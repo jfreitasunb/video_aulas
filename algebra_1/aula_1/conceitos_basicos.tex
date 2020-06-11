@@ -10,8 +10,10 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usecolortheme{beaver}
-
+% \mode<presentation>
 \input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
 
 \title{Noções de Lógica}
 \author[\autor]{\autor}
@@ -19,20 +21,88 @@
 \date{\today}
 
 \begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
 
-\begin{frame}
-\maketitle
-\end{frame}
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
-\logo{
-    \includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}
-}
+    \begin{frame}
+        \begin{definicao}
+            Uma \textbf{proposi\c{c}\~ao} \'e todo conjunto de palavras ou s{\'\i}mbolos ao qual podemos atribuir um \textbf{valor l\'ogico}.\pause
+        \end{definicao}
 
-\begin{frame}
-Now the logo is visible
-\end{frame}
+        \begin{definicao}
+            Diz-se que o \textbf{valor l\'ogico} de uma proposi\c{c}\~ao \'e ``verdade'' (V) se a proposi\c{c}\~ao \'e verdadeira ou ``falsidade'' (F) se a proposi\c{c}\~ao \'e falsa.
+        \end{definicao}
+    \end{frame}
 
-\begin{frame}
-    adfjasdfasfdaf
-\end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            Julgue se as seguintes senten\c{c}as s\~ao ou n\~ao proposi\c{c}\~oes:\pause
+            \begin{itemize}
+                \item[1)] Todo n\'umero primo \'e {\'\i}mpar.\pause
+                \item[2)] $x^2 + y^2 \ge 0$ para todos $x$, $y \in \real$.\pause
+                \item[3)] Amanh\~a ir\'a chover.
+            \end{itemize}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{center}
+            ``Toda proposi\c{c}\~ao tem um, e um s\'o, dos valores l\'ogicos \textbf{verdade} ou \textbf{falsidade}.''\pause
+        \end{center}
+        Isso é conhecido como \textbf{Princ{\'\i}pio da n\~ao contradi\c{c}\~ao e do terceiro exclu{\'\i}do}.
+    \end{frame}
+
+    \begin{frame}
+        Vamos considerar com proposi\c{c}\~oes da forma:\pause
+
+        \begin{center}
+            Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+        \end{center}
+
+        $\mathbb{H}$ \'e a hip\'otese\pause
+
+        $\mathbb{T}$ é a tese.\pause
+
+        \begin{center}
+            $\mathbb{H}$ se, e somente se, $\mathbb{T}$\pause
+
+            ou
+
+            $\mathbb{H}$ se, e s\'o se, $\mathbb{T}$.\pause
+        \end{center}
+
+        Essa proposi\c{c}\~ao poder decomposta em duas proposi\c{c}\~oes:\pause
+        \begin{itemize}
+            \item[1)] Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+            \item[2)] Se $\mathbb{T}$, ent\~ao $\mathbb{H}$.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        Por exemplo, sejam $x$, $y \in \real$.\pause
+        \[
+            x^2 + y^2 = 0 \quad\mbox{ se, e somente se, }\quad x = y = 0\pause
+        \]
+        Nesse caso podemos escrever:
+        \begin{itemize}
+            \item Se $x^2 + y^2 = 0$, então $x = y = 0$.\pause
+            \item Se $x = y = 0$, então $x^2 + y^2 = 0$.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        Temos 3 caminhos para tentar provar uma proposição do tipo:
+        \begin{center}
+            Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+        \end{center}
+
+        \begin{itemize}
+            \item[1)] Demonstra\c{c}\~ao direta;\pause
+            \item[2)] Demonstra\c{c}\~ao por contraposi\c{c}\~ao;\pause
+            \item[3)] Demonstra\c{c}\~ao por contradi\c{c}\~ao ou redu\c{c}\~ao ao absurdo.\pause
+        \end{itemize}
+    \end{frame}
 \end{document}
