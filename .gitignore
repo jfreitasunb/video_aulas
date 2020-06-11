@@ -20,3 +20,5 @@
 *.xdv
 
 modelo_apresentacao_beamer/modelo_beamer.pdf
+
+*.vrb
