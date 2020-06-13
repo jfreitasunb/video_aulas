@@ -79,14 +79,59 @@
     \end{frame}
 
     \begin{frame}
-        \begin{definicao}\label{igualdade_conjuntos}
-            Dados dois conjuntos $A$ e $B$,\pause dizemos que $A$ e $B$ s{\~a}o \textbf{iguais}\quando se, e somente se, eles t{\^e}m os mesmos elementos.\pause Ou seja, para todo $x \in A$ também vale que $x \in B$\pause e para todo $y \in B$ também vale que $y \in A$.\pause Se $A$ e $B$ s{\~a}o iguais,\pause escrevemos $A = B$.\pause
+        \begin{definicao}
+            Dados dois conjuntos $A$ e $B$,\pause dizemos que $A$ e $B$ s{\~a}o \textbf{iguais}\pause se, e somente se, eles t{\^e}m os mesmos elementos.\pause Ou seja, para todo $x \in A$ também vale que $x \in B$\pause e para todo $y \in B$ também vale que $y \in A$.\pause Se $A$ e $B$ s{\~a}o iguais,\pause escrevemos $A = B$.\pause
         \end{definicao}
 
         \begin{exemplo}
-            Sejam $A = \{1,1,2,3,4,4\}$, $B = \{3,2,1,4\}$, $C = \{1,2,3\}$ e $D = \{2,3\}$. Ent\~ao temos $A = B$. Agora como $1 \in C$ e $1 \notin D$ ent\~ao $C \ne D$.
+            Sejam $A = \{1,1,2,3,4,4\}$,\pause $B = \{3,2,1,4\}$,\pause $C = \{1,2,3\}$\pause e $D = \{2,3\}$.\pause Ent\~ao temos $A = B$.\pause Agora como $1 \in C$ e $1 \notin D$ ent\~ao $C \ne D$.\pause
         \end{exemplo}
             
-        
+        \begin{definicao}
+            Se $A$ e $B$ s{\~a}o dois conjuntos,\pause dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$\pause ou que $A$ \textbf{est\'a contido} em $B$\pause ou que $B$ \textbf{cont\'em} $A$\pause se todo elemento de $A$ for elemento de $B$.\pause Ou seja, se para todo elemento $x \in A$,\pause temos $x \in B$. \pause Nesse caso, escrevemos $A \subseteq B$ (ou $A \subset B$)\pause ou $B \supseteq A$ (ou $B \supset A$).\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            Sejam $A = \{1,2,3,x,y,z\}$,\pause $B = \{x, y\}$\pause e $C = \{x, y , z\}$.\pause
+            \begin{itemize}
+                \item[1)] $A \nsubseteq B$\pause pois $1 \in A$ e $1 \notin B$.\pause
+                \item[2)] $B \subsetneq A$\pause
+                \item[3)] $B \subseteq C$\pause
+                \item[4)] $C \subseteq A$\pause
+            \end{itemize}
+        \end{exemplos}
+
+        \begin{observacao}
+            Dados dois conjuntos $A$ e $B$\pause para que $A$ \textbf{n\~ao esteja contido em} $B$ basta\pause que exista $x \in A$ tal que $x \notin B$.\pause Nesse caso escrevemos $A \nsubseteq B$.
+        \end{observacao}
+    \end{frame}
+    \begin{frame}
+        Pela defini\c{c}\~ao de contin\^encia de conjuntos, podemos reescrever a igualdade de conjuntos, da seguinte forma:\pause dados dois conjuntos $A$ e $B$\pause
+\begin{center}
+    $A = B$\quad \textbf{se, e somente se,}\pause\quad $A \subseteq B$\quad\pause \textbf{e}\quad $B \subseteq A$.\pause
+\end{center}
+
+Ou seja,
+\begin{center}
+    \textbf{se} $A = B$ \textbf{ent{\~a}o} $A \subseteq B$ \textbf{e} $B \subseteq A$.\pause
+\end{center}
+
+Al\'em disso,
+\begin{center}
+    \textbf{se} $A \subseteq B$ \textbf{e} $B \subseteq A$, \textbf{ent{\~a}o} $A = B$.\pause
+\end{center}
+
+Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$.\pause
+
+\begin{proposicao}
+    Dados tr\^es conjuntos $A$, $B$ e $C$ temos:\pause
+    \begin{enumerate}[label={\roman*})]
+        \item $A\subseteq A$ (Reflexividade)\pause
+        \item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$. (Antissimetria)\pause
+        \item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$. (Transitividade)\pause
+    \end{enumerate}
+\end{proposicao}
     \end{frame}
 \end{document}
