@@ -1,0 +1,92 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Teoria de Conjuntos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        Um conjunto {\'e} uma ``cole{\c c}{\~a}o'' ou ``fam{\'\i}lia'' de elementos.\pause
+
+        Denotaremos os conjuntos por letras maiúscula e os elementos de um dado conjunto por letras min{\'u}sculas.\pause
+
+        Seja $A$ um conjunto, para indicar que $x$ {\'e} um elemento de $A$, escrevemos:
+        \[
+            x \in A.\pause
+        \]
+
+        Para dizer que um elemento $x$ n{\~a}o pertence ao conjunto $A$, escrevemos:
+        \[
+            x \notin A.\pause
+        \]
+
+        Um conjunto sem elementos {\'e} chamado de \textbf{conjunto vazio} e {\'e} denotado por $\emptyset$.\pause
+
+        Dado um conjunto $A$ e $x$ um elemento, temos:\pause
+        \[
+            x \in A\pause \mbox{ ou } x \notin A.\pause
+        \]
+
+        Al{\'e}m disso, para dois elementos $x$, $y \in A$, sempre ocorre:\pause
+        \[
+            x = y\pause \mbox{ ou } x \neq y
+        \]
+    \end{frame}
+
+    \begin{frame}
+        Um conjunto $A$ pode ser dado pela simples listagem dos seus elementos, entre chaves:\pause
+            \begin{center}
+                $A = \{1,2,3,4,5\}$\pause\\
+                $B = \{verdade, falso\}.$\pause
+            \end{center}
+            
+
+        Ou pela descri{\c c}{\~a}o das propriedades dos seus elementos, também  entre chaves:\pause
+        \begin{center}
+            $A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.$
+        \end{center}
+
+        \begin{itemize}
+            \item $\n = \{0,1,2,3,...\}$ o conjunto do n{\'u}meros naturais.\pause
+            \item $\n_0 = \{0,1,2,3,...\}$ o conjunto dos n{\'u}meros inteiros n{\~a}o negativos.\pause
+            \item $\z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros.\pause
+            \item $\rac = \left\{\dfrac{p}{q} \mid p,q \in \z, q \neq 0 \right\}$ o conjunto dos n{\'u}meros racionais.\pause
+            \item $\real $ o conjunto dos n{\'u}meros reais.\pause
+            \item $\complex = \{a + bi \mid a,b \in \real,\ i^2 = -1\}$ o conjunto dos n\'umeros complexos.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}\label{igualdade_conjuntos}
+            Dados dois conjuntos $A$ e $B$,\pause dizemos que $A$ e $B$ s{\~a}o \textbf{iguais}\quando se, e somente se, eles t{\^e}m os mesmos elementos.\pause Ou seja, para todo $x \in A$ também vale que $x \in B$\pause e para todo $y \in B$ também vale que $y \in A$.\pause Se $A$ e $B$ s{\~a}o iguais,\pause escrevemos $A = B$.\pause
+        \end{definicao}
+
+        \begin{exemplo}
+            Sejam $A = \{1,1,2,3,4,4\}$, $B = \{3,2,1,4\}$, $C = \{1,2,3\}$ e $D = \{2,3\}$. Ent\~ao temos $A = B$. Agora como $1 \in C$ e $1 \notin D$ ent\~ao $C \ne D$.
+        \end{exemplo}
+            
+        
+    \end{frame}
+\end{document}
