@@ -28,110 +28,53 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        Um conjunto {\'e} uma ``cole{\c c}{\~a}o'' ou ``fam{\'\i}lia'' de elementos.\pause
-
-        Denotaremos os conjuntos por letras maiúscula e os elementos de um dado conjunto por letras min{\'u}sculas.\pause
-
-        Seja $A$ um conjunto, para indicar que $x$ {\'e} um elemento de $A$, escrevemos:
-        \[
-            x \in A.\pause
-        \]
-
-        Para dizer que um elemento $x$ n{\~a}o pertence ao conjunto $A$, escrevemos:
-        \[
-            x \notin A.\pause
-        \]
-
-        Um conjunto sem elementos {\'e} chamado de \textbf{conjunto vazio} e {\'e} denotado por $\emptyset$.\pause
-
-        Dado um conjunto $A$ e $x$ um elemento, temos:\pause
-        \[
-            x \in A\pause \mbox{ ou } x \notin A.\pause
-        \]
-
-        Al{\'e}m disso, para dois elementos $x$, $y \in A$, sempre ocorre:\pause
-        \[
-            x = y\pause \mbox{ ou } x \neq y
-        \]
-    \end{frame}
-
-    \begin{frame}
-        Um conjunto $A$ pode ser dado pela simples listagem dos seus elementos, entre chaves:\pause
-            \begin{center}
-                $A = \{1,2,3,4,5\}$\pause\\
-                $B = \{verdade, falso\}.$\pause
-            \end{center}
-            
-
-        Ou pela descri{\c c}{\~a}o das propriedades dos seus elementos, também  entre chaves:\pause
-        \begin{center}
-            $A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.$
-        \end{center}
-
-        \begin{enumerate}[label={\arabic*})]
-            \item $\n = \{0,1,2,3,...\}$ o conjunto do n{\'u}meros naturais.\pause
-            \item $\n_0 = \{0,1,2,3,...\}$ o conjunto dos n{\'u}meros inteiros n{\~a}o negativos.\pause
-            \item $\z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros.\pause
-            \item $\rac = \left\{\dfrac{p}{q} \mid p,q \in \z, q \neq 0 \right\}$ o conjunto dos n{\'u}meros racionais.\pause
-            \item $\real $ o conjunto dos n{\'u}meros reais.\pause
-            \item $\complex = \{a + bi \mid a,b \in \real,\ i^2 = -1\}$ o conjunto dos n\'umeros complexos.
-        \end{enumerate}
-    \end{frame}
-
-    \begin{frame}
         \begin{definicao}
-            Dados dois conjuntos $A$ e $B$, \pause dizemos que $A$ e $B$ s{\~a}o \textbf{iguais} \pause se, e somente se, eles t{\^e}m os mesmos elementos. \pause Ou seja, para todo $x \in A$ também vale que $x \in B$ \pause e para todo $y \in B$ também vale que $y \in A$. \pause Se $A$ e $B$ s{\~a}o iguais, \pause escrevemos $A = B$.\pause
+            Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{intersec{\c c}{\~a}o} de $A$ e $B$ \pause como sendo o conjunto $A \cap B$ \pause cujos elementos pertencem aos conjuntos $A$ e $B$ simultaneamente. \pause Assim,
+            \[
+                A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.\pause
+            \]
         \end{definicao}
 
         \begin{exemplo}
-            Sejam $A = \{1,1,2,3,4,4\}$, \pause $B = \{3,2,1,4\}$, \pause $C = \{1,2,3\}$ \pause e $D = \{2,3\}$. \pause Ent\~ao temos $A = B$. \pause Agora como $1 \in C$ e $1 \notin D$ ent\~ao $C \ne D$.\pause
+            Sejam $A = \{1, 2, 3\}$, \pause $B = \{2, 3, 4\}$ \pause e $C = \{r, s, t\}$. \pause Ent\~ao\pause
+            \begin{center}
+                $A \cap B \pause = \{2, 3\}$\pause\\
+                $A \cap C \pause = \emptyset.$\pause
+            \end{center}
         \end{exemplo}
-            
+
+    \end{frame}
+
+    \begin{frame}
         \begin{definicao}
-            Se $A$ e $B$ s{\~a}o dois conjuntos, \pause dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ \pause ou que $A$ \textbf{est\'a contido} em $B$ \pause ou que $B$ \textbf{cont\'em} $A$ \pause se todo elemento de $A$ for elemento de $B$. \pause Ou seja, se para todo elemento $x \in A$, \pause temos $x \in B$. \pause Nesse caso, escrevemos $A \subseteq B$ (ou $A \subset B$) \pause ou $B \supseteq A$ (ou $B \supset A$).\pause
+            Sejam $A$ e $B$ dois conjuntos. \pause Definimos a \textbf{uni{\~a}o} de $A$ com $B$ \pause como sendo o conjunto $A \cup B$, \pause cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. \pause Assim,\pause
+            \[
+                A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.\pause
+            \]
         \end{definicao}
+
+        \begin{exemplo}
+            Sejam $A = \{1, 2, 3\}$, \pause $B = \{2, 3, 4\}$ \pause e $C = \{r, s, t\}$. \pause Ent\~ao\pause
+            \begin{center}
+                $A \cup B \pause = \{1,2,3,4\}$\pause\\
+                $A \cup C \pause = \{1,2,3,r,s,t\}.$\pause
+            \end{center}
+        \end{exemplo}
     \end{frame}
 
     \begin{frame}
-        \begin{exemplos}
-            Sejam $A = \{1,2,3,x,y,z\}$, \pause $B = \{x, y\}$ \pause e $C = \{x, y , z\}$.\pause
-            \begin{enumerate}[label={\arabic*})]
-                \item $A \nsubseteq B$ \pause pois $1 \in A$ e $1 \notin B$.\pause
-                \item $B \subsetneq A$\pause
-                \item $B \subseteq C$\pause
-                \item $C \subseteq A$\pause
+        \begin{proposicao} Sejam $A$ e $B$ dois conjuntos. \pause Ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $(A \cap B) \subseteq A$;\pause
+                \item $(A \cap B) \subseteq B$;\pause
+                \item $A \subseteq A \cup B$;\pause
+                \item $B \subseteq A \cup B$.\pause
             \end{enumerate}
-        \end{exemplos}
+        \end{proposicao}
+        \begin{prova}
+            Para provar a primeira afirma\c{c}\~ao seja $x \in A \cap B$ um elemento qualquer. \pause Da defini\c{c}\~ao de interse\c{c}\~ao de conjuntos \pause temos $x \in A$ e $x \in B$. \pause Assim podemos afirmar com certeza que $x \in A$. \pause Logo todo elemente de $A \cap B$ tamb\'em est\'a em $A$, \pause ou seja, $A \cap B \subseteq A$. \pause De modo an\'alogo prova-se a segunda afirma\c{c}\~ao sobre a interse\c{c}\~ao.\pause
 
-        \begin{observacao}
-            Dados dois conjuntos $A$ e $B$ \pause para que $A$ \textbf{n\~ao esteja contido em} $B$ basta \pause que exista $x \in A$ tal que $x \notin B$. \pause Nesse caso escrevemos $A \nsubseteq B$.
-        \end{observacao}
-    \end{frame}
-    \begin{frame}
-        Pela defini\c{c}\~ao de contin\^encia de conjuntos, podemos reescrever a igualdade de conjuntos, da seguinte forma: \pause dados dois conjuntos $A$ e $B$\pause
-\begin{center}
-    $A = B$\quad \textbf{se, e somente se,} \pause\quad $A \subseteq B$ \quad\pause \textbf{e}\quad $B \subseteq A$.\pause
-\end{center}
-
-Ou seja,
-\begin{center}
-    \textbf{se} $A = B$ \textbf{ent{\~a}o} $A \subseteq B$ \textbf{e} $B \subseteq A$.\pause
-\end{center}
-
-Al\'em disso,
-\begin{center}
-    \textbf{se} $A \subseteq B$ \textbf{e} $B \subseteq A$, \textbf{ent{\~a}o} $A = B$.\pause
-\end{center}
-
-Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$.\pause
-
-\begin{proposicao}
-    Dados tr\^es conjuntos $A$, $B$ e $C$ temos:\pause
-    \begin{enumerate}[label={\roman*})]
-        \item $A\subseteq A$ (Reflexividade)\pause
-        \item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$. (Antissimetria)\pause
-        \item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$. (Transitividade)\pause
-    \end{enumerate}
-\end{proposicao}
+            Para a terceira afirma\c{c}\~ao, seja $x \in A$. \pause Da defini\c{c}\~ao de uni\~ao de conjuntos \pause segue que $x \in A \cup B$. \pause Logo todo elemento de $A$ tamb\'em est\'a em $A \cup B$, \pause ou seja, $A \subseteq (A \cup B)$. \pause De modo an\'alogo prova-se a quarta afirma\c{c}\~ao.\pause
+        \end{prova}
     \end{frame}
 \end{document}
