@@ -1,0 +1,162 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Teoria de Conjuntos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Dados dois conjuntos $A$ e $B$, \pause definimos a \textbf{diferen{\c c}a} \pause dos conjuntos $A$ e $B$, denotada por \pause $A - B$ ou $A \backslash B$ \pause como sendo o conjunto\pause
+            \[
+                A - B = \pause \{x \mid x \in A \pause \mbox{ e } x \notin B\}.\pause
+            \]
+        \end{definicao}
+
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Se $A=\{1,2,3,5,4\}$, \pause $B=\{2,3,6,8\}$, \pause ent\~ao
+                \begin{center}
+                    $A - B = \pause \{1,4,5\}$\pause\\
+                    $B - A = \pause \{6,8\}$.\pause
+                \end{center}
+                \item Se $A=\{2,4,6,8,10,...\}$, \pause $B=\{3,6,9,12,15,...\}$ \pause, ent\~ao\pause
+                \begin{center}
+                    $A - B = \pause \{2,4,8,10,14,16,...\}\pause$\\
+                    $B - A = \pause \{3,9,15,21,...\}$
+                 \end{center}
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $A$, $B$ e $C$ \pause conjuntos n\~ao vazios. Ent\~ao\pause
+            \[
+                (A \cup B) - C = (A - C) \cup (B - C).\pause
+            \]
+        \end{proposicao}
+        \textit{Prova: }\pause
+        Precisamos mostrar que\pause
+        \begin{enumerate}[label={\arabic*})]
+            \item $(A \cup B) - C \sub (A - C) \cup (B - C)$\pause
+            \item $(B - C) \sub (A \cup B) - C = (A - C)$\pause
+        \end{enumerate}
+        Para a primeira inclus\~ao \pause seja $x \in (A \cup B) - C$. \pause Assim por defini\c{c}\~ao, \pause $x \in A \cup B$ \pause e $x \notin C$. \pause De $x \in A \cup B$, \pause ent\~ao $x \in A$ ou $x \in B$.\pause
+        
+        Se $x \in A$, \pause como $x \notin C$ \pause segue ent\~ao que $x \in A - C$. \pause Logo $x \in (A - C) \cup (B - C)$.\pause
+
+        Se $x \in B$, \pause como $x \notin C$ \pause segue ent\~ao que $x \in B - C$. \pause Logo $x \in (A - C) \cup (B - C)$.\pause
+    \end{frame}
+
+    \begin{frame}
+        Assim $(A \cup B) - C = (A - C) \sub (B - C)$.\pause
+        
+        Agora, para a segunda inclus\~ao, \pause seja $y \in (A - C) \cup (B - C)$. \pause Por defini\c{c}\~ao, \pause $x \in A - C$ ou $x \in B - C$.\pause
+
+        Se $x \in A - C$, \pause ent\~ao $x \in A$ e $x \notin C$. \pause Como $x \in A$, \pause segue que $x \in A \cup B$. \pause Mas $x \notin C$, \pause com isso, $x \in (A \cup B) - C$.\pause
+
+        Se $x \in B - C$, \pause ent\~ao $x \in B$ \pause e $x \notin C$. \pause Como $x \in B$, \pause segue que $x \in A \cup B$. \pause Mas $x \notin C$, \pause com isso, $x \in (A \cup B) - C$.\pause
+        
+        Assim $(A - B) \cup (B - C) \sub (A \cup B) - C$.\pause
+
+        Portanto, \pause $(A \cup B) - C = (A - C) \cup (B - C)$, \pause como quer{\'\i}amos.\qedsymbol
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+        Dados dois conjuntos $A$ e $E$ \pause tais que $A\subseteq E$, \pause definimos o \textbf{complementar} \pause de $A$ em $E$, denotado $A^C$ ou $C_E(A)$, como\pause
+        \[
+            C_E(A) = \pause \{ x \in E \pause \mid x \notin A \}.\pause
+        \]
+        \end{definicao}
+
+        \begin{observacoes}
+            \begin{enumerate}[label={\arabic*})]
+                \item Se $A = E$, \pause ent{\~a}o $C_A(A) = \{ x \in A \pause \mid x \notin A \} \pause = \emptyset$.\pause
+                \item $(A^C)^C = \pause \{x \in E \pause \mid x \notin A^C\} \pause = \{ x \in E \mid x \in A \} = A$\pause
+            \end{enumerate}
+            
+        \end{observacoes}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplo}
+            Sejam $A = \{1,2,3,4\}$ \pause e $E = \{1,2,3,5,4,0,8,9\}$. \pause Primeiro note que $A \subseteq E$, \pause da{\'\i}
+            \[
+                    A^C = C_E(A) \pause = \{0,5,8,9\}.\pause
+            \]
+        \end{exemplo}
+    
+        \begin{proposicao}
+            Sejam $A$, $B$ e $E$ conjuntos. \pause Se $A\subseteq B\subseteq E$, \pause ent{\~a}o $C_E(B)\subseteq C_E(A)$.\pause
+        \end{proposicao}
+        \textit{Prova: }\pause
+            Seja $x \in C_E(B)$. \pause Assim $x\notin B$ \pause e como $A \subseteq B$, \pause ent\~ao $x \notin A$. \pause Da{\'\i} por defini\c{c}\~ao $x\in C_E(A)$, \pause ou seja, $C_E(B) \subseteq C_E(A)$.\qedsymbol\pause
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $A$, $B$ e $E$ tr{\^e}s conjunto \pause tais que $A\subseteq E$ \pause e $B\subseteq E$. \pause Ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $(A\cup B)^C = A^C\cap B^C$\pause
+                \item $(A\cap B)^C = A^C\cup B^C$\pause
+            \end{enumerate}
+        \end{proposicao}
+        \textit{Prova: }\pause 
+        Seja $x \in (A\cup B)^C$. \pause Logo $x\notin A\cup B$, \pause assim $x\notin A$ \pause e $x\notin B$. \pause Da{\'\i}, $x\in A^C$ \pause e $x\in B^C$, \pause isto {\'e}, $x\in A^C\cap B^C$. \pause Desse modo, \pause
+        \begin{equation}\label{complementar_uniao-1}
+            (A\cup B)^C \subseteq A^C\cap B^C.\pause
+        \end{equation}
+    
+        Por outro lado, \pause se $y \in A^C \cap B^C$, \pause ent{\~a}o $y \in A^C$ \pause e $y \in B^C$. \pause Com isso, $y \notin A$ \pause e $y \notin B$, \pause ou seja, $y\notin A\cup B$, \pause logo $y\in (A\cup B)^C$. \pause Desse modo
+        \begin{equation}\label{complementar_uniao-2}
+            A^C\cap B^C\subseteq(A\cup B)^C.\pause
+        \end{equation}
+    \end{frame}
+
+    \begin{frame}
+        Portanto, \pause de \eqref{complementar_uniao-1} e \eqref{complementar_uniao-2} temos\pause
+        \[
+            (A\cup B)^C = A^C\cap B^C.\pause
+        \]
+
+        Seja $x \in (A \cap B)^C$. \pause Logo $x \notin A \cap B$, \pause assim $x \notin A$ \pause ou $x \notin B$. \pause Ent\~ao $x \in A^C$ \pause ou $x \in B^C$, \pause isto {\'e}, $ x\in A^C \cup B^C$. \pause Desse modo,
+        \begin{equation}\label{complementar_intersecao-1}
+            (A\cap B)^C \subseteq A^C\cup B^C.\pause
+        \end{equation}
+
+        Por outro lado, \pause se $y \in A^C \cup B^C$, \pause ent{\~a}o $y \in A^C$ \pause ou $y \in B^C$. \pause Da{\'\i}, $y \notin A$ \pause ou $y \notin B$, \pause ou seja, $y \notin A \cap B$, \pause logo $y \in (A \cap B)^C$. \pause Desse modo
+        \begin{equation}\label{complementar_intersecao-2}
+            A^C \cup B^C \subseteq (A \cap B)^C.\pause
+        \end{equation}
+
+        Portanto, \pause de \eqref{complementar_intersecao-1} e \eqref{complementar_intersecao-2} temos\pause
+        \[
+            (A\cap B)^C = A^C\cup B^C,\pause
+        \]
+        como quer{\'\i}amos.\qedsymbol
+    \end{frame}
+\end{document}
