@@ -1,0 +1,80 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Teoria de Conjuntos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{proposicao} Sejam $A,$ $B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $A \cap ( B \cup C) = (A \cap B) \cup (A \cap C)$\pause
+                \item $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$\pause
+            \end{enumerate}
+        \end{proposicao}
+        \textit{Prova:} \pause
+        Para mostrar a primeira igualdade precisamos mostrar que\pause
+        \begin{enumerate}[label=({\arabic*})]
+            \item $A \cap (B \cup C) \subseteq (A \cap B) \cup ( A \cap C)$;\label{intersecao_unicao_1}\pause
+            \item $(A \cap B) \cup (A \cap C) \subseteq A \cap (B \cup C).$\label{intersecao_unicao_2}\pause
+        \end{enumerate}
+
+        Para provar \ref{intersecao_unicao_1} seja $x\in A \cap (B \cup C)$. \pause Logo $x \in A$ \pause e $x \in B \cup C$. \pause Agora, de $x \in B \cup C$, \pause segue que $x \in B$ \pause ou $x \in C$. \pause Suponha que $x \in B$. \pause Como $x \in A$ e $x \in B$, \pause ent\~ao $x \in A \cap B$. \pause Assim, $x \in (A \cap B) \cup (A \cap C)$, \pause ou seja, $A \cap (B \cup C) \subseteq (A \cap B) \cup (A \cap C)$. \pause Por outro lado, se $x \in C$, \pause como $x \in A$, ent{\~a}o $x \in A \cap C$ \pause e da{\'\i} $x \in (A \cap B) \cup (A \cap C)$, \pause logo $A \cap (B \cup C)\subseteq (A \cap B) \cup (A \cap C)$.\pause
+
+        Portanto,
+        \[
+            A \cap (B \cup C) \subseteq (A \cap B) \cup (A \cap C).\pause
+        \]
+    \end{frame}
+    \begin{frame}
+        Agora para provar \ref{intersecao_unicao_2}, \pause seja $y \in (A \cap B) \cup (A \cap C)$. \pause Da{\'\i}, $y \in A\cap B$ \pause ou $y \in A \cap C$. \pause Suponha que $y \in A \cap B$. \pause Assim, $y \in A$ \pause e $y \in B$. \pause Como $y \in B$, \pause segue que $y \in B \cup C$ \pause e ent{\~a}o $y \in A \cap (B \cup C)$, \pause ou seja, $(A \cap B) \cup (A \cap C) \subseteq A \cap (B \cup C)$. \pause Agora, suponha que $y \in A \cap C$. \pause Com isso $y \in A$ \pause e $y \in C$. \pause Desse modo, $y \in B \cup C$ \pause e ent{\~a}o $y \in A \cap (B \cup C)$ \pause e da{\'\i}\pause
+        \[
+            (A \cap B) \cup (A \cap C) \subseteq A \cap (B \cup C).\pause
+        \]
+
+        Portanto
+        \[
+            A \cap (B \cup C)=(A \cap B) \cup (A \cap C),\pause
+        \]
+        como quer{\'\i}amos.
+    \end{frame}
+    \begin{frame}
+        Para mostrar a segunda igualdade de conjuntos, precisamos mostrar que\pause
+        \begin{enumerate}[label=({\arabic*})]
+            \item $A \cup (B \cap C) \subseteq (A \cup B) \cap (A \cup C)$;\label{uniao_intersecao_1}\pause
+            \item $(A \cup B) \cap (A \cup C) \subseteq A \cup (B \cap C)$.\label{uniao_intersecao_2}\pause
+        \end{enumerate}
+
+        Para mostrar \ref{uniao_intersecao_1} seja $x \in A \cup (B \cap C)$. \pause Daí $x \in A$ \pause ou $x \in B \cap C$. \pause Suponha que $x \in A$, \pause assim $x \in A \cup B$ \pause e também $x \in A \cup C$. Logo $x \in (A \cup B) \cap (A \cup C)$ \pause e com isso $A \cup (B \cap C) \subseteq (A \cup B) \cap (A \cup C)$.\pause
+
+        Agora para mostrar \ref{uniao_intersecao_2} seja $y \in (A \cup B) \cap (A \cup C)$. \pause Assim $y \in A \cup B$ \pause e $y \in A \cap C$. \pause Assim $y \in A$ \pause ou $y \in B$ \pause e também $y \in A$ \pause ou $y \in C$. \pause Se $y \in A$, \pause então $y \in A \cup (B \cap C)$. Agora, suponha que $y \notin A$, \pause logo $y \in B$ e $y \in C$, \pause isto é, $y \in B \cap C$ e com isso $y \in A \cup (B \cap C)$. Assim, \pause independente do caso sempre temos $y \in A \cup (B \cap C)$. \pause Logo, $(A \cup B) \cap (A \cup C) \subseteq A \cup (B \cap C)$.\pause
+
+        Portanto,\pause
+        \[
+            (A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C),\pause
+        \]
+        como queríamos. \qedsymbol \pause 
+    \end{frame}
+\end{document}
