@@ -62,7 +62,7 @@
         Precisamos mostrar que\pause
         \begin{enumerate}[label={\arabic*})]
             \item $(A \cup B) - C \sub (A - C) \cup (B - C)$\pause
-            \item $(B - C) \sub (A \cup B) - C = (A - C)$\pause
+            \item $(A - C) \cup (B - C) \sub  (A \cup B) - C$\pause
         \end{enumerate}
         Para a primeira inclus\~ao \pause seja $x \in (A \cup B) - C$. \pause Assim por defini\c{c}\~ao, \pause $x \in A \cup B$ \pause e $x \notin C$. \pause De $x \in A \cup B$, \pause ent\~ao $x \in A$ ou $x \in B$.\pause
         
@@ -74,13 +74,13 @@
     \begin{frame}
         Assim $(A \cup B) - C \sub (A - C) \cup (B - C)$.\pause
         
-        Agora, para a segunda inclus\~ao, \pause seja $y \in (A - C) \cup (B - C)$. \pause Por defini\c{c}\~ao, \pause $x \in A - C$ ou $x \in B - C$.\pause
+        Agora, para a segunda inclus\~ao, \pause seja $y \in (A - C) \cup (B - C)$. \pause Por defini\c{c}\~ao, \pause $y \in A - C$ ou $y \in B - C$.\pause
 
-        Se $x \in A - C$, \pause ent\~ao $x \in A$ e $x \notin C$. \pause Como $x \in A$, \pause segue que $x \in A \cup B$. \pause Mas $x \notin C$, \pause com isso, $x \in (A \cup B) - C$.\pause
+        Se $y \in A - C$, \pause ent\~ao $y \in A$ e $y \notin C$. \pause Como $y \in A$, \pause segue que $y \in A \cup B$. \pause Mas $y \notin C$, \pause com isso, $y \in (A \cup B) - C$.\pause
 
-        Se $x \in B - C$, \pause ent\~ao $x \in B$ \pause e $x \notin C$. \pause Como $x \in B$, \pause segue que $x \in A \cup B$. \pause Mas $x \notin C$, \pause com isso, $x \in (A \cup B) - C$.\pause
+        Se $y \in B - C$, \pause ent\~ao $y \in B$ \pause e $y \notin C$. \pause Como $y \in B$, \pause segue que $y \in A \cup B$. \pause Mas $y \notin C$, \pause com isso, $y \in (A \cup B) - C$.\pause
         
-        Assim $(A - B) \cup (B - C) \sub (A \cup B) - C$.\pause
+        Assim $(A - C) \cup (B - C) \sub (A \cup B) - C$.\pause
 
         Portanto, \pause $(A \cup B) - C = (A - C) \cup (B - C)$, \pause como quer{\'\i}amos.\qedsymbol
     \end{frame}
