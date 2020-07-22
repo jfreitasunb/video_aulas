@@ -1,0 +1,87 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Diferen\c{c}a de Conjuntos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Dados dois conjuntos $A$ e $B$, \pause definimos a \textbf{diferen{\c c}a} \pause dos conjuntos $A$ e $B$, denotada por \pause $A - B$ ou $A \backslash B$ \pause como sendo o conjunto\pause
+            \[
+                A - B = \pause \{x \mid x \in A \pause \mbox{ e } x \notin B\}.\pause
+            \]
+        \end{definicao}
+
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Se $A=\{1,2,3,5,4\}$, \pause $B=\{2,3,6,8\}$, \pause ent\~ao
+                \begin{center}
+                    $A - B = \pause \{1,4,5\}$\pause\\
+                    $B - A = \pause \{6,8\}$.\pause
+                \end{center}
+                \item Se $A=\{2,4,6,8,10,...\}$, \pause $B=\{3,6,9,12,15,...\}$ \pause, ent\~ao\pause
+                \begin{center}
+                    $A - B = \pause \{2,4,8,10,14,16,...\}\pause$\\
+                    $B - A = \pause \{3,9,15,21,...\}$
+                 \end{center}
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $A$, $B$ e $C$ \pause conjuntos n\~ao vazios. Ent\~ao\pause
+            \[
+                (A \cup B) - C = (A - C) \cup (B - C).\pause
+            \]
+        \end{proposicao}
+        \textit{Prova: }\pause
+        Precisamos mostrar que\pause
+        \begin{enumerate}[label={\arabic*})]
+            \item $(A \cup B) - C \sub (A - C) \cup (B - C)$\pause
+            \item $(B - C) \sub (A \cup B) - C = (A - C)$\pause
+        \end{enumerate}
+        Para a primeira inclus\~ao \pause seja $x \in (A \cup B) - C$. \pause Assim por defini\c{c}\~ao, \pause $x \in A \cup B$ \pause e $x \notin C$. \pause De $x \in A \cup B$, \pause ent\~ao $x \in A$ ou $x \in B$.\pause
+        
+        Se $x \in A$, \pause como $x \notin C$ \pause segue ent\~ao que $x \in A - C$. \pause Logo $x \in (A - C) \cup (B - C)$.\pause
+
+        Se $x \in B$, \pause como $x \notin C$ \pause segue ent\~ao que $x \in B - C$. \pause Logo $x \in (A - C) \cup (B - C)$.\pause
+    \end{frame}
+
+    \begin{frame}
+        Assim $(A \cup B) - C = (A - C) \sub (B - C)$.\pause
+        
+        Agora, para a segunda inclus\~ao, \pause seja $y \in (A - C) \cup (B - C)$. \pause Por defini\c{c}\~ao, \pause $x \in A - C$ ou $x \in B - C$.\pause
+
+        Se $x \in A - C$, \pause ent\~ao $x \in A$ e $x \notin C$. \pause Como $x \in A$, \pause segue que $x \in A \cup B$. \pause Mas $x \notin C$, \pause com isso, $x \in (A \cup B) - C$.\pause
+
+        Se $x \in B - C$, \pause ent\~ao $x \in B$ \pause e $x \notin C$. \pause Como $x \in B$, \pause segue que $x \in A \cup B$. \pause Mas $x \notin C$, \pause com isso, $x \in (A \cup B) - C$.\pause
+        
+        Assim $(A - B) \cup (B - C) \sub (A \cup B) - C$.\pause
+
+        Portanto, \pause $(A \cup B) - C = (A - C) \cup (B - C)$, \pause como quer{\'\i}amos.\qedsymbol
+    \end{frame}
+\end{document}
