@@ -1,0 +1,42 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Rela\c{c}\~ao de Equival\^encia}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $A$ um conjunto n{\~a}o vazio e $R\subseteq A \times A$. Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:
+            \begin{enumerate}[label={\roman*})]
+                \item Para todo $x \in A$, $(x,x) \in R$. \textit{(Propriedade Reflexiva)}
+                \item Se $(x, y) \in R$, ent\~ao $(y, x) \in R$. \textit{(Propriedade Sim\'etrica)}
+                \item Se $(x, y) \in R$ e $(y, z) \in R$, ent\~ao $(x, z)\in R$. \textit{(Propriedade Transitiva)}
+            \end{enumerate}
+        \end{definicao}
+
+        Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Quando dois elementos $x$, $y \in A$ s{\~a}o tais que $(x,y) \in R$, dizemos que $x$ e $y$ \textbf{s{\~a}o relacionados} ou que $x$ e $y$ \textbf{est\~ao relacionados}.
+    \end{frame}
+\end{document}
