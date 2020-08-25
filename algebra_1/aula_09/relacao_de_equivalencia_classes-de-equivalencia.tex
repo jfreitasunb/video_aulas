@@ -15,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Rela\c{c}\~ao de Equival\^encia}
+\title{Rela\c{c}\~ao de Equival\^encia - Classes de Equivalência}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{\today}
@@ -63,5 +63,66 @@
         $\overline{b} =\pause C(b) = \pause \{x \in A \pause \mid (x,b) \in R\}\pause = \{x \in A \pause\mid xRb\}.\pause$
     \end{center}
 \end{definicao}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            Seja A=\{1,2,3,4\}. \pause Temos
+        \begin{align*}
+            A\times A = &\{(1,1);(1,2);(1,3);(1,4);(2,1);(2,2);(2,3);(2,4);\\ &(3,1);(3,2);(3,3);(3,4);(4,1);(4,2);(4,3);(4,4)\}.\pause
+        \end{align*}
+        De um exemplo anterior sabemos que
+        \begin{itemize}
+            \item $R_{1}= A\times A$\pause
+            \item $R_{3}=\{(1,1);(2,2);(3,3);(4,4);(1,2);(2,1)\}$\pause
+            \item $R_{5}=\{(1,1);(2,2);(3,3);(4,4);(1,2);(2,1);(2,4);(4;2)\}$\pause
+        \end{itemize}
+        são relações de equivalência sobre $A$. \pause Vamos determinar as classes de equivalência para cada uma delas.\pause
+    \end{exemplos}
+    \end{frame}
+    \begin{frame}
+    \begin{exemplos}
+    \begin{enumerate}
+        \item[1)] As classes de equival\^encia de $R_1$ s\~ao:\pause
+        \begin{center}
+            $\overline{1} = \pause \{x \in A \mid (x,1) \in R_1\} \pause = \{1,2,3,4\}\pause$\\
+            $\overline{2} = \pause \{x \in A \mid (x,2) \in R_1\} \pause = \{1,2,3,4\}$\pause \\
+            $\overline{3} = \pause \{x \in A \mid (x,3) \in R_1\} \pause = \{1,2,3,4\}$\pause \\
+            $\overline{4} = \pause \{x \in A \mid (x,4) \in R_1\} \pause = \{1,2,3,4\}$\pause \\
+        \end{center}
+        Nesse caso temos somente uma classe de equival\^encia.
+    \end{enumerate}
+    \end{exemplos}
+    \end{frame}
+    \begin{frame}
+    \begin{exemplos}
+        \begin{enumerate}
+        \item[2)] As classes de equival\^encia de $R_3$ s\~ao:
+        \begin{center}
+            $\overline{1} = \{x \in A \mid (x,1) \in R_3\} = \{1,2\}$\\
+            $\overline{2} = \{x \in A \mid (x,2) \in R_3\} = \{1,2\}$\\
+            $\overline{3} = \{x \in A \mid (x,3) \in R_3\} = \{3\}$\\
+            $\overline{4} = \{x \in A \mid (x,4) \in R_3\} = \{4\}$\\
+        \end{center}
+        Aqui temos tr\^es classes de equival\^encia diferentes.
+
+        \item[3)] As classes de equival\^encia de $R_4$ s\~ao:
+        \begin{center}
+            \overline{1} = \{x \in A \mid (x,1) \in R_4\} = \{1\}\\
+            \overline{2} = \{x \in A \mid (x,2) \in R_4\} = \{2\}\\
+            \overline{3} = \{x \in A \mid (x,3) \in R_4\} = \{3\}\\
+            \overline{4} = \{x \in A \mid (x,4) \in R_4\} = \{4\}\\
+        \end{center}
+        Aqui temos quatro classes de equival\^encia diferentes.
+
+        \item[4)] Para a rela\c{c}\~ao de equival\^encia $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$ temos:
+        \begin{center}
+            \overline{0} = \{x \in \z \mid xR0 \} = \{x \in \z \mid x - 0 = 2k,\ k \in \z\} \\ 
+            \overline{0} = \{x \in \z \mid x = 2k,\ k \in \z\} = \{0, \pm 2, \pm 4, \pm 6, \dots\}\\
+            \overline{1} = \{x \in \z \mid xR1 \} = \{x \in \z \mid x - 1 = 2k,\ k \in \z\} \\
+            \overline{1} = \{x \in \z \mid x = 2k + 1,\ k \in \z\} = \{\pm 1, \pm 3, \pm 4, \pm 7, \dots\}\\
+        \end{center}
+        Neste caso existem somente duas classes de equival\^encia. (\textit{Por qu\^e?})
+    \end{enumerate}
+    \end{exemplos}
     \end{frame}
 \end{document}
