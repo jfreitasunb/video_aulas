@@ -143,4 +143,28 @@
             \end{enumerate}
         \end{exemplos}
     \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $A$. \pause Dados $a$, $b \in A$ temos:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item se $\overline{a} \cap \overline{b} \ne \emptyset$, \pause ent{\~a}o $aRb$.\pause \vspace{.3cm}
+                \item se  $\overline{a} \cap \overline{b} \neq \emptyset$, \pause ent{\~a}o $\overline{a} = \overline{b}$.\pause
+            \end{enumerate}
+        \end{proposicao}
+        \textit{Prova:}
+            \begin{enumerate}
+                \item[i)] Como  $\overline{a} \cap \overline{b} \ne \emptyset$, \pause existe um $y \in \overline{a} \cap \overline{b}$, \pause logo $y \in \overline{a}$ \pause e $y \in \overline{b}$. \pause Da defini{\c c}{\~a}o de classe de equival{\^e}ncia \pause temos $yRa$ e $yRb$. \pause Como $R$ {\'e} rela{\c c}{\~a}o de equival{\^e}ncia \pause temos $aRy$ \pause e $bRy$. \pause Pela propriedade transitiva \pause segue que $aRb$, \pause como quer{\'\i}amos.\pause
+            \end{enumerate}
+        \end{frame}
+
+        \begin{frame}
+            \begin{enumerate}
+                \item[ii)] Precisamos mostrar que \pause $\overline{a} \sub \overline{b}$ \pause e que $\overline{b} \sub \overline{a}$. \pause Para a primeira inclus\~ao seja \pause $y \in \overline{a}$. \pause Da{\'\i} $yRa$. \pause Mas, por hip\'otese, \pause $\overline{a}\cap\overline{b}\neq\emptyset$, \pause assim pelo item anterior \pause segue que $aRb$. \pause Logo, como $yRa$ e $aRb$, \pause segue que $yRb$, \pause ou seja, $y \in \overline{b}$. \pause Da{\'\i} $\overline{a}\sub\overline{b}$. \pause Agora para provar a segunda inclus\~ao \pause seja $x \in \overline{b}$. \pause Ent\~ao $xRb$. \pause Novamente, $\overline{a} \cap \overline{b} \ne \emptyset$ \pause e ent\~ao pelo item anterior \pause segue que $aRb$. \pause Assim uma vez que $R$ \'e uma rela\c{c}\~ao de equival\^encia \pause temos $bRa$ \pause e de $xRb$ \pause obtemos $xRa$, \pause ou seja, $x \in \overline{a}$. \pause Com isso $\overline{b} \sub \overline{a}$. \pause Portanto $\overline{a} = \overline{b}$, \pause como quer{\'\i}amos. \hspace{.2cm} \qedsymbol\pause
+            \end{enumerate}
+        \vspace{.5cm}
+        \begin{corolario}
+            Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. \pause Dados $a$, $b \in A$ \pause ent\~ao $\overline{a} \cap \overline{b} = \emptyset$ \pause ou $\overline{a} = \overline{b}$.\pause
+        \end{corolario}
+    \end{frame}
 \end{document}
