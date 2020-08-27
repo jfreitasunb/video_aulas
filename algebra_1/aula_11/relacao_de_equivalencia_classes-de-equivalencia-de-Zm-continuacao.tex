@@ -28,44 +28,59 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        Como a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, podemos determinar suas classes de equival{\^e}ncia. Assim, dado $n \in \z$, temos
+        Sabemos, pela aula anterior, que a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, \pause assim vamos determinar suas classes de equival{\^e}ncia. \pause Para isso, dado $n \in \z$, temos\pause
         \[
-            \overline{n} = C(n) = \{x \in \z \mid x\equiv n \pmod{m}\}.
+            \overline{n} = \pause C(n) = \pause \{x \in \z \mid \pause x\equiv n \pmod{m}\}.\pause
         \]
 
-        Denotaremos $C(n)$ por $R_{m}(n)$ ou $\overline{n}$, quando n{\~a}o houver possibilidade de confus{\~a}o.
+        Vamos dentoar $C(n)$ \pause por $R_{m}(n)$ \pause ou $\overline{n}$, \pause quando n{\~a}o houver possibilidade de confus{\~a}o.\pause
 
-        Por exemplo, fixando $m > 1$
-        \begin{align*}
-            R_{m}(0) &= \{x \in \z \mid x\equiv 0 \pmod{m}\}=\{x\in \z \mid x = mk, k\in\z\}=m\z\\
-            R_{m}(1) &= \{x\in\z \mid x\equiv 1 \pmod{m}\}=\{x\in\z \mid x = 1 + km, k\in\z\}\\
-            R_{m}(n) &= \{x\in\z \mid x = n + km, k\in\z\}
-        \end{align*}
+        Por exemplo, fixando $m > 1$\pause
+        \begin{center}
+            \begin{tabular}{l}
+                $R_{m}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{m}\} \pause =\{x \in \z \mid \pause x = mk, k \in \z\}\pause = m\z$\pause\\
+                \\
+                $R_{m}(1) = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{m}\} \pause = \{x \in \z \mid \pause x = 1 + km, k \in \z \}$\pause \\
+                \\
+                \vdots\\
+                \\
+                $R_{m}(n) = \pause \{x \in \z \mid \pause x = n + km, k \in \z \}$\pause    
+            \end{tabular}
+            
+        \end{center}
     \end{frame}
+
     \begin{frame}
         \begin{proposicao}
-            As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ s{\~a}o determinadas pelos restos da divis{\~a}o inteira por $m$. Em outras palavras, $R_{m}(n)$ {\'e} o conjunto dos n{\'u}meros inteiros cujo resto na divis{\~a}o inteira por $m$ {\'e} $n$.
+            As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ \pause s{\~a}o determinadas pelos restos da divis{\~a}o inteira por $m$. \pause Em outras palavras, $R_{m}(n)$ \pause {\'e} o conjunto dos n{\'u}meros inteiros \pause cujo resto na divis{\~a}o inteira por $m$ {\'e} $n$.\pause
         \end{proposicao}
 
         \begin{corolario}
-            $R_{m}(k) = R_{m}(l)$ se, e somente se, $k\equiv l \pmod{m}$.
+            $R_{m}(k) = R_{m}(l)$ \pause se, e somente se, $k\equiv l \pmod{m}$.\pause
         \end{corolario}
     \end{frame}
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item Se $m=2$, ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. Logo, existem duas classes de equival{\^e}ncia, a saber
-                \begin{align*}
-                    R_{2}(0) &= \{x \in \z \mid x\equiv 0 \pmod{2}\} = \{x\in \z \mid x = 2k, k\in\z\}\\
-                    R_{2}(1) &= \{x\in\z \mid x\equiv 1 \pmod{2}\} = \{x\in\z \mid x = 1 + 2k, k\in\z\}.
-                \end{align*}
-                
-                \item Se $m = 3$, ent{\~a}o os poss{\'\i}veis restos da divis{\~a}o inteira s{\~a}o 0, 1 e 2. Da{\'\i}
-                \begin{align*}
-                    R_{3}(0) &= \{x \in \z \mid x\equiv 0 \pmod{3}\} = \{x\in \z \mid x = 3k, k \in \z\}\\
-                    R_{3}(1) & = \{x \in \z \mid x\equiv 1 \pmod{3}\} = \{x\in\z \mid x = 3k + 1, k \in \z\}\\
-                    R_{3}(2) &= \{x \in \z \mid x\equiv 2 \pmod{3}\} = \{x\in\z \mid x = 3k + 2, k \in \z\}
-                \end{align*}
+                \item Se $m=2$, \pause ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. \pause Logo, existem duas classes de equival{\^e}ncia, a saber\pause
+                \begin{center}
+                    \begin{tabular}{l}
+                        $R_{2}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{2}\} = \pause \{x\in \z \mid \pause x = 2k, k \in \z \}$\pause \\
+                        \\
+                        $R_{2}(1) = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{2}\} = \pause \{x \in \z \mid \pause x = 1 + 2k, k\in \z \}.$\pause
+                    \end{tabular}
+                \end{center}
+                \vspace{.3cm}
+                \item Se $m = 3$, \pause ent{\~a}o os poss{\'\i}veis restos da divis{\~a}o inteira s{\~a}o 0, 1 e 2. \pause Da{\'\i}\pause
+                \begin{center}
+                    \begin{tabular}{l}
+                        $R_{3}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{3}\} = \pause \{x \in \z \mid \pause x = 3k, k \in \z\}$\pause\\
+                        \\
+                        $R_{3}(1)  = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{3}\} = \pause \{x \in \z \mid \pause x = 3k + 1, k \in \z \}$\pause\\
+                        \\
+                        $R_{3}(2) = \pause \{x \in \z \mid \pause x \equiv 2 \pmod{3}\} = \pause \{x \in \z \mid \pause x = 3k + 2, k \in \z\}$\pause
+                    \end{tabular}
+                \end{center}
             \end{enumerate} 
         \end{exemplos}
     \end{frame}
