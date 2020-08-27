@@ -29,34 +29,32 @@
 
     \begin{frame}
         \begin{definicao}
-            Seja $C$ uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia $R$. Qualquer elemento $y\in C$ {\'e} chamado \textbf{representante} de $C$.
+            Seja $C$ uma classe de equival{\^e}ncia \pause de uma rela{\c c}{\~a}o de equival{\^e}ncia $R$. \pause Qualquer elemento $y\in C$ \pause {\'e} chamado \textbf{representante} de $C$.\pause
         \end{definicao}
 
         \begin{proposicao}
-            Seja $A$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Ent{\~a}o $A$ {\'e} a uni{\~a}o disjunta das classes $\overline{b}$, $b \in A$, ou seja,
+            Seja $A$ um conjunto n{\~a}o vazio \pause e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. \pause Ent{\~a}o $A$ {\'e} a uni{\~a}o disjunta das classes $\overline{b}$, $b \in A$, ou seja,\pause
             \[
-                A = \bigcup_{b\in A}\overline{b}.
+                A = \bigcup_{b\in A}\overline{b}.\pause
             \]
         \end{proposicao}
-        \begin{prova}
-            Para todo $b\in A$ temos, pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. Assim $A\subseteq\bigcup_{a\in A}\overline{a}$. Portanto, $A=\bigcup_{b\in A}\overline{b}$.
-        \end{prova}
+        \noindent\textbf{Prova:}
+            Para todo $b\in A$ temos, \pause pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. \pause Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. \pause Agora seja $x\in A$. \pause Logo $x \in \overline{x}$ \pause e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. \pause Assim $A\subseteq\bigcup_{a\in A}\overline{a}$. \pause Portanto, $A=\bigcup_{b\in A}\overline{b}$.\hspace{.5cm}\qedsymbol\pause
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Sejam $a$, $b \in \z$, $b \neq 0$. Dizemos que $b$ \textbf{divide} $a$ quando existe um inteiro $k$ tal que $a=bk$.
-            Nesse caso escrevemos $b \mid a$. Quando $b$ \textbf{n{\~a}o divide} $a$, escrevemos $b\not{\mid}a$.
+            Sejam $a$, $b \in \z$, \pause $b \neq 0$. \pause Dizemos que $b$ \textbf{divide} $a$ \pause quando existe um inteiro $k$ tal que $a=bk$. \pause Nesse caso escrevemos $b \mid a$. \pause Quando $b$ \textbf{n{\~a}o divide} $a$, \pause escrevemos $b\not{\mid}a$.\pause
         \end{definicao}
 
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item Os inteiros 1 e $-1$ dividem qualquer n{\'u}mero inteiro $a$, pois $a = 1 a$ e $a = (-1)(-a)$.
-                \item O n{\'u}mero 0 n{\~a}o divide nenhum inteiro $b$, pois n{\~a}o existe $a \in \z$ tal que $b = 0a$.
-                \item Para todo $b\neq 0$, $b$ divide $\pm b$.
-                \item Para todo inteiro $b\neq 0$, $b$ divide 0, pois $0 = b0$.
-                \item $3 \not{\mid} 8$.
-                \item $17 \mid 51$.
+                \item Os inteiros 1 e $-1$ dividem qualquer n{\'u}mero inteiro $a$, pois $a = 1 a$ e $a = (-1)(-a)$.\pause \vspace{.3cm}
+                \item O n{\'u}mero 0 n{\~a}o divide nenhum inteiro $b$, pois n{\~a}o existe $a \in \z$ tal que $b = 0a$.\pause \vspace{.3cm}
+                \item Para todo $b\neq 0$, $b$ divide $\pm b$.\pause \vspace{.3cm}
+                \item Para todo inteiro $b\neq 0$, $b$ divide 0, pois $0 = b0$.\pause \vspace{.3cm}
+                \item $3 \not{\mid} 8$.\pause \vspace{.3cm}
+                \item $17 \mid 51$.\pause
             \end{enumerate} 
         \end{exemplos}
     \end{frame}
@@ -64,85 +62,92 @@
     \begin{frame}
         \begin{proposicao}
             \begin{enumerate}[label={\roman*})]
-                \item $a\mid a$, para todo $a \in \z$.
-                \item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ ent\~ao $a = b$.
-                \item Se $a\mid b$ e $b\mid c$, ent{\~a}o $a\mid c$.
-                \item Se $a\mid b$ e $a\mid c$, ent{\~a}o $a\mid (bx+cy)$, para todos $x$, $y \in \z$.
+                \item $a\mid a$, para todo $a \in \z$.\pause \vspace{.3cm}
+                \item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ ent\~ao $a = b$.\pause \vspace{.3cm}
+                \item Se $a\mid b$ e $b\mid c$, ent{\~a}o $a\mid c$.\pause \vspace{.3cm}
+                \item Se $a\mid b$ e $a\mid c$, ent{\~a}o $a\mid (bx+cy)$, para todos $x$, $y \in \z$.\pause \vspace{.3cm}
             \end{enumerate}
         \end{proposicao}
+        \noindent \textbf{Prova:}
         \begin{enumerate}
-            \item[i)] Imediata.
+            \item[i)] Imediata.\pause \vspace{.3cm}
             
-            \item[ii)] De fato, existem $k$, $l \in \z $ tais que $b = ka$ e $a = lb$. Assim $b = klb$, isto \'e, $b(1 - kl) = 0$.
-            Como $b \ne 0$ ent\~ao $1 - kl = 0$. Da{\'\i} $kl = 1$ e ent\~ao $k = \pm 1$ e $l = \pm 1$. Mas $a > 0$ e $b > 0$, logo $k = l =1$. Logo $a = b$.
-
-            \item[iii)] De fato, existem $k$, $l \in \z$ tais que $b = ka$ e $c = bl$. Assim  $c = kal = (kl)a$, ou seja, $a\mid c$.
+            \item[ii)] Como $a\mid b$ e $b\mid a$, \pause existem $k$, $l \in \z $ \pause tais que $b = ka$ \pause e $a = lb$. \pause Assim $b = klb$, \pause isto \'e, $b(1 - kl) = 0$. \pause Como $b \ne 0$ \pause ent\~ao $1 - kl = 0$. \pause Da{\'\i} $kl = 1$ \pause e ent\~ao $k = \pm 1$ \pause e $l = \pm 1$. \pause Mas $a > 0$ e $b > 0$, \pause logo $k = l =1$. \pause Logo $a = b$.\pause \vspace{.3cm}
         \end{enumerate}
     \end{frame}
     \begin{frame}
         \begin{enumerate}
-            \item[iv)] Temos $b = ka$ e $c = al$, com $k$, $l \in \z$. Da{\'\i} $bx + cy = (ka)x + (al)y = a(kx + ly)$ e como $kx + ly \in \z$ segue que $a \mid (bx + cy)$.
+            \item[iii)] Como $a\mid b$ e $b\mid c$, \pause existem $k$, $l \in \z$ \pause tais que $b = ka$ \pause e $c = bl$. \pause Assim  $c = kal = (kl)a$, \pause ou seja, $a\mid c$.\pause \vspace{.3cm}
+
+            \item[iv)] Como $a\mid b$ e $a\mid c$ \pause temos $b = ka$ e $c = al$, \pause com $k$, $l \in \z$. \pause Da{\'\i} $bx + cy = \pause (ka)x + (al)y = \pause a(kx + ly)$ \pause e como $kx + ly \in \z$ \pause segue que $a \mid (bx + cy)$.\hspace{.5cm} \qedsymbol\pause
         \end{enumerate}
 
         \begin{definicao}
-            Sejam $a$, $b \in\z$, dizemos que $a$ \textbf{{\'e} congruente \`a} $b$ \textbf{m{\'o}dulo} $m$ se $m \mid (a-b)$. Neste caso, escrevemos $a\equiv_{m} b$ ou $a\equiv b \pmod{m}$.
+            Sejam $a$, $b \in\z$, \pause dizemos que $a$ \textbf{{\'e} congruente \`a} $b$ \pause \textbf{m{\'o}dulo} $m$ \pause se $m \mid (a-b)$. \pause Neste caso, escrevemos $a\equiv_{m} b$ \pause ou $a\equiv b \pmod{m}$.\pause
         \end{definicao}
+    \end{frame}
 
+    \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item $5\equiv 2 \pmod{3}$, pois $3 \mid (5-2)$.
-                \item $3\equiv 1 \pmod{2}$, pois $2\mid (3-1)$.
-                \item $3\equiv 9 \pmod{6}$, pois $6\mid (3-9)$.
+                \item $5\equiv 2 \pmod{3}$, pois $3 \mid (5-2)$.\pause \vspace{.3cm}
+                \item $3\equiv 1 \pmod{2}$, pois $2\mid (3-1)$.\pause \vspace{.3cm}
+                \item $3\equiv 9 \pmod{6}$, pois $6\mid (3-9)$.\pause \vspace{.3cm}
             \end{enumerate} 
         \end{exemplos}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\z$.
+            A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\z$.\pause
         \end{proposicao}
-        \begin{prova}
-            \begin{enumerate}[label={\roman*})]
-                \item Para todo $a \in \z$, $a\equiv a\pmod{m}$ pois $m\mid (a-a)$.
-                \item Se $a\equiv b\pmod{m}$, ent{\~a}o $m\mid (a - b)$. Da{\'\i} existe $k \in \z$, tal que $(a - b) = km$. Agora, $(b - a) = -(a - b) = -(km) = (-k)m$, ou seja, $m \mid (b - a)$. Da{\'\i} $b\equiv a \pmod{m}$.
-                \item Se $a\equiv b\pmod{m}$ e $b\equiv c\pmod{m}$, ent{\~a}o $m\mid (a-b)$ e $m\mid (b-c)$. Assim, $m\mid [(a-b)+(b-c)]$. Logo, $m\mid (a-c)$, isto {\'e}, $a\equiv c\pmod{m}$.
-            \end{enumerate}
+        \noindent\textbf{Prova}
+        \begin{enumerate}[label={\roman*})]
+            \item Para todo $a \in \z$, $a\equiv a\pmod{m}$ \pause pois $m\mid (a-a)$.\pause \vspace{.3cm}
 
-            Portanto a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
-        \end{prova}
+            \item Se $a\equiv b\pmod{m}$, \pause ent{\~a}o $m\mid (a - b)$. \pause Da{\'\i} existe $k \in \z$, \pause tal que $(a - b) = km$. \pause Agora, $(b - a) = -(a - b) \pause = -(km) = (-k)m$, \pause ou seja, $m \mid (b - a)$. \pause Da{\'\i} $b\equiv a \pmod{m}$.\pause \vspace{.3cm}
+            
+            \item Se $a\equiv b\pmod{m}$ \pause e $b\equiv c\pmod{m}$, \pause ent{\~a}o $m\mid (a-b)$ \pause e $m\mid (b-c)$. \pause Assim, $m\mid [(a-b)+(b-c)]$. \pause Logo, $m\mid (a-c)$, \pause isto {\'e}, $a\equiv c\pmod{m}$.\pause
+        \end{enumerate}
+        Portanto a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.\hspace{.5cm} \qedsymbol\pause
     \end{frame}
     \begin{frame}
         \begin{teorema}
-            A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
+            A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:\pause
             \begin{enumerate}[label={\roman*})]
-                \item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.
-                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.
-                \item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}
-                \item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.
-                \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
+                \item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.\pause \vspace{.3cm}
+
+                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.\pause \vspace{.3cm}
+                
+                \item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}\pause \vspace{.3cm}
+
+                \item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.\pause \vspace{.3cm}
+
+                \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.\pause
             \end{enumerate}
         \end{teorema}
     \end{frame}
     \begin{frame}
-        \begin{prova}
-            Provemos o item \ref{item_provado}.
+        \noindent\textbf{Prova: }
+            Provemos o item \ref{item_provado}.\pause
             
-            Como $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, existem $k$, $l \in \z$ tais que
+            Como $a_{1}\equiv b_{2}\pmod{m}$ \pause e $a_{2}\equiv b_{2}\pmod{m}$, \pause existem $k$, $l \in \z$ tais que\pause
             \begin{align*}
                 a_1 - b_1 &= km\\
                 a_2 - b_2 &= lm,
-            \end{align*}
+            \end{align*}\pause
             isto \'e,
             \begin{align*}
                 a_1 &= b_1 + km\\
                 a_2 &= b_2 + lm,
-            \end{align*}
+            \end{align*}\pause
             Assim
-            \begin{align*}
-                a_1a_2 &= (b_1 + km)(b_2 + lm) \\ &= b_1b_2 + b_1lm + b_2km + klm^2 \\ &= b_1b_2 + \underbrace{(lb_{1}+kb_{2}+klm)}_{\in \z}m
-            \end{align*}
+            \begin{center}
+                \begin{tabular}{l}
+                    $a_1a_2 = \pause (b_1 + km)(b_2 + lm)$ \\ \pause $= b_1b_2 + b_1lm + b_2km + klm^2 $ \pause $= b_1b_2 + \underbrace{(lb_{1}+kb_{2}+klm)}_{\in \z}m\pause$    
+                \end{tabular}
+            \end{center}\pause
             
-            Ou seja, $a_1a_2 - b_1b_2 = pm$, onde $p = lb_1 + kb_2 + klm \in \z$. Portanto, $a_1a_2 \equiv b_1b_2 \pmod{m}$.
-        \end{prova}
+            Ou seja, $a_1a_2 - b_1b_2 = cm$, \pause onde $c = lb_1 + kb_2 + klm \in \z$. \pause Portanto, $a_1a_2 \equiv b_1b_2 \pmod{m}$.\hspace{.5cm} \qedsymbol\pause
     \end{frame}
 \end{document}
