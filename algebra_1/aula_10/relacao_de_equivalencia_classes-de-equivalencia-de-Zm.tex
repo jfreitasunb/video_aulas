@@ -1,0 +1,186 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Rela\c{c}\~ao de Equival\^encia - Classes de Equivalência de $\z_m$, $m > 1$}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $A$ um conjunto n{\~a}o vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ \pause {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Para todo $x \in A$, \pause $(x,x) \in R$. \pause \textit{(Propriedade Reflexiva)}\pause
+                \item Se $(x, y) \in R$, \pause ent\~ao $(y, x) \in R$. \pause \textit{(Propriedade Sim\'etrica)}\pause
+                \item Se $(x, y) \in R$ \pause e $(y, z) \in R$, \pause ent\~ao $(x, z)\in R$. \pause \textit{(Propriedade Transitiva)}\pause
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacoes}
+            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$, \pause isto \'e, $R \sub A \times A$.\pause
+            \begin{enumerate}[label={\arabic*})]
+                \item  Para dizermos que $(x, y) \in R$ \pause usaremos a nota{\c c}{\~a}o $x\equiv y\ (R)$, \pause que se l{\^e} ``$x$ \'e equivalente a $y$ m{\'o}dulo $R$", \pause ou ainda a nota{\c c}{\~a}o $xRy$ \pause, com o mesmo significado anterior.\pause
+                \item Em alguns casos vamos utilizar a nota\c{c}\~ao $\sim$ \pause para representar a rela\c{c}\~ao $R$. \pause Nesse caso, escrevemos $x \sim y$ \pause para dizer que $(x, y) \in R$, \pause ou que, $xRy$.\pause
+            \end{enumerate}
+        \end{observacoes}
+
+        \begin{definicao}
+            Seja $A$ um conjunto n{\~a}o vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Para todo $x \in A$, $xRx$. \textit{(Propriedade Reflexiva)}\pause
+                \item Se $xRy$, ent\~ao $yRx$. \textit{(Propriedade Sim\'etrica)}\pause
+                \item Se $xRy$ e $yRz$, ent\~ao $xRz$. \textit{(Propriedade Transitiva)}\pause
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+    \begin{frame}
+        \begin{definicao}
+            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto $A$. \pause Dado $b \in A$, \pause chamamos de \textbf{classe de equival{\^e}ncia \pause determinada por $b$ \pause m{\'o}dulo $R$}\pause, denotada por $\overline{b}$ \pause ou $C(b)$, \pause o subconjunto de $A$ \pause dado por\pause
+            \begin{center}
+                $\overline{b} =\pause C(b) = \pause \{x \in A \pause \mid (x,b) \in R\}\pause = \{x \in A \pause\mid xRb\}.\pause$
+            \end{center}
+        \end{definicao}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            Seja A=\{1,2,3,4\}. \pause Temos
+            \begin{center}
+                $A\times A = \{(1,1);(1,2);(1,3);(1,4);(2,1);(2,2);(2,3);\linebreak (2,4);(3,1);(3,2);(3,3);(3,4);(4,1);(4,2);(4,3);(4,4)\}.\pause$
+            \end{center}
+            De um exemplo anterior sabemos que
+            \begin{itemize}
+                \item $R_{1}= A\times A$\pause \vspace{.3cm}
+                \item $R_{3}=\{(1,1);(2,2);(3,3);(4,4);(1,2);(2,1)\}$\pause \vspace{.3cm}
+                \item $R_{5}=\{(1,1);(2,2);(3,3);(4,4);(1,2);(2,1);(2,4);(4;2)\}$\pause \vspace{.3cm}
+            \end{itemize}
+            são relações de equivalência sobre $A$. \pause Vamos determinar as classes de equivalência para cada uma delas.\pause
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[1)] As classes de equival\^encia de $R_1$ s\~ao:\pause
+                \begin{center}
+                    \begin{tabular}{l}
+                        $\overline{1} = \pause \{x \in A \mid (x,1) \in R_1\} \pause = \{1,2,3,4\}\pause$\\ \\
+                        $\overline{2} = \pause \{x \in A \mid (x,2) \in R_1\} \pause = \{1,2,3,4\}$\pause \\ \\
+                        $\overline{3} = \pause \{x \in A \mid (x,3) \in R_1\} \pause = \{1,2,3,4\}$\pause \\ \\
+                        $\overline{4} = \pause \{x \in A \mid (x,4) \in R_1\} \pause = \{1,2,3,4\}$\pause \\ \\
+                    \end{tabular}
+                \end{center}
+                Nesse caso temos somente uma classe de equival\^encia.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[2)] As classes de equival\^encia de $R_3$ s\~ao: \pause
+                \begin{center}
+                    \begin{tabular}{l}
+                        $\overline{1} \pause = \{x \in A \mid (x,1) \in R_3\} \pause = \{1,2\} \pause$\\ \\
+                        $\overline{2} \pause = \{x \in A \mid (x,2) \in R_3\} \pause = \{1,2\} \pause$\\ \\
+                        $\overline{3} \pause = \{x \in A \mid (x,3) \in R_3\} \pause = \{3\} \pause$\\ \\
+                        $\overline{4} \pause = \{x \in A \mid (x,4) \in R_3\} \pause = \{4\} \pause$\\ \\
+                    \end{tabular}
+                \end{center}
+                Aqui temos tr\^es classes de equival\^encia diferentes.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[3)] As classes de equival\^encia de $R_4$ s\~ao:\pause
+                \begin{center}
+                    \begin{tabular}{l}
+                        $\overline{1} = \pause \{x \in A \mid (x,1) \in R_4\} \pause = \{1\}\pause$\\ \\
+                        $\overline{2} = \pause \{x \in A \mid (x,2) \in R_4\} \pause = \{2\}\pause$\\ \\
+                        $\overline{3} = \pause \{x \in A \mid (x,3) \in R_4\} \pause = \{3\}\pause$\\ \\
+                        $\overline{4} = \pause \{x \in A \mid (x,4) \in R_4\} \pause = \{4\}\pause$\\ \\
+                    \end{tabular}
+                \end{center}
+                Aqui temos quatro classes de equival\^encia diferentes.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[4)] Para a rela\c{c}\~ao de equival\^encia $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$ temos:
+                \begin{center}
+                    \begin{tabular}{l}
+                        $\overline{0} = \pause \{x \in \z \mid xR0 \} \pause = \{x \in \z \mid x - 0 = 2k,\ k \in \z\} \pause$\\ \\
+                        $\overline{0} = \pause \{x \in \z \mid x = 2k,\ k \in \z\} \pause = \{0, \pm 2, \pm 4, \pm 6, \dots\} \pause$\\ \\
+                        $\overline{1} = \pause \{x \in \z \mid xR1 \} \pause = \{x \in \z \mid x - 1 = 2k,\ k \in \z\} \pause$\\ \\
+                        $\overline{1} = \pause \{x \in \z \mid x = 2k + 1,\ k \in \z\} \pause = \{\pm 1, \pm 3, \pm 4, \pm 7, \dots\} \pause$\\ \\
+                    \end{tabular}
+                \end{center}
+                Neste caso existem somente duas classes de equival\^encia. (\textit{Por qu\^e?})
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $A$. \pause Dados $a$, $b \in A$ temos:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item se $\overline{a} \cap \overline{b} \ne \emptyset$, \pause ent{\~a}o $aRb$.\pause \vspace{.3cm}
+                \item se  $\overline{a} \cap \overline{b} \neq \emptyset$, \pause ent{\~a}o $\overline{a} = \overline{b}$.\pause
+            \end{enumerate}
+        \end{proposicao}
+        \textit{Prova:}
+            \begin{enumerate}
+                \item[i)] Como  $\overline{a} \cap \overline{b} \ne \emptyset$, \pause existe um $y \in \overline{a} \cap \overline{b}$, \pause logo $y \in \overline{a}$ \pause e $y \in \overline{b}$. \pause Da defini{\c c}{\~a}o de classe de equival{\^e}ncia \pause temos $yRa$ e $yRb$. \pause Como $R$ {\'e} rela{\c c}{\~a}o de equival{\^e}ncia \pause temos $aRy$ \pause e $bRy$. \pause Pela propriedade transitiva \pause segue que $aRb$, \pause como quer{\'\i}amos.\pause
+            \end{enumerate}
+        \end{frame}
+
+        \begin{frame}
+            \begin{enumerate}
+                \item[ii)] Precisamos mostrar que \pause $\overline{a} \sub \overline{b}$ \pause e que $\overline{b} \sub \overline{a}$. \pause Para a primeira inclus\~ao seja \pause $y \in \overline{a}$. \pause Da{\'\i} $yRa$. \pause Mas, por hip\'otese, \pause $\overline{a}\cap\overline{b}\neq\emptyset$, \pause assim pelo item anterior \pause segue que $aRb$. \pause Logo, como $yRa$ e $aRb$, \pause segue que $yRb$, \pause ou seja, $y \in \overline{b}$. \pause Da{\'\i} $\overline{a}\sub\overline{b}$. \pause Agora para provar a segunda inclus\~ao \pause seja $x \in \overline{b}$. \pause Ent\~ao $xRb$. \pause Novamente, $\overline{a} \cap \overline{b} \ne \emptyset$ \pause e ent\~ao pelo item anterior \pause segue que $aRb$. \pause Assim uma vez que $R$ \'e uma rela\c{c}\~ao de equival\^encia \pause temos $bRa$ \pause e de $xRb$ \pause obtemos $xRa$, \pause ou seja, $x \in \overline{a}$. \pause Com isso $\overline{b} \sub \overline{a}$. \pause Portanto $\overline{a} = \overline{b}$, \pause como quer{\'\i}amos. \hspace{.2cm} \qedsymbol\pause
+            \end{enumerate}
+        \vspace{.5cm}
+        \begin{corolario}
+            Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. \pause Dados $a$, $b \in A$ \pause ent\~ao $\overline{a} \cap \overline{b} = \emptyset$ \pause ou $\overline{a} = \overline{b}$.\pause
+        \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. \pause O conjunto de todas as classes de equival{\^e}ncia \pause determinadas por $R$ ser{\'a} \pause denotado por $A/R$ \pause e {\'e} chamado de \textbf{conjunto quociente} de $A$ por $R$.\pause
+        \end{definicao}
+
+        \begin{exemplos}
+            Do Exemplo anterior temos:\pause
+            \begin{enumerate}[label={\arabic*})]
+                \item $A/R_1 = \{\overline{1}\}$\pause \vspace{.3cm}
+                \item $A/R_3 = \{\overline{1},\overline{3},\overline{4}\}$ \pause \vspace{.3cm}
+                \item $A/R_4 = \{\overline{1},\overline{2},\overline{3},\overline{4}\}$ \pause \vspace{.3cm}
+                \item $\z/R = \{\overline{0},\overline{1}\}$\pause
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+\end{document}
