@@ -31,8 +31,10 @@
         \begin{definicao}
             Seja $A$ um conjunto n{\~a}o vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ \pause {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:\pause
             \begin{enumerate}[label={\roman*})]
-                \item Para todo $x \in A$, \pause $(x,x) \in R$. \pause \textit{(Propriedade Reflexiva)}\pause
-                \item Se $(x, y) \in R$, \pause ent\~ao $(y, x) \in R$. \pause \textit{(Propriedade Sim\'etrica)}\pause
+                \item Para todo $x \in A$, \pause $(x,x) \in R$. \pause \textit{(Propriedade Reflexiva)}\pause\vspace{.2cm}
+
+                \item Se $(x, y) \in R$, \pause ent\~ao $(y, x) \in R$. \pause \textit{(Propriedade Sim\'etrica)}\pause\vspace{.2cm}
+                
                 \item Se $(x, y) \in R$ \pause e $(y, z) \in R$, \pause ent\~ao $(x, z)\in R$. \pause \textit{(Propriedade Transitiva)}\pause
             \end{enumerate}
         \end{definicao}
@@ -42,7 +44,8 @@
         \begin{observacoes}
             Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$, \pause isto \'e, $R \sub A \times A$.\pause
             \begin{enumerate}[label={\arabic*})]
-                \item  Para dizermos que $(x, y) \in R$ \pause usaremos a nota{\c c}{\~a}o $x\equiv y\ (R)$, \pause que se l{\^e} ``$x$ \'e equivalente a $y$ m{\'o}dulo $R$", \pause ou ainda a nota{\c c}{\~a}o $xRy$ \pause, com o mesmo significado anterior.\pause
+                \item  Para dizermos que $(x, y) \in R$ \pause usaremos a nota{\c c}{\~a}o $x\equiv y\ (R)$, \pause que deve ser lido como ``$x$ \'e equivalente a $y$ m{\'o}dulo $R$", \pause ou ainda a nota{\c c}{\~a}o $xRy$ \pause, com o mesmo significado anterior.\pause\vspace{.2cm}
+
                 \item Em alguns casos vamos utilizar a nota\c{c}\~ao $\sim$ \pause para representar a rela\c{c}\~ao $R$. \pause Nesse caso, escrevemos $x \sim y$ \pause para dizer que $(x, y) \in R$, \pause ou que, $xRy$.\pause
             \end{enumerate}
         \end{observacoes}
@@ -50,8 +53,10 @@
         \begin{definicao}
             Seja $A$ um conjunto n{\~a}o vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:\pause
             \begin{enumerate}[label={\roman*})]
-                \item Para todo $x \in A$, $xRx$. \textit{(Propriedade Reflexiva)}\pause
-                \item Se $xRy$, ent\~ao $yRx$. \textit{(Propriedade Sim\'etrica)}\pause
+                \item Para todo $x \in A$, $xRx$. \textit{(Propriedade Reflexiva)}\pause\vspace{.2cm}
+
+                \item Se $xRy$, ent\~ao $yRx$. \textit{(Propriedade Sim\'etrica)}\pause\vspace{.2cm}
+
                 \item Se $xRy$ e $yRz$, ent\~ao $xRz$. \textit{(Propriedade Transitiva)}\pause
             \end{enumerate}
         \end{definicao}
@@ -130,12 +135,12 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}
-                \item[4)] Para a rela\c{c}\~ao de equival\^encia $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$ temos:
+                \item[4)] Para a rela\c{c}\~ao de equival\^encia $S = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$ temos:
                 \begin{center}
                     \begin{tabular}{l}
-                        $\overline{0} = \pause \{x \in \z \mid xR0 \} \pause = \{x \in \z \mid x - 0 = 2k,\ k \in \z\} \pause$\\ \\
+                        $\overline{0} = \pause \{x \in \z \mid xS0 \} \pause = \{x \in \z \mid x - 0 = 2k,\ k \in \z\} \pause$\\ \\
                         $\overline{0} = \pause \{x \in \z \mid x = 2k,\ k \in \z\} \pause = \{0, \pm 2, \pm 4, \pm 6, \dots\} \pause$\\ \\
-                        $\overline{1} = \pause \{x \in \z \mid xR1 \} \pause = \{x \in \z \mid x - 1 = 2k,\ k \in \z\} \pause$\\ \\
+                        $\overline{1} = \pause \{x \in \z \mid xS1 \} \pause = \{x \in \z \mid x - 1 = 2k,\ k \in \z\} \pause$\\ \\
                         $\overline{1} = \pause \{x \in \z \mid x = 2k + 1,\ k \in \z\} \pause = \{\pm 1, \pm 3, \pm 4, \pm 7, \dots\} \pause$\\ \\
                     \end{tabular}
                 \end{center}
@@ -179,7 +184,7 @@
                 \item $A/R_1 = \{\overline{1}\}$\pause \vspace{.3cm}
                 \item $A/R_3 = \{\overline{1},\overline{3},\overline{4}\}$ \pause \vspace{.3cm}
                 \item $A/R_4 = \{\overline{1},\overline{2},\overline{3},\overline{4}\}$ \pause \vspace{.3cm}
-                \item $\z/R = \{\overline{0},\overline{1}\}$\pause
+                \item $\z/S = \{\overline{0},\overline{1}\}$\pause
             \end{enumerate}
         \end{exemplos}
     \end{frame}
