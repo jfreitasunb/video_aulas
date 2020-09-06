@@ -18,7 +18,7 @@
 \title{Rela\c{c}\~ao de Equival\^encia - Classes de Equival\^encia nos Inteiros - Continua\c{c}\~ao}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
-\date{\today}
+\date{29 de agosto de 2020}
 
 \begin{document}
     \begin{frame}
@@ -154,7 +154,7 @@
                 \begin{tabular}{l}
                     $\overline{a}\oplus\overline{b} = \pause \overline{a + b}\label{soma_modulo_m}$\pause \\
                     \\
-                    $\overline{a}\otimes\overline{b} = \pause \overline{ab}.\label{multiplicacao_modulo_m}$
+                    $\overline{a}\otimes\overline{b} = \pause \overline{ab}.\label{multiplicacao_modulo_m}$\pause
                 \end{tabular}
             \end{center}
         \end{definicao}
@@ -163,20 +163,35 @@
             As opera{\c c}{\~o}es de soma \pause e produto \pause definidas acima s{\~a}o independentes dos representantes das classes.\pause
         \end{proposicao}
         \noindent \textbf{Prova:}
-            Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$, $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$, temos:
+            Dadas duas classes em $\z_m$ com representantes diferentes, \pause $\overline{a}_{1} = \overline{a}_{2}$ e \pause $\overline{b}_{1} = \overline{b}_{2}$, \pause com $a_{1}\ne a_{2}$ \pause e $b_{1}\ne b_{2}$, \pause temos:\pause
             \begin{center}
-                \begin{tabular}{l}
-                    $\overline{a}_{1}\oplus \overline{b}_{1} = \pause \overline{a_{1}+b_{1}} = \pause \overline{a_{2} + b_{2}} = \pause \overline{a}_{2}\oplus \overline{b}_{2}$\pause \\
-                    \\
-                    $\overline{a}_{1}\otimes \overline{b}_{1} = \pause \overline{a_{1}b_{1}} = \pause \overline{a_{2}b_{2}} = \pause \overline{a}_{2}\otimes\overline{b}_{2}.$\pause
-                \end{tabular}
+                $a_1 \equiv a_2 \pmod m$\pause\\
+                $b_1 \equiv b_2 \pmod m$.\pause
             \end{center}
-            \qedsymbol
+            Da{\'\i},
+            \begin{center}
+                $a_1 + b_1 \equiv a_2 + b_2 \pmod m$\pause\\
+                $a_1b_1 \equiv a_2b_2 \pmod m\pause$\\
+            \end{center}
+    \end{frame}
+
+    \begin{frame}
+        Mas de $a_1 + b_1 \equiv a_2 + b_2 \pmod m$ \pause segue que $\overline{a_1 + b_1} =  \pause \overline{a_2 + b_2}$\pause. Assim
+        \begin{center}
+            $\overline{a}_{1}\oplus \overline{b}_{1} = \pause \overline{a_{1}+b_{1}} = \pause \overline{a_{2} + b_{2}} = \pause \overline{a}_{2}\oplus \overline{b}_{2}$.\pause
+        \end{center}
+
+        Agora de $a_1b_1 \equiv a_2b_2 \pmod m$ \pause segue que $\overline{a_1b_2} = \pause \overline{a_2b_2}$\pause. Assim
+        \begin{center}
+            $\overline{a}_{1}\otimes \overline{b}_{1} = \pause \overline{a_{1}b_{1}} = \pause \overline{a_{2}b_{2}} = \pause \overline{a}_{2}\otimes\overline{b}_{2}$.\pause
+        \end{center}
+
+        Portanto a soma e a multiplica\c{c}\~ao \pause n\~ao dependem dos representantes que escolhemos para as classes de equival\^encia, \pause como quer{\'\i}amos.\hspace{.3cm} \qedsymbol
     \end{frame}
 
     \begin{frame}
         \begin{exemplo}
-            A some e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$\pause
+            A soma e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$\pause
             s\~ao dadas nas tabelas abaixo:\pause
                 \begin{table}[!htb]
                   \caption{Soma em $\z_4$}
@@ -234,7 +249,7 @@
 
                 \item Para todo $\overline{x} \in \z_m$, $\overline{x} \oplus \overline{0} = \overline{x}$. \vspace{.2cm} \pause
 
-                \item Para todo $\overline{x} \in \z$, existe $\overline{y} \in \z$ tal que $\overline{x} \oplus \overline{y} = \overline{0}$. \vspace{.2cm} \pause
+                \item Para todo $\overline{x} \in \z_m$, existe $\overline{y} \in \z_m$ tal que $\overline{x} \oplus \overline{y} = \overline{0}$. \vspace{.2cm} \pause
 
                 \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \otimes \overline{y} = \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
 
@@ -295,11 +310,8 @@
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
                 \item Em $\z_4$ existem dois elementos invers{\'\i}veis \pause que s{\~a}o $\overline{1}$, \pause cujo inverso {\'e} $\overline{1}$, \pause e o $\overline{3}$, \pause cujo inverso {\'e} $\overline{3}$.\pause
-                \item Em $\z_{11}$, \pause todos elementos, exceto $\overline{0}$, \pause possuem inverso:\pause
-
+                \item Em $\z_{11}$, \pause todos elementos, exceto $\overline{0}$, \pause possuem inverso:
                 \begin{table}[h]
-                    \centering 
-                    \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
                     \caption{\it Inversos em $\z_{11}$}
                    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} 
                         \hline

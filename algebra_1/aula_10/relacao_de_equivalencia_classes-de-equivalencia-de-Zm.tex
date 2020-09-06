@@ -15,10 +15,10 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Rela\c{c}\~ao de Equival\^encia - Classes de Equivalência nos Inteiros}
+\title{Rela\c{c}\~ao de Equival\^encia - Classes de Equival\^encia nos Inteiros}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
-\date{\today}
+\date{29 de agosto de 2020}
 
 \begin{document}
     \begin{frame}
@@ -39,7 +39,11 @@
             \]
         \end{proposicao}
         \noindent\textbf{Prova:}
-            Para todo $b\in A$ temos, \pause pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. \pause Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. \pause Agora seja $x\in A$. \pause Logo $x \in \overline{x}$ \pause e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. \pause Assim $A\subseteq\bigcup_{a\in A}\overline{a}$. \pause Portanto, $A=\bigcup_{b\in A}\overline{b}$.\hspace{.5cm}\qedsymbol\pause
+            Para todo $b\in A$ temos, \pause pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. \pause Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. \pause Agora seja $x\in A$. \pause Logo $x \in \overline{x}$ \pause e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. \pause Assim $A\subseteq\bigcup_{b\in A}\overline{b}$. \pause Portanto, $A=\bigcup_{b\in A}\overline{b}$.\hspace{.5cm}\qedsymbol\pause
+    \end{frame}
+
+    \begin{frame}
+        
     \end{frame}
 
     \begin{frame}
@@ -119,7 +123,7 @@
 
                 \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.\pause \vspace{.3cm}
                 
-                \item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}\pause \vspace{.3cm}
+                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}\pause \vspace{.3cm}
 
                 \item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.\pause \vspace{.3cm}
 
@@ -131,7 +135,7 @@
         \noindent\textbf{Prova: }
             Provemos o item \ref{item_provado}.\pause
             
-            Como $a_{1}\equiv b_{2}\pmod{m}$ \pause e $a_{2}\equiv b_{2}\pmod{m}$, \pause existem $k$, $l \in \z$ tais que\pause
+            Como $a_{1}\equiv b_{1}\pmod{m}$ \pause e $a_{2}\equiv b_{2}\pmod{m}$, \pause existem $k$, $l \in \z$ tais que\pause
             \begin{align*}
                 a_1 - b_1 &= km\\
                 a_2 - b_2 &= lm,
