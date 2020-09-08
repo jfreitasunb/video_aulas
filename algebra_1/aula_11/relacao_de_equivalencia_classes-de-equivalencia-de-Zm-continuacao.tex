@@ -59,27 +59,43 @@
     \end{frame}
     \begin{frame}
         \begin{exemplos}
-            \begin{enumerate}[label={\arabic*})]
-                \item Se $m=2$, \pause ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. \pause Logo, existem duas classes de equival{\^e}ncia, a saber\pause
+            \begin{enumerate}
+                \item[i)] Se $m=2$, \pause ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. \pause Logo, existem duas classes de equival{\^e}ncia, a saber\pause
+                \vspace{.3cm}
                 \begin{center}
                     \begin{tabular}{l}
                         $R_{2}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{2}\} = \pause \{x\in \z \mid \pause x = 2k, k \in \z \}$\pause \\
                         \\
+                        \\
+                        \\
                         $R_{2}(1) = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{2}\} = \pause \{x \in \z \mid \pause x = 1 + 2k, k\in \z \}.$\pause
                     \end{tabular}
                 \end{center}
+            \end{enumerate}
+            \vspace{2cm}
+        \end{exemplos}
+    \end{frame}
+            
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[ii)] Se $m = 3$, \pause ent{\~a}o os poss{\'\i}veis restos da divis{\~a}o inteira s{\~a}o 0, 1 e 2. \pause Da{\'\i}\pause
                 \vspace{.3cm}
-                \item Se $m = 3$, \pause ent{\~a}o os poss{\'\i}veis restos da divis{\~a}o inteira s{\~a}o 0, 1 e 2. \pause Da{\'\i}\pause
                 \begin{center}
                     \begin{tabular}{l}
                         $R_{3}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{3}\} = \pause \{x \in \z \mid \pause x = 3k, k \in \z\}$\pause\\
                         \\
+                        \\
+                        \\
                         $R_{3}(1)  = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{3}\} = \pause \{x \in \z \mid \pause x = 3k + 1, k \in \z \}$\pause\\
+                        \\
+                        \\
                         \\
                         $R_{3}(2) = \pause \{x \in \z \mid \pause x \equiv 2 \pmod{3}\} = \pause \{x \in \z \mid \pause x = 3k + 2, k \in \z\}$\pause
                     \end{tabular}
                 \end{center}
             \end{enumerate} 
+            \vspace{2cm}
         \end{exemplos}
     \end{frame}
 
@@ -114,34 +130,38 @@
     \end{frame}
 
     \begin{frame}
-        Vamos definir um meio de somar \pause e multiplicar os elementos de $\z_m$. \pause Por exemplo, em $\z_2 = \pause \{\overline{0},\overline{1}\}$ \pause temos que a soma de pares {\'e} par, \pause soma de par com {\'\i}mpar \pause {\'e} {\'\i}mpar \pause e a soma de {\'\i}mpares {\'e} par. \pause Assim podemos escrever\pause
-
+        Vamos definir um meio de somar \pause e multiplicar os elementos de $\z_m$. \pause Por exemplo, em $\z_2 = \pause \{\overline{0},\overline{1}\}$ \pause temos:
         \begin{table}[h]
-           \centering 
            \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
+           \hskip-8.0cm
            \begin{tabular}{|c|c|c|} 
               \hline
               $\oplus$ & $\overline{0}$ & $\overline{1}$ \T\\
               \hline
               $\overline{0}$ & \phantom{abc} & \phantom{abc}\T\\
+              & & \\
               \hline
               $\overline{1}$ & \phantom{abc} & \phantom{abc}\T\\
+              & & \\
               \hline
            \end{tabular}
         \end{table}
+    \end{frame}
 
-        Para multiplica{\c c}{\~a}o, temos\pause
-
+    \begin{frame}
+        Para multiplica{\c c}{\~a}o, temos
         \begin{table}[h]
-           \centering 
            \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
-           \begin{tabular}{|c|c|c|} 
+           \hskip-8.0cm
+           \begin{tabular}{|c|c|c|}
               \hline
               $\otimes$ & $\overline{0}$ & $\overline{1}$\T\\
               \hline
               $\overline{0}$ & \phantom{abc} & \phantom{abc}\T\\
+              & & \\
               \hline
               $\overline{1}$ & \phantom{abc} & \phantom{abc}\T\\
+              & & \\
               \hline
            \end{tabular}
         \end{table}
@@ -160,28 +180,30 @@
         \end{definicao}
 
         \begin{proposicao}
-            As opera{\c c}{\~o}es de soma \pause e produto \pause definidas acima s{\~a}o independentes dos representantes das classes.\pause
+            As opera{\c c}{\~o}es de soma \pause e a multiplica\c{c}\~ao \pause definidas acima s{\~a}o independentes dos representantes das classes.\pause
         \end{proposicao}
-        \noindent \textbf{Prova:}
+        \noindent \textbf{Prova:} \pause
             Dadas duas classes em $\z_m$ com representantes diferentes, \pause $\overline{a}_{1} = \overline{a}_{2}$ e \pause $\overline{b}_{1} = \overline{b}_{2}$, \pause com $a_{1}\ne a_{2}$ \pause e $b_{1}\ne b_{2}$, \pause temos:\pause
             \begin{center}
                 $a_1 \equiv a_2 \pmod m$\pause\\
-                $b_1 \equiv b_2 \pmod m$.\pause
-            \end{center}
-            Da{\'\i},
-            \begin{center}
-                $a_1 + b_1 \equiv a_2 + b_2 \pmod m$\pause\\
-                $a_1b_1 \equiv a_2b_2 \pmod m\pause$\\
+                $b_1 \equiv b_2 \pmod m$.
             \end{center}
     \end{frame}
 
     \begin{frame}
-        Mas de $a_1 + b_1 \equiv a_2 + b_2 \pmod m$ \pause segue que $\overline{a_1 + b_1} =  \pause \overline{a_2 + b_2}$\pause. Assim
+        \pause
+        Da{\'\i},
+        \begin{center}
+            $a_1 + b_1 \equiv a_2 + b_2 \pmod m$\pause\\
+            $a_1b_1 \equiv a_2b_2 \pmod m.$\pause\\
+        \end{center}
+
+        Mas de $a_1 + b_1 \equiv a_2 + b_2 \pmod m$ \pause segue que $\overline{a_1 + b_1} =  \pause \overline{a_2 + b_2}$. \pause Assim
         \begin{center}
             $\overline{a}_{1}\oplus \overline{b}_{1} = \pause \overline{a_{1}+b_{1}} = \pause \overline{a_{2} + b_{2}} = \pause \overline{a}_{2}\oplus \overline{b}_{2}$.\pause
         \end{center}
 
-        Agora de $a_1b_1 \equiv a_2b_2 \pmod m$ \pause segue que $\overline{a_1b_2} = \pause \overline{a_2b_2}$\pause. Assim
+        Agora de $a_1b_1 \equiv a_2b_2 \pmod m$ \pause segue que $\overline{a_1b_2} = \pause \overline{a_2b_2}$. \pause Assim
         \begin{center}
             $\overline{a}_{1}\otimes \overline{b}_{1} = \pause \overline{a_{1}b_{1}} = \pause \overline{a_{2}b_{2}} = \pause \overline{a}_{2}\otimes\overline{b}_{2}$.\pause
         \end{center}
@@ -191,51 +213,57 @@
 
     \begin{frame}
         \begin{exemplo}
-            A soma e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$\pause
+            A soma e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$ \pause
             s\~ao dadas nas tabelas abaixo:\pause
                 \begin{table}[!htb]
                   \caption{Soma em $\z_4$}
-                  \begin{minipage}{.5\linewidth}
-                    \centering
+                  \hskip-6.0cm
                     \begin{tabular}{|c|c|c|c|c|} 
                         \hline
                         $\oplus$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$\T\\
                         \hline
                         $\overline{0}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                        & & & &\\
                         \hline
                         $\overline{1}$ & \phantom{abc} & \phantom{abc}& \phantom{abc} & \phantom{abc}\T\\
+                        & & & &\\
                         \hline
                         $\overline{2}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                        & & & &\\
                         \hline
                         $\overline{3}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                        & & & &\\
                         \hline
                     \end{tabular}
-                  \end{minipage}
                 \end{table}
+                \vspace{2cm}
         \end{exemplo}
     \end{frame}
 
     \begin{frame}
         \begin{exemplo}
                 \begin{table}[!htb]
-                  \caption{Multiplica\c{c}\~ao em $\z_4$}
-                  \begin{minipage}{.5\linewidth}
-                  \centering
+                    \caption{Multiplica\c{c}\~ao em $\z_4$}
+                    \hskip-6.0cm
                     \begin{tabular}{|c|c|c|c|c|} 
                       \hline
                       $\otimes$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$\T\\
                       \hline
                       $\overline{0}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                      & & & &\\
                       \hline
                       $\overline{1}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                      & & & &\\
                       \hline
                       $\overline{2}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                      & & & &\\
                       \hline
                       $\overline{3}$ & \phantom{abc} & \phantom{abc} & \phantom{abc} & \phantom{abc}\T\\
+                      & & & &\\
                       \hline
                     \end{tabular}
-                \end{minipage}
-            \end{table}
+                \end{table}
+            \vspace{2cm}
         \end{exemplo}
     \end{frame}
 
@@ -243,19 +271,19 @@
         \begin{proposicao}
             As opera\c{c}\~oes de soma $\oplus$ \pause e multiplica\c{c}\~ao $\otimes$ \pause em $\z_m$ satisfazem as seguintes propriedades:\pause
             \begin{enumerate}[label={\roman*})]
-                \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \oplus \overline{y} = \overline{y} \oplus \overline{x}$. \vspace{.2cm} \pause
+                \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: \pause $\overline{x} \oplus \overline{y} = \overline{y} \oplus \overline{x}$. \vspace{.2cm} \pause
 
-                \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$. \vspace{.2cm} \pause
+                \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: \pause $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \pause \overline{x} \oplus (\overline{y} \oplus \overline{z})$. \vspace{.2cm} \pause
 
-                \item Para todo $\overline{x} \in \z_m$, $\overline{x} \oplus \overline{0} = \overline{x}$. \vspace{.2cm} \pause
+                \item Para todo $\overline{x} \in \z_m$, \pause $\overline{x} \oplus \overline{0} = \overline{x}$. \vspace{.2cm} \pause
 
-                \item Para todo $\overline{x} \in \z_m$, existe $\overline{y} \in \z_m$ tal que $\overline{x} \oplus \overline{y} = \overline{0}$. \vspace{.2cm} \pause
+                \item Para todo $\overline{x} \in \z_m$, \pause existe $\overline{y} \in \z_m$ \pause tal que $\overline{x} \oplus \overline{y} = \overline{0}$. \vspace{.2cm} \pause
 
-                \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \otimes \overline{y} = \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
+                \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: \pause $\overline{x} \otimes \overline{y} = \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
 
-                \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \overline{x} \otimes (\overline{y} \otimes \overline{z})$. \vspace{.2cm} \pause
+                \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: \pause $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \pause \overline{x} \otimes (\overline{y} \otimes \overline{z})$. \vspace{.2cm} \pause
 
-                \item Para todo $\overline{x} \in \z_m$: $\overline{x} \otimes \overline{1} = \overline{x}$. \pause
+                \item Para todo $\overline{x} \in \z_m$: \pause $\overline{x} \otimes \overline{1} = \overline{x}$. \pause
             \end{enumerate}
         \end{proposicao}
     \end{frame}
@@ -263,19 +291,19 @@
     \begin{frame}
         \noindent \textbf{Prova: }
             \begin{enumerate}[label={\roman*})]
-                \item $\overline{x} \oplus \overline{y} = \pause \overline{x + y} = \pause \overline{y + x} = \pause \overline{y} \oplus \overline{x}$. \vspace{.2cm} \pause
+                \item \pause $\overline{x} \oplus \overline{y} = \pause \overline{x + y} = \pause \overline{y + x} = \pause \overline{y} \oplus \overline{x}$. \vspace{.2cm} \pause
                 
-                \item $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \pause \overline{x + y} \pause \oplus \overline{z} = \pause \overline{(x + y) + z} = \pause \overline{x + (y + z)} \pause = \overline{x} \oplus \pause \overline{y + z}\pause  = \overline{x} \oplus \pause (\overline{y} \oplus \overline{z})$. \vspace{.2cm} \pause
+                \item \pause $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \pause \overline{x + y} \pause \oplus \overline{z} = \pause \overline{(x + y) + z} = \pause \overline{x + (y + z)} \pause = \overline{x} \oplus \pause \overline{y + z}\pause  = \overline{x} \oplus \pause (\overline{y} \oplus \overline{z})$. \vspace{.2cm} \pause
 
-                \item $\overline{x} \oplus \overline{0} = \pause \overline{x + 0} = \pause \overline{x}$. \vspace{.2cm} \pause
+                \item \pause $\overline{x} \oplus \overline{0} = \pause \overline{x + 0} = \pause \overline{x}$. \vspace{.2cm} \pause
 
-                \item Dado $\overline{x} \in \z_m$ \pause escolha $\overline{y} = \pause \overline{m - x} \in \z_m$. \pause Assim $\overline{x} \oplus \overline{y} = \pause \overline{x} \oplus \pause \overline{m - x} = \pause \overline{x + (m - x)} = \pause \overline{m} = \overline{0}$. \vspace{.2cm} \pause
+                \item \pause Dado $\overline{x} \in \z_m$ \pause escolha $\overline{y} = \pause \overline{m - x} \in \z_m$. \pause Assim $\overline{x} \oplus \overline{y} = \pause \overline{x} \oplus \pause \overline{m - x} = \pause \overline{x + (m - x)} = \pause \overline{m} = \overline{0}$. \vspace{.2cm} \pause
 
-                \item $\overline{x} \otimes \overline{y} = \pause \overline{x \cdot y} = \pause \overline{y \cdot x} = \pause \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
+                \item \pause $\overline{x} \otimes \overline{y} = \pause \overline{x \cdot y} = \pause \overline{y \cdot x} = \pause \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
 
-                \item $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \pause \overline{x \cdot y} \otimes \pause \overline{z} = \pause \overline{(x \cdot y)\cdot z} \pause = \overline{x\cdot(y \cdot z)} = \pause \overline{x} \otimes \pause \overline{y \cdot z} = \pause \overline{x} \otimes \pause (\overline{y}\otimes \overline{z})$. \vspace{.2cm} \pause
+                \item \pause $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \pause \overline{x \cdot y} \otimes \pause \overline{z} = \pause \overline{(x \cdot y)\cdot z} \pause = \overline{x\cdot(y \cdot z)} = \pause \overline{x} \otimes \pause \overline{y \cdot z} = \pause \overline{x} \otimes \pause (\overline{y}\otimes \overline{z})$. \vspace{.2cm} \pause
 
-                \item $\overline{x} \otimes \overline{1} = \pause \overline{x \cdot 1} = \pause \overline{x}$. \pause
+                \item \pause $\overline{x} \otimes \overline{1} = \pause \overline{x \cdot 1} = \pause \overline{x}$. \pause
             \end{enumerate}
         \qedsymbol
     \end{frame}
@@ -288,14 +316,14 @@
         \begin{proposicao}
             Se o inverso existe, \pause ent\~ao ele {\'e} {\'u}nico.\pause
         \end{proposicao}
-        \noindent \textbf{Prova:}
-            De fato, \pause dado $\overline{a} \in \z_m$, \pause suponha que existem $\overline{b}$, \pause $\overline{d} \in \z_m$\pause tais que $\overline{a} \otimes \overline{b} = \overline{1} \pause = \overline{a} \otimes \overline{d}$, \pause ent{\~a}o\pause
+        \noindent \textbf{Prova:} \pause 
+            De fato, \pause dado $\overline{a} \in \z_m$, \pause suponha que existem $\overline{b}$, \pause $\overline{d} \in \z_m$ \pause tais que $\overline{a} \otimes \overline{b} = \overline{1} \pause = \overline{a} \otimes \overline{d}$, \pause ent{\~a}o\pause
             \begin{center}
                 \begin{tabular}{l}
                     $\overline{b} = \pause \overline{b} \otimes \overline{1} = \pause \overline{b} \otimes \pause (\overline{a} \otimes \overline{d}) = \pause (\overline{b} \otimes \overline{a}) \pause \otimes \overline{d} = \pause \overline{1} \otimes \overline{d} = \pause \overline{d}$\pause
                 \end{tabular}
             \end{center}
-        Portanto o inverso de $\overline{a}$ \'e \'unico, como quer{\'\i}amos. \hspace{.5cm}\qedsymbol\pause
+        Portanto o inverso de $\overline{a}$ \'e \'unico, \pause como quer{\'\i}amos. \hspace{.5cm}\qedsymbol\pause
     \end{frame}
 
     \begin{frame}
@@ -309,8 +337,15 @@
 
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item Em $\z_4$ existem dois elementos invers{\'\i}veis \pause que s{\~a}o $\overline{1}$, \pause cujo inverso {\'e} $\overline{1}$, \pause e o $\overline{3}$, \pause cujo inverso {\'e} $\overline{3}$.\pause
-                \item Em $\z_{11}$, \pause todos elementos, exceto $\overline{0}$, \pause possuem inverso:
+                \item[i)] Em $\z_4$ existem dois elementos invers{\'\i}veis \pause que s{\~a}o $\overline{1}$, \pause cujo inverso {\'e} $\overline{1}$, \pause e o $\overline{3}$, \pause cujo inverso {\'e} $\overline{3}$.\pause
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[ii)] Em $\z_{11}$, \pause todos elementos, exceto $\overline{0}$, \pause possuem inverso:
                 \begin{table}[h]
                     \caption{\it Inversos em $\z_{11}$}
                    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} 
@@ -318,10 +353,12 @@
                         Elemento & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ & $\overline{4}$ & $\overline{5}$ & $\overline{6}$ & $\overline{7}$ & $\overline{8}$ & $\overline{9}$ & $\overline{10}$\T \\
                         \hline
                         Inverso & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} & \phantom{ab} \T\\
+                        & & & & & & & & & & \\
                         \hline
                    \end{tabular}
                 \end{table}
             \end{enumerate}
+            \vspace{4.5cm}
         \end{exemplos}
     \end{frame}
 \end{document}
