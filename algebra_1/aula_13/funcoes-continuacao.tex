@@ -313,45 +313,74 @@
         \textbf{\textit{Prova: }}\pause
         Temos $i_{B} : \pause B \to B$ \pause e $i_{A} : \pause A \to A$. \pause Al{\'e}m disso, \pause $f\circ f^{-1} : \pause B \to B$ \pause e $f^{-1}\circ f : \pause A \to A$, \pause da{\'\i} $\dom(f\circ f^{-1}) \pause = \dom(i_{B})$ \pause e $\dom(f^{-1}\circ f) = \pause \dom(i_{A})$. \pause 
 
-        Agora, $y \in B$, \pause $(f\circ f^{-1})(y) \pause = f(f^{-1}(y)) \pause = y \pause = i_{B}(y)$. \pause E se $x \in A$, \pause $(f^{-1}\circ f)(x) = \pause f^{-1}(f(x)) \pause = x \pause = i_{A}(x)$. \pause Portanto $f\circ f^{-1} = \pause i_{B}$ \pause e $f^{-1}\circ f = \pause i_{A}$ como quer{\'\i}amos.\pause \hspace{.5cm} \qedsymbol
+        \vspace{.5cm}
+
+        Agora, $y \in B$, \pause $(f\circ f^{-1})(y) \pause = f(f^{-1}(y)) \pause = y \pause = i_{B}(y)$. \pause E se $x \in A$, \pause $(f^{-1}\circ f)(x) = \pause f^{-1}(f(x)) \pause = x \pause = i_{A}(x)$. \pause 
+
+        \vspace{.5cm}
+
+        Portanto $f\circ f^{-1} = \pause i_{B}$ \pause e $f^{-1}\circ f = \pause i_{A}$ como quer{\'\i}amos.\pause \hspace{.5cm} \qedsymbol
     \end{frame}
 
     \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to A$ \pause s{\~a}o fun{\c c}{\~o}es, \pause ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $f\circ i_{A} = f$\pause
 
-\begin{proposicao}\label{propriedades_identidade}
-    Se $f : A \to B$ e $g : B \to A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
-    \begin{enumerate}[label={\roman*})]
-        \item $f\circ i_{A} = f$
-        \item $i_{B}\circ f = f$
-        \item $g\circ i_{B} = g$
-        \item $i_{A}\circ g = g$
-        \item Se $g\circ f = i_{A}$ e $f\circ g = i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
-    \end{enumerate}
-\end{proposicao}
-    \noindent \textbf{\textit{Prova:}}
-    \begin{enumerate}
-        \item[i)] Primeiro temos $f: A \to B$ e $i_{A} : A \to A$ e $f\circ i_{A} : A \to B$. Assim $\dom(f\circ i_{A}) = \dom(f)$. Agora dado $x \in A$, temos $(f\circ i_{A})(x) = f(i_{A}(x)) = f(x)$. Portanto, $f\circ i_{A} = f$.
-        \item[ii)] Segue de forma semelhante ao caso anteiror.
-        \item[iii)] Segue de forma semelhante ao primeiro caso.
-        \item[iv)] Segue de forma semelhante ao primeiro caso.
-    \end{enumerate}
+                \vspace{.3cm}
 
+                \item $i_{B}\circ f = f$\pause
+                
+                \vspace{.3cm}
+
+                \item $g\circ i_{B} = g$\pause
+
+                \vspace{.3cm}
+
+                \item $i_{A}\circ g = g$\pause
+
+                \vspace{.3cm}
+
+                \item Se $g\circ f = i_{A}$ \pause e $f\circ g = i_{B}$, \pause ent{\~a}o \pause $f$ e $g$ s{\~a}o bijetoras \pause e $g=f^{-1}$.\pause
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \noindent \textbf{\textit{Prova:}}
+        \begin{enumerate}
+            \item[i)] Primeiro temos $f: A \to B$ \pause, $i_{A} : A \to A$ \pause e $f\circ i_{A} : A \to B$. \pause Assim \pause $\dom(f\circ i_{A}) = \pause \dom(f)$. \pause Agora dado $x \in A$, \pause temos $(f\circ i_{A})(x) = \pause f(i_{A}(x)) = \pause f(x)$. Portanto, \pause $f\circ i_{A} = f$.\pause
+
+            \vspace{.3cm}
+
+            \item[ii)] Segue de forma semelhante ao caso anteiror.\pause
+
+            \vspace{.3cm}
+
+            \item[iii)] Segue de forma semelhante ao primeiro caso.\pause
+
+            \vspace{.3cm}
+
+            \item[iv)] Segue de forma semelhante ao primeiro caso.\pause
+        \end{enumerate}
     \end{frame}
 
     \begin{frame}
         \begin{enumerate}
-        \item[v)] Provemos que $f$ \'e bijetora: sejam $x_1$, $x_2 \in B$ tais que $f(x_1) = f(x_2)$. Como $f : A \to B$ e $g : B \to A$, ent{\~a}o $g(f(x_1)) = g(f(x_2))$, ou seja, $(g\circ f)(x_1) = (g\circ f)(x_2)$. Da{\'\i}, $i_{A}(x_1) = i_{A}(x_2)$. Logo, $x_1 = x_2$. Logo $f$ {\'e} injetora.
+            \item[v)] Provemos que $f$ \'e bijetora: \pause sejam $x_1$, \pause $x_2 \in B$ \pause tais que $f(x_1) = \pause f(x_2)$. \pause Como $f : A \to B$ \pause e $g : B \to A$, \pause ent{\~a}o $g(f(x_1)) = \pause g(f(x_2))$, \pause ou seja, \pause $(g\circ f)(x_1) \pause = (g\circ f)(x_2)$. \pause Da{\'\i}, $i_{A}(x_1) = \pause i_{A}(x_2)$. \pause Logo, \pause $x_1 = x_2$ \pause \linebreak e então $f$ {\'e} injetora.\pause
 
-        Agora, dado $y \in B$, segue que $y = i_{B}(y)$. Mas $i_{B} = f\circ g$. Da{\'\i}, $y = i_{B}(y) = (f\circ g)(y) = f(g(y))$. Assim, $x = g(y)\in A$ e $f(x) = y$. Logo $f$ {\'e} sobrejetora.
+            \vspace{.3cm}
 
-        Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. 
+            Agora, dado $y \in B$, \pause segue que $y = \pause i_{B}(y)$. \pause Mas $i_{B} = \pause f\circ g$. \pause Da{\'\i}, \pause $y = \pause i_{B}(y) \pause = (f\circ g)(y) \pause = f(g(y))$. \pause Assim, \pause $x = g(y) \in A$ \pause e $f(x) = y$. \pause Logo $f$ {\'e} sobrejetora.\pause
 
-        Provemos agora que $g = f^{-1}$. Para isso, primeiro temos  $f^{-1} : B \to A$ e ent\~ao $\dom(g) = B = \dom(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x \in B$, $(f\circ g)(x) = (f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x)) = f(f^{-1}(x))$. Portanto como $f$ \'e injetora, $g(x) = f^{-1}(x)$ para todo $x\in B$. Logo $g = f^{-1}$ como quer{\'\i}amos.
-    \end{enumerate}
+            \vspace{.3cm}
 
-\end{frame}
+            Portanto $f$ {\'e} bijetora. \pause Analogamente, prova-se que g {\'e} bijetora.\pause
 
-    \begin{frame}
-        \vspace{5cm}
+            \vspace{.3cm}
+
+            Provemos agora que \pause $g = f^{-1}$. \pause Para isso, \pause primeiro temos \linebreak $f^{-1} : B \to A$ \pause e ent\~ao $\dom(g) = B = \pause \dom(f^{-1})$. \pause Agora, $f\circ g = \pause i_{B} = \pause f\circ f^{-1}$. \pause Assim, para todo $x \in B$, \pause $(f\circ g)(x) = \pause (f\circ f^{-1})(x)$. \pause Isto {\'e}, \pause $f(g(x)) = \pause f(f^{-1}(x))$. \pause Portanto como $f$ \'e injetora, \pause $g(x) = f^{-1}(x)$ \pause para todo $x \in B$. \pause Logo $g = f^{-1}$ \pause como quer{\'\i}amos.\pause \hspace{.5cm} \qedsymbol
+        \end{enumerate}
     \end{frame}
 \end{document}
