@@ -175,4 +175,18 @@
     \begin{frame}
         \vspace{5cm}
     \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+    Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} injetora.
+\end{proposicao}
+\begin{prova}
+    Dados $x_1$, $x_2 \in A$ tais que $(g\circ f)(x_1) = (g\circ f)(x_2)$ queremos mostrar que $x_1 = x_2$. Temos:
+    \begin{align*}
+        (g\circ f)(x_1) &= (g\circ f)(x_2)\\
+        g(f(x_1)) &= g(f(x_2)).
+    \end{align*}
+    Como por hip\'otese $g$ \'e injetora, dessa \'ultima igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ tamb\'em \'e injetora, por hip\'otese, da{\'\i} $x_1 = x_2$, como quer{\'\i}amos. Portanto $g\circ f$ \'e injetora.
+\end{prova}
+    \end{frame}
 \end{document}
