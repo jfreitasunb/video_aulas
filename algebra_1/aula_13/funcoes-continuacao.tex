@@ -109,144 +109,212 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}
-                \item[2)] Sejam $A = B = \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos:
+                \item[2)] Sejam $A = B = \real$ \pause e $f : \real \to \real$ \pause dada por $f(x) = x^2$. \pause Temos:\pause
+
+                \vspace{.5cm}
+
                 \begin{itemize}
-                    \item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
+                    \item $f(\{1, 2, 3\}) \pause = \{1, 4, 9\}$\pause
 
-                    \item $f([0,2]) = \{f(x) \in \real \mid 0 \le x \le 2 \} = \{x^2 \mid 0 \le x \le 2\} = [0, 4]$
+                    \vspace{.5cm}
 
-                    \item $f^{-1}([1, 9]) = \{x \in \real \mid f(x) \in [1, 9]\} = \{ x \in \real \mid 1 \le f(x) \le 9\} = \{x \in \real \mid 1 \le x^2 \le 9\} = [-1, -3] \cup [1, 3]$
+                    \item $f([0,2]) \pause = \{f(x) \pause \in \real \pause \mid 0 \le x \pause \le 2 \pause \} = \{x^2 \pause \mid 0 \le x \le 2\} \pause = [0, 4]$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f^{-1}([1, 9]) \pause = \{x \in \real \pause \mid f(x) \in [1, 9]\pause \} = \{ x \in \real \pause \mid 1 \le f(x) \le 9\} \pause = \{x \in \real \pause \mid 1 \le x^2 \pause \le 9\} \pause = [-1, -3] \pause \cup [1, 3]$\pause
+
+                    \vspace{.5cm}
                 \end{itemize}
             \end{enumerate}
         \end{exemplos}
     \end{frame}
 
     \begin{frame}
-\begin{proposicao}
-    Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P$, $Q \sub A$, $X$, $Y \sub B$.
-    \begin{enumerate}[label={\roman*})]
-        \item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
+        \begin{proposicao}
+            Seja $f : A \to B$ uma fun{\c c}{\~a}o \pause e sejam $P$, \pause $Q \sub A$, \pause $X$, \pause $Y \sub B$.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Se $P \sub Q$, \pause ent{\~a}o $f(P) \sub f(Q)$.\pause
 
-        \item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
-    \end{enumerate}
-\end{proposicao}
-\begin{prova}
-    \begin{enumerate}[label={\roman*})]
-        \item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
+                \vspace{.5cm}
 
-        \item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, ent\~ao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
+                \item $f^{-1}(X \cup Y) \pause = f^{-1}(X) \pause \cup f^{-1}(Y)$.\pause
+            \end{enumerate}
+        \end{proposicao}
+            \noindent \textbf{\textit{Prova: }}\pause
+            \begin{enumerate}
+                \item[i)] Se $y \in f(P)$, \pause ent{\~a}o existe $x \in P$ \pause tal que $f(x) = y$. \pause Mas como $P \sub Q$, \pause ent{\~a}o $x \in Q$ \pause e da{\'\i} $y \in f(Q)$. \pause Logo $f(P) \sub f(Q)$.\pause
+            \end{enumerate}
+        \end{frame}
 
-        Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, ent{\~a}o $f(z) \in X$, da{\'\i} $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, ent{\~a}o $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
+        \begin{frame}
+            \begin{enumerate}
+                \item[ii)] Seja $z \in f^{-1}(X \cup Y)$. \pause Ent{\~a}o $f(z) \in X \cup Y$. \pause Se $f(z) \in X$, \pause ent\~ao $z \in f^{-1}(X)$ \pause e da{\'\i} $z \in f^{-1}(X) \cup \pause f^{-1}(Y)$. \pause Se $f(z) \in Y$, \pause ent{\~a}o $z \in f^{-1}(Y)$ \pause e assim $z \in f^{-1}(X) \cup \pause f^{-1}(Y)$. \pause Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.\pause
 
-        Portanto, $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
-    \end{enumerate}
-\end{prova}
+                \vspace{.3cm}
+
+                Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. \pause Se $z \in f^{-1}(X)$, \pause ent{\~a}o $f(z) \in X$, \pause da{\'\i} $f(z) \in X \cup Y$, \pause isto {\'e}, \pause $z \in f^{-1}(X \cup Y)$. \pause Se $z \in f^{-1}(Y)$, \pause ent{\~a}o $f(z) \in Y$ \pause e assim $f(z) \in X \cup Y$, \pause isto {\'e}, \pause $z \in f^{-1}(X \cup Y)$. \pause Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.\pause
+
+                \vspace{.3cm}
+
+                Portanto, \pause $f^{-1}(X \cup Y) = \pause f^{-1}(X) \cup f^{-1}(Y)$.\pause \hspace{.5cm} \qedsymbol
+            \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        Dado $f : A \to B$ \pause uma fun\c{c}{\~a}o, \pause queremos construir uma fun\c{c}\~ao $g : B \to A$ \pause de modo que
+        \[
+            g(f(x)) = x,\pause
+        \]
+        para todo $x \in A$. \pause Mas $f(x) = y$ \pause com $y \in B$. \pause Assim podemos tentar definir $g$ \pause como
+        \[
+            g(y) = x,\ y \in B \pause \quad \mbox{ se, e somente se, } \pause f(x) = y.\pause
+        \]
+        Com essa defini\c{c}\~ao \pause $g$ \'e uma fun\c{c}\~ao? \pause Vejamos um exemplo: \pause definia $f : \{0,1,2,3\} \to \{4,5,6,7,8\}$ por:\pause
+        \begin{center}
+            $f(0) = 5$ \pause\\
+            \vspace{.3cm}
+            $f(1) = 5$\pause\\
+            \vspace{.3cm}
+            $f(2) = 6$\pause\\
+            \vspace{.3cm}
+            $f(3) = 7$.\pause
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        A partir da defini\c{c}\~ao acimas temos\pause
+        \begin{center}
+            $g(5) = 0 $\pause\\
+
+            \vspace{.3cm}
+            
+            $g(5) = 1$\pause\\
+            
+            \vspace{.3cm}
+
+            $g(6) = 2$\pause\\
+
+            \vspace{.3cm}
+            
+            $g(7) = 3$.\pause
+        \end{center}
+
+        Assim $g$ definida dessa forma \pause n\~ao \'e uma fun\c{c}\~ao \pause pois $g$ atribui ao n\'umero 5 \pause dois poss{\'\i}veis valores: \pause 0 e 1. \pause Isso ocorre pois $f$ n\~ao \'e injetora. \pause Vamos ent\~ao redefinir $f$ de modo a torn\'a-la injetora:\pause
+        \begin{center}
+            $f(0) = 5$\pause\\
+
+            \vspace{.3cm}
+
+            $f(1) = 4$\pause\\
+
+            \vspace{.3cm}
+
+            $f(2) = 6$\pause\\
+
+            \vspace{.3cm}
+
+            $f(3) = 7$.\pause
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        Agora $g$ torna-se:\pause
+        \begin{center}
+            $g(5) = 0$\pause\\
+
+            \vspace{.3cm}
+
+            $g(4) = 1$\pause\\
+
+            \vspace{.3cm}
+
+            $g(6) = 2$\\
+
+            \vspace{.3cm}
+
+            $g(7) = 3.$\pause
+        \end{center}
+
+        Ainda assim $g$ n\~ao \'e fun\c{c}\~ao \pause pois $g$ n\~ao associa $8 \in B$ \pause com nenhum elemento em $A$.  Isso ocorre pois \pause $f$ n\~ao \'e sobrejetora.\pause
+
+        \vspace{.3cm}
+
+        Portanto para que a condi\c{c}\~ao dada \pause defina uma fun\c{c}\~ao \pause \'e necess\'ario que $f$ seja bijetora. \pause Temos ent\~ao o seguinte teorema:\pause
+    \end{frame}
+
+    \begin{frame}
+        \begin{teorema}
+            Seja $f: A \to B$ uma fun{\c c}{\~a}o. \pause Defina $g : B \to A$ \pause por\pause
+            \[
+                g(y) = x,\ y \in B \pause \quad \mbox{ se, e somente se, } \pause f(x) = y.\pause
+            \]
+            Ent{\~a}o $g$ \pause {\'e} uma fun{\c c}{\~a}o \pause se, e somente se, \pause $f$ {\'e} bijetora.\pause
+        \end{teorema}
+        \noindent \textbf{\textit{Prova:}}
+        Precisamos mostrar que:\pause
+        \begin{enumerate}[label={\roman*})]
+            \item Se $g$ definida como acima \'e uma fun\c{c}\~ao, \pause ent\~ao $f$ \'e bijetora.\pause
+
+            \vspace{.3cm}
+
+            \item Se $f$ \'e bijetora, \pause ent\~ao $g$ definida como acima \'e uma fun\c{c}\~ao.\pause
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        Provemos a primeira afirma\c{c}\~ao: \pause suponha que $g$ \'e uma fun\c{c}\~ao. \pause Precisamos provar que $f$ {\'e} injetora \pause e sobrejetora.\pause
+
+        \vspace{.5cm}
+
+        Sejam $x_1$, \pause $x_2 \in A$\pause  tais que $f(x_1) = y \pause = f(x_2)$. \pause Como $f(x_1) = y$ \pause temos $g(y) = x_1$, \pause al{\'e}m disso, \pause $g(y) = x_2$. \pause Mas $g$ {\'e} uma fun{\c c}{\~a}o, \pause da{\'\i} $x_1 = x_2$, \pause ou seja, \pause $f$ {\'e} injetora.\pause
+        
+        \vspace{.5cm}
+
+        Dado $y \in B$, \pause como $g$ {\'e} uma fun{\c c}{\~a}o, \pause existe $x \in A$, \pause tal que $g(y) = x$, \pause logo $f(x) = y$ \pause e assim $f$ {\'e} sobrejetora.\pause
+
+        \vspace{.5cm}
+
+        Portanto $f$ {\'e} bijetora.\pause
     \end{frame}
 
     \begin{frame}
 
-Dado $f : A \to B$ uma fun\c{c}{\~a}o, queremos construir uma fun\c{c}\~ao $g : B \to A$ de modo que
-\[
-    g(f(x)) = x
-\]
-para todo $x \in A$. Mas $f(x) = y$ com $y \in B$. Assim podemos tentar definir $g$ como
-\begin{align}\label{condicao_funcao_inversa}
-    g(y) = x,\ y \in B \mbox{ se, e somente se, } f(x) = y.
-\end{align}
-Com essa defini\c{c}\~ao $g$ \'e uma fun\c{c}\~ao? Vejamos um exemplo: definia $f : \{0,1,2,3\} \to \{4,5,6,7,8\}$ por:
-\begin{align*}
-    f(0) &= 5\\
-    f(1) &= 5\\
-    f(2) &= 6\\
-    f(3) &= 7.  
-\end{align*}
+        Agora vamos provar a segunda afirma\c{c}\~ao. \pause Para isso suponha que $f$ \'e bijetora. \pause Precisamos mostrar que $g$ \'e uma fun\c{c}\~ao. \pause
+
+        \vspace{.5cm}
+
+        Primeiramente, \pause dado $y \in B$, \pause como $f$ {\'e} sobrejetora, \pause existe $x \in A$ \pause tal que $f(x) = y$. \pause Logo pela definição de $g$ \pause segue que $g(y) = x \in A$. \pause Logo $g$ associa cada elemento de $B$ \pause com algum elemento em $A$.\pause
+
+        \vspace{.5cm}
+
+        Agora, suponha que $g(y) = x_1$ \pause e que $g(y) = x_2$. \pause Da{\'\i}, da definição de $g$ \pause  temos $f(x_1) = y$ \pause e $f(x_2) = y$. \pause Mas $f$ {\'e} injetora, \pause logo $x_1 = x_2$ \pause e ent{\~a}o $g(y) = \pause x_1 \pause = x_2$. \pause Assim $g$ associa cada elemento de $B$ \pause com somente um elemento em $A$.\pause
+
+        \vspace{.5cm}
+
+        Portanto $g$ {\'e} fun{\c c}{\~a}o.\pause
     \end{frame}
 
     \begin{frame}
-A partir da defini\c{c}\~ao \eqref{condicao_funcao_inversa} temos
-\begin{align*}
-    g(5) &= 0\\
-    g(5) &= 1\\
-    g(6) &= 2\\
-    g(7) &= 3.
-\end{align*}
+        \begin{definicao}
+            A fun\c{c}\~ao $g : B \to A$ \pause do teorema anterior \pause \'e chamada de \textbf{fun\c{c}\~ao inversa} \pause de $f : A \to B$ \pause e ser\'a denotada por $g = f^{-1}$.\pause
+        \end{definicao}
 
-Assim $g$ definida pela condi\c{c}\~ao \eqref{condicao_funcao_inversa} n\~ao \'e uma fun\c{c}\~ao pois $g$ atribui ao n\'umero 5 dois poss{\'\i}veis valores: 0 e 1. Isso ocorre pois $f$ n\~ao \'e injetora. Vamos ent\~ao redefinir $f$ de modo a torn\'a-la injetora:
-\begin{align*}
-    f(0) &= 5\\
-    f(1) &= 4\\
-    f(2) &= 6\\
-    f(3) &= 7.  
-\end{align*}
+
+        \begin{definicao}
+            Dado um conjunto $A \ne \emptyset$, \pause a fun{\c c}{\~a}o $i_{A}: A \to A$ \pause dada por $i_{A}(x) \pause = x$ \pause {\'e} chamada de \pause \textbf{fun{\c c}{\~a}o identidade}.\pause
+        \end{definicao}
     \end{frame}
 
     \begin{frame}
-Agora $g$ torna-se:
-\begin{align*}
-    g(5) &= 0\\
-    g(4) &= 1\\
-    g(6) &= 2\\
-    g(7) &= 3.
-\end{align*}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause {\'e} bijetora, \pause ent{\~a}o $f\circ f^{-1} \pause = i_{B}$ \pause e $f^{-1}\circ f \pause = i_{A}$.\pause
+        \end{proposicao}
+        \textbf{\textit{Prova: }}\pause
+        Temos $i_{B} : \pause B \to B$ \pause e $i_{A} : \pause A \to A$. \pause Al{\'e}m disso, \pause $f\circ f^{-1} : \pause B \to B$ \pause e $f^{-1}\circ f : \pause A \to A$, \pause da{\'\i} $\dom(f\circ f^{-1}) \pause = \dom(i_{B})$ \pause e $\dom(f^{-1}\circ f) = \pause \dom(i_{A})$. \pause 
 
-Ainda assim $g$ n\~ao \'e fun\c{c}\~ao pois $g$ n\~ao associa $8 \in B$ com nenhum elemento em $A$. Isso ocorre pois $f$ n\~ao \'e sobrejetora.
-
-Portanto para que a condi\c{c}\~ao \eqref{condicao_funcao_inversa} defina uma fun\c{c}\~ao \'e necess\'ario que $f$ seja bijetora. Temos ent\~ao o seguinte teorema:
+        Agora, $y \in B$, \pause $(f\circ f^{-1})(y) \pause = f(f^{-1}(y)) \pause = y \pause = i_{B}(y)$. \pause E se $x \in A$, \pause $(f^{-1}\circ f)(x) = \pause f^{-1}(f(x)) \pause = x \pause = i_{A}(x)$. \pause Portanto $f\circ f^{-1} = \pause i_{B}$ \pause e $f^{-1}\circ f = \pause i_{A}$ como quer{\'\i}amos.\pause \hspace{.5cm} \qedsymbol
     \end{frame}
-
-    \begin{frame}
-\begin{teorema}\label{teorema_funcao_inversa}
-    Seja $f: A \to B$ fun{\c c}{\~a}o. Defina $g : B \to A$ por
-    \begin{align}\label{funcao_inversa}
-        g(y) = x,\ y \in B \mbox{ se, e somente se, } f(x) = y.
-    \end{align}
-    Ent{\~a}o $g$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.
-\end{teorema}
-    \noindent \textbf{\textit{Prova:}}
-    Precisamos mostrar que:
-    \begin{enumerate}[label={\roman*})]
-        \item Se $g$ definida por \eqref{funcao_inversa} \'e uma fun\c{c}\~ao, ent\~ao $f$ \'e bijetora.
-        \item Se $f$ \'e bijetora, ent\~ao $g$ definida por \eqref{funcao_inversa} \'e uma fun\c{c}\~ao.
-    \end{enumerate}
-
-    Provemos a primeira afirma\c{c}\~ao: suponha que $g$ \'e uma fun\c{c}\~ao. Precisamos provar que $f$ {\'e} injetora e sobrejetora.
-
-    Sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = y = f(x_2)$. Como $f(x_1) = y$ temos $g(y) = x_1$, al{\'e}m disso, $g(y) = x_2$. Mas $g$ {\'e} uma fun{\c c}{\~a}o, da{\'\i} $x_1 = x_2$, ou seja, $f$ {\'e} injetora.
-    \end{frame}
-
-    \begin{frame}
-
-    Dado $y \in B$, como $g$ {\'e} uma fun{\c c}{\~a}o, existe $x \in A$, tal que $g(y) = x$, logo $f(x) = y$ e assim $f$ {\'e} sobrejetora.
-
-    Portanto $f$ {\'e} bijetora.
-
-    Agora vamos provar a segunda afirma\c{c}\~ao: suponha que $f$ \'e bijetora. Precisamos mostrar que $g$ \'e uma fun\c{c}\~ao. Primeiramente, dado $y \in B$, como $f$ {\'e} sobrejetora, existe $x \in A$ tal que $f(x) = y$. Logo por \eqref{funcao_inversa} segue que $g(y) = x \in A$. Logo $g$ associa cada elemento de $B$ com algum elemento em $A$.
-
-    Suponha que $g(y) = x_1$ e que $g(y) = x_2$. Da{\'\i}, de \eqref{funcao_inversa} temos $f(x_1) = y$ e $f(x_2) = y$. Mas $f$ {\'e} injetora, logo $x_1 = x_2$ e ent{\~a}o $g(y) = x_1 = x_2$. Assim $g$ associa cada elemento de $B$ com somente um elemento em $A$.
-
-    Portanto $g$ {\'e} fun{\c c}{\~a}o.
-    \end{frame}
-
-    \begin{frame}
-\begin{definicao}
-    A fun\c{c}\~ao $g : B \to A$ do teorema \ref{teorema_funcao_inversa} \'e chamada de \textbf{fun\c{c}\~ao inversa} de $f : A \to B$ e ser\'a denotada por $g = f^{-1}$.
-\end{definicao}
-
-
-\begin{definicao}
-    Dado um conjunto $A \ne \emptyset$, a fun{\c c}{\~a}o $i_{A}: A \to A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de \textbf{fun{\c c}{\~a}o identidade}.
-\end{definicao}
-\end{frame}
-
-    \begin{frame}
-
-\begin{proposicao}
-    Se $f : A \to B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$.
-\end{proposicao}
-\begin{prova}
-    Temos $i_{B} : B \to B$ e $i_{A} : A \to A$. Al{\'e}m disso, $f\circ f^{-1} : B \to B$ e $f^{-1}\circ f : A \to A$, da{\'\i} $\dom(f\circ f^{-1}) = \dom(i_{B})$ e $\dom(f^{-1}\circ f) = \dom(i_{A})$. Agora, $y \in B$, $(f\circ f^{-1})(y) = f(f^{-1}(y)) = y = i_{B}(y)$. E se $x \in A$, $(f^{-1}\circ f)(x) = f^{-1}(f(x)) = x = i_{A}(x)$. Portanto $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$ como quer{\'\i}amos.
-\end{prova}
-\end{frame}
 
     \begin{frame}
 
