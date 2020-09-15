@@ -28,67 +28,97 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-\begin{proposicao}
-    Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun\c{c}\~oes sobrejetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} sobrejetora.
-\end{proposicao}
-\begin{prova}
-    Para mostrar que $g \circ f : A \to C$ \'e sobrejetora, precisamos mostrar que para todo $y \in C$, existe $x \in A$ tal que $(g\circ f)(x) = y$.
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to C$ \pause s{\~a}o fun\c{c}\~oes sobrejetoras, \pause ent{\~a}o $g\circ f : A \to C$ \pause {\'e} sobrejetora.\pause
+        \end{proposicao}
+        \noindent \textbf{\textit{Prova: }}\pause
+        Para mostrar que $g \circ f : A \to C$ \pause \'e sobrejetora, \pause precisamos mostrar que para todo $y \in C$, \pause existe $x \in A$ \pause tal que $(g\circ f)(x) = y$.\pause
 
-    Assim seja $y \in C$. Como $g : B \to C$ \'e sobrejetora, existe $z \in A$ tal que $g(z) = y$. Mas $z \in B$ e $f : A \to B$ \'e sobrejetora e assim existe $x \in A$ tal que $f(x) = z$. Logo
-    \[
-        (g\circ f)(x) = g(f(x)) = g(z) = y.
-    \]
-    Portanto $g \circ f$ \'e sobrejetora.
-\end{prova}
+        Assim seja $y \in C$. \pause Como $g : B \to C$ \'e sobrejetora, \pause existe $z \in A$ \pause tal que $g(z) = y$. \pause Mas $z \in B$ \pause e $f : A \to B$ \pause \'e sobrejetora \pause. Assim existe $x \in A$ \pause tal que $f(x) = z$. \pause Logo\pause
+        \[
+            (g\circ f)(x) \pause = g(f(x)) \pause = g(z) \pause = y.\pause
+        \]
+        Portanto $g \circ f$ \pause \'e sobrejetora.\pause \hspace{.5cm} \qedsymbol
     \end{frame}
 
     \begin{frame}
-\begin{definicao}
-    Seja $f : A \to B$ uma fun{\c c}{\~a}o.
-    \begin{enumerate}[label={\roman*})]
-        \item Dado $P \sub A$, chama-se \textbf{imagem direta} de $P$  \textbf{segundo} $f$ e indica-se por $f(P)$ o subconjunto de $B$ dado por
-        \[
-            f(P) = \{f(x) \mid x \in P\},
-        \]
-        isto {\'e}, $f(P)$ {\'e} o conjunto das imagens por $f$ dos elementos de $P$.
+        \begin{definicao}
+            Seja $f : A \to B$ \pause uma fun{\c c}{\~a}o.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Dado $P \sub A$, \pause chama-se \textbf{imagem direta} \pause de $P$ \pause \textbf{segundo} $f$ \pause e indica-se por $f(P)$ \pause o subconjunto de $B$ \pause dado por\pause
+                \[
+                    f(P) = \pause \{f(x) \pause \mid x \in P\},\pause
+                \]
+                isto {\'e}, \pause $f(P)$ \pause {\'e} o conjunto das imagens por $f$ \pause dos elementos de $P$.\pause
+                
+                \vspace{.5cm}
 
-        \item Dado $Q \sub B$, chama-se \textbf{imagem inversa} de $Q$ \textbf{segundo} $f$ e indica-se por $f^{-1}(Q)$ o subconjunto de $A$ dado por
-        \[
-            f^{-1}(Q) = \{x \in A \mid f(x) \in Q\},
-        \]
-        isto {\'e}, $f^{-1}(Q)$ {\'e} o conjunto dos elementos de $A$ que tem imagem em $Q$ atrav{\'e}s de $f$.
-    \end{enumerate}
-\end{definicao}
+                \item Dado $Q \sub B$, \pause chama-se \textbf{imagem inversa} \pause de $Q$ \textbf{segundo} $f$ \pause e indica-se por \pause $f^{-1}(Q)$ \pause o subconjunto de $A$ \pause dado por\pause
+                \[
+                    f^{-1}(Q) \pause = \{x \in A \pause \mid f(x) \in Q\},\pause
+                \]
+                isto {\'e}, \pause $f^{-1}(Q)$ \pause {\'e} o conjunto dos elementos de $A$ \pause que tem imagem em $Q$ \pause atrav{\'e}s de $f$.\pause
+            \end{enumerate}
+        \end{definicao}
     \end{frame}
 
     \begin{frame}
-\begin{exemplos}
-    \begin{enumerate}[label={\arabic*})]
-        \item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos:
-        \begin{itemize}
-            \item $f(\{1\}) = \{f(1)\} = \{2\}$
+        \vspace{5cm}
+    \end{frame}
 
-            \item $f(\{3, 5, 7\}) = \{f(3), f(5), f(7)\} = \{4, 6, 8\}$
+    \begin{frame}
+        \vspace{5cm}
+    \end{frame}
 
-            \item $f(A) = \{f(1), f(3), f(5), f(7), f(9)\} = \{2, 4, 6, 8, 10\}$
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[1)] Seja $A = \{1, 3, 5, 7, 9 \}$ \pause e $B = \{0, 1, 2, 3, \dots, 10\}$ \pause e $f : A \to B$ \pause dada por $f(x) = x + 1$. \pause Temos:\pause
 
-            \item $f(\emptyset) = \emptyset$
+                \vspace{.5cm}
 
-            \item $f^{-1}(\{2, 4, 10\}) = \{x \in A \mid f(x) \in \{2, 4, 10\}\} = \{1, 3, 9\}$
+                \begin{itemize}
+                    \item $f(\{1\}) = \pause \{f(1)\} \pause= \{2\}$\pause
 
-            \item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) = \{x \in A \mid f(x) \in \{0, 1, 3, 5, 7, 9\}\} = \emptyset$
-        \end{itemize}
+                    \vspace{.5cm}
 
-        \item Sejam $A = B = \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos:
-        \begin{itemize}
-            \item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
+                    \item $f(\{3, 5, 7\}) \pause= \{f(3), \pause f(5), \pause f(7)\} \pause = \{4, 6, 8\}$\pause
 
-            \item $f([0,2]) = \{f(x) \in \real \mid 0 \le x \le 2 \} = \{x^2 \mid 0 \le x \le 2\} = [0, 4]$
+                    \vspace{.5cm}
 
-            \item $f^{-1}([1, 9]) = \{x \in \real \mid f(x) \in [1, 9]\} = \{ x \in \real \mid 1 \le f(x) \le 9\} = \{x \in \real \mid 1 \le x^2 \le 9\} = [-1, -3] \cup [1, 3]$
-        \end{itemize}
-    \end{enumerate}
-\end{exemplos}
+                    \item $f(A) \pause = \{f(1), \pause f(3), \pause f(5), \pause f(7), \pause f(9)\} = \pause \{2, 4, 6, 8, 10\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f(\emptyset) \pause = \emptyset$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f^{-1}(\{2, 4, 10\}) = \pause \{x \in A \pause \mid f(x) \pause \in \{2, 4, 10\}\pause\} = \{1, 3, 9\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) \pause = \{x \in A \pause \mid f(x) \pause \in \{0, 1, 3, 5, 7, 9\}\pause\} = \emptyset$\pause
+
+                    \vspace{.5cm}
+                \end{itemize}
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[2)] Sejam $A = B = \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos:
+                \begin{itemize}
+                    \item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
+
+                    \item $f([0,2]) = \{f(x) \in \real \mid 0 \le x \le 2 \} = \{x^2 \mid 0 \le x \le 2\} = [0, 4]$
+
+                    \item $f^{-1}([1, 9]) = \{x \in \real \mid f(x) \in [1, 9]\} = \{ x \in \real \mid 1 \le f(x) \le 9\} = \{x \in \real \mid 1 \le x^2 \le 9\} = [-1, -3] \cup [1, 3]$
+                \end{itemize}
+            \end{enumerate}
+        \end{exemplos}
     \end{frame}
 
     \begin{frame}
