@@ -29,40 +29,45 @@
 
     \begin{frame}
         \begin{definicao}
-            Uma \textbf{fun{\c c}{\~a}o} $f : A \to B$, de um conjunto $A$ em um conjunto $B$, {\'e} uma rela{\c c}{\~a}o que associa os elementos de $A$ com os elementos em $B$ satisfazendo as seguintes condi\c{c}\~oes:
+            Uma \textbf{fun{\c c}{\~a}o} \pause $f : A \to B$, \pause de um conjunto $A$ \pause em um conjunto $B$, \pause {\'e} uma rela{\c c}{\~a}o que associa os elementos de $A$ \pause com os elementos em $B$ \pause satisfazendo as seguintes condi\c{c}\~oes:\pause
             \begin{enumerate}[label={\roman*})]
-                \item Para todo $x \in A$, existe $y \in B$ tal que $f(x) = y$.
+                \item Para todo $x \in A$, \pause existe $y \in B$ \pause tal que $f(x) = y$.\pause
 
-                \item  Se $x \in A$ \'e tal que $f(x) = y_1$ e $f(x) = y_2$ com $y_1$, $y_2 \in B$, ent\~ao $y_1 = y_2$.
+                \vspace{.3cm}
+
+                \item  Se $x \in A$ \pause \'e tal que $f(x) = y_1$ \pause e $f(x) = y_2$ \pause com $y_1$, \pause $y_2 \in B$, \pause ent\~ao $y_1 = y_2$.\pause
             \end{enumerate}
-            Nesse caso $y$ \'e chamado de \textbf{imagem} de $x$ segundo $f$.
+            Nesse caso $y$ \'e chamado de \textbf{imagem} \pause de $x$ segundo $f$.\pause
         \end{definicao}
 
-        O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado por $\dom(f)$. O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} de $f$. O conjunto
+        O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} \pause de $f$ \pause e ser\'a denotado por $\dom(f)$. \pause O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} \pause de $f$. \pause O conjunto\pause
         \[
-            \im(f) = \{f(x) \mid x \in A\} \sub B
+            \im(f) = \pause \{f(x) \pause \mid x \in A\} \pause \sub B\pause
         \]
-        \'e chamado \textbf{imagem} de $f$.
+        \'e chamado \textbf{imagem} de $f$.\pause
     \end{frame}
 
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}
-                \item[1)] Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
+                \item[1)] Sejam $A = \{0,1,2,3\}$ \pause e $B = \{4,5,6,7,8\}$. \pause Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?\pause
                 \begin{enumerate}[label={\alph*})]
-                    \item $R_1 = \{(0,5),(1,6),(2,7)\}$
-                    \item $R_2 = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
-                    \item $R_3 = \{(0,4),(1,5),(2,7),(3,8)\}$
-                    \item $R_4 = \{(0,5),(1,5),(2,6),(3,7)\}$
+                    \item $R_1 = \{(0,5),(1,6),(2,7)\}$\pause
+
+                    \vspace{1cm}
+
+                    \item $R_2 = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$\pause
+
+                    \vspace{1cm}
+
+                    \item $R_3 = \{(0,4),(1,5),(2,7),(3,8)\}$\pause
+
+                    \vspace{1cm}
+
+                    \item $R_4 = \{(0,5),(1,5),(2,6),(3,7)\}$\pause
+
+                    \vspace{1cm}
                 \end{enumerate}
-                \begin{solucao}
-                    \begin{enumerate}[label={\alph*})]
-                        \item N\~ao \'e fun\c{c}\~ao pois $3 \in A$ e $3$ n\~ao est\'a associado {\`a} nenhum elemento de $B$.
-                        \item N\~ao \'e fun\c{c}\~ao pois $1 \in A$ est\'a associado a dois elementos diferentes em $B$.
-                        \item \'E uma fun\c{c}\~ao.
-                        \item \'E uma fun\c{c}\~ao.
-                    \end{enumerate}
-                \end{solucao}
             \end{enumerate}
         \end{exemplos}
     \end{frame}
@@ -70,36 +75,43 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}
-                \item[2)] $R_{5} = \{(x,y) \in \real  \times \real  \mid y^2 = x^2\}$
-                \begin{solucao}
-                    N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
-                \end{solucao}
-                \item[3)] $R_{6} = \{(x,y) \in \real  \times \real  \mid x^2 + y^2 = 1\}$.
-                \begin{solucao}
-                    N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
-                \end{solucao}
-                \item[4)] $R_{7} = \{(x,y) \in \real  \times \real \mid y = x^2\}$
-                \begin{solucao}
-                    \'E uma fun\c{c}\~ao.
-                \end{solucao}
+                \item[2)] $R_{5} = \{(x,y) \in \real  \times \real  \mid y^2 = x^2\}$\pause
+                
+                \vspace{1cm}
+
+                \item[3)] $R_{6} = \{(x,y) \in \real  \times \real  \mid x^2 + y^2 = 1\}$\pause
+                
+                \vspace{1cm}
+
+                \item[4)] $R_{7} = \{(x,y) \in \real  \times \real \mid y = x^2\}$\pause
+
+                \vspace{1.5cm}
             \end{enumerate} 
         \end{exemplos}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Seja $f : A \to B$ uma fun\c{c}\~ao.
+            Seja $f : A \to B$ uma fun\c{c}\~ao.\pause
             \begin{enumerate}[label={\roman*})]
-                \item Dizemos que $f$ \'e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, ent\~ao $x_1 = x_2$. De modo equivalente, dizemos que $f$ e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, ent\~ao $f(x_1) \ne f(x_2)$.
-                \item Dizemos que $f$ \'e \textbf{sobrejetora} se para todo $y \in B$, existe $x \in A$ tal que $f(x) = y$.
-                \item Dizemos que $f$ e \textbf{bijetora} se $f$ for \textbf{injetora} e \textbf{sobrejetora} simultaneamente.
+                \item Dizemos que $f$ \'e \textbf{injetora} \pause se dados $x_1$, \pause $x_2 \in A$ \pause tais que $f(x_1) = \pause f(x_2)$, \pause ent\~ao $x_1 = x_2$. \pause De modo equivalente, \pause dizemos que $f$ é \textbf{injetora} \pause se dados $x_1$, \pause $x_2 \in A$ \pause tais que $x_1 \ne x_2$, \pause ent\~ao $f(x_1) \ne f(x_2)$.\pause
+
+                \vspace{.3cm}
+
+                \item Dizemos que $f$ \'e \textbf{sobrejetora} \pause se para todo $y \in B$, \pause existe $x \in A$ \pause tal que $f(x) = y$.\pause
+
+                \vspace{.3cm}
+
+                \item Dizemos que $f$ e \textbf{bijetora} \pause se $f$ for \textbf{injetora} \pause e \textbf{sobrejetora} \pause simultaneamente.\pause
+
+                \vspace{.3cm}
             \end{enumerate}
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{exemplos}
-            Verifique se as seguintes fun\c{c}\~oes s\~ao injetoras ou sobrejetoras:
+            Verifique se as seguintes fun\c{c}\~oes s\~ao injetoras \pause ou sobrejetoras:\pause
             \begin{enumerate}
                 \item[1)] $f : \z \to \z$ dada por $f(x) = 3x + 1$
             \end{enumerate}
@@ -142,7 +154,7 @@
 
     \begin{frame}
         \begin{definicao}
-            Sejam $f : A \to B$ e $g : B \to C$ fun\c{c}\~oes. Definimos a \textbf{fun\c{c}\~ao composta} de $g$ com $f$ como sendo a fun\c{c}\~ao denotada por $g \circ f : A \to C$ tal que $(g\circ f)(x) = g(f(x))$ para todo $x \in A$.
+            Sejam $f : A \to B$ \pause e $g : B \to C$ \pause fun\c{c}\~oes. \pause Definimos a \textbf{fun\c{c}\~ao composta} \pause de $g$ com $f$ \pause como sendo a fun\c{c}\~ao denotada por $g \circ f \pause : A \to C$ \pause tal que \pause $(g\circ f)(x) \pause = g(f(x))$ \pause para todo $x \in A$.\pause
         \end{definicao}
 
         \vspace{5cm}
@@ -151,7 +163,7 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}
-                \item[1)] Sejam $f : \real \to \real$ e $g : \real \to \real$ dadas por $f(x) = x^2$ e $g(x) = x + 1$. Assim podemos definir $g \circ f$ e $f \circ g$ e:
+                \item[1)] Sejam $f : \real \to \real$ \pause e $g : \real \to \real$ \pause dadas por $f(x) = x^2$ \pause e $g(x) = x + 1$. \pause Assim podemos definir $g \circ f$ \pause e $f \circ g$ e:\pause
             \end{enumerate}
         \end{exemplos}
 
@@ -165,7 +177,7 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}
-                \item[2)] $f : \real_- \to \real^*_+$ e $g : \real^*_+ \to \real$ dadas por $f(x) = x^2 + 1$ e $g(x) = \ln x$. Nesse caso s\'o podemos definir $g \circ f : \real_- \to \real$ e:
+                \item[2)] $f : \real_- \to \real^*_+$ \pause e $g : \real^*_+ \to \real$ \pause dadas por $f(x) = x^2 + 1$ \pause e $g(x) = \ln x$. \pause Nesse caso s\'o podemos definir $g \circ f : \real_- \to \real$ e:\pause
             \end{enumerate}
         \end{exemplos}
 
@@ -178,15 +190,17 @@
 
     \begin{frame}
         \begin{proposicao}
-    Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} injetora.
-\end{proposicao}
-\begin{prova}
-    Dados $x_1$, $x_2 \in A$ tais que $(g\circ f)(x_1) = (g\circ f)(x_2)$ queremos mostrar que $x_1 = x_2$. Temos:
-    \begin{align*}
-        (g\circ f)(x_1) &= (g\circ f)(x_2)\\
-        g(f(x_1)) &= g(f(x_2)).
-    \end{align*}
-    Como por hip\'otese $g$ \'e injetora, dessa \'ultima igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ tamb\'em \'e injetora, por hip\'otese, da{\'\i} $x_1 = x_2$, como quer{\'\i}amos. Portanto $g\circ f$ \'e injetora.
-\end{prova}
+            Se $f : A \to B$ \pause e $g : B \to C$ \pause s{\~a}o fun{\c c}{\~o}es injetoras, \pause ent{\~a}o $g\circ f : \pause A \to C$ \pause {\'e} injetora.\pause
+        \end{proposicao}
+            \noindent \textbf{\textit{Prova: }}\pause
+            Dados $x_1$, \pause $x_2 \in A$ \pause tais que $(g\circ f)(x_1) \pause = (g\circ f)(x_2)$ \pause queremos mostrar que $x_1 = x_2$. \pause Temos:\pause
+            \begin{center}
+                \begin{tabular}{c}
+                    $(g\circ f)(x_1) = (g\circ f)(x_2)$\pause\\
+                    \\
+                    $g(f(x_1)) = g(f(x_2))$.\pause
+                \end{tabular}
+            \end{center}
+            Como por hip\'otese \pause $g$ \'e injetora, \pause dessa \'ultima igualdade segue \pause  que $f(x_1) \pause = f(x_2)$. \pause Mas $f$ tamb\'em \'e injetora, \pause por hip\'otese, \pause da{\'\i} $x_1 = \pause x_2$, como quer{\'\i}amos. \pause Portanto $g\circ f$ \'e injetora.\pause \hspace{.3cm} \qedsymbol
     \end{frame}
 \end{document}
