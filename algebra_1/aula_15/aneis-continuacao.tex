@@ -15,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Anéis - Continuação }
+\title{Anéis - Continuação}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{\today}
@@ -113,6 +113,162 @@
                 -f(x) &= f(-x) \oplus (f(x) \oplus (-f(x)))\\
                 f(-x) &= -f(x)
             \end{align*}
+        \end{enumerate}
+        como queríamos. \hspace{.5cm} \qedsymbol
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que
+            \begin{enumerate}[label={\roman*})]
+                \item $f$ {\'e} um epimorfismo se $f$ for sobrejetora.
+
+                \vspace{.5cm}
+
+                \item $f$ {\'e} um monomorfismo se $f$ for injetora.
+
+                \vspace{.5cm}
+                
+                \item $f$ {\'e} um isomorfismo se $f$ for bijetora.
+
+                \vspace{.5cm}
+                
+                \item Quando $A=B$ e $f$ {\'e} um isomorfismo, ent{\~a}o $f$ {\'e} um automorfismo.
+
+                \vspace{.5cm}
+                
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao o subconjunto de $A$ definido por
+            \[
+                \ker(f) = \{ x \in A \mid f(x) = 0_B\}
+            \]
+            \'e chamado de \textbf{kernel} ou \textbf{n\'ucleo} de $f$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao:
+            \begin{enumerate}[label={\roman*})]
+                \item $\ker(f)$ \'e um subanel de $A$.
+
+                \vspace{.5cm}
+
+                \item $f$ \'e injetora se, e somente se, $\ker(f) = \{0_A\}$.
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \noindent \textbf{\textit{Prova: }}
+        \begin{enumerate}[label={\roman*})]
+            \item Primeiro note que sendo $f$ \'e um homomorfismo ent\~ao $f(0_A) = 0_B$. Logo $0_A \in \ker(f)$, isto \'e, $\ker(f) \ne \emptyset$.
+
+            Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$. Inicialmente como $x$, $y \in \ker(f)$ da{\'\i} $f(x) = f(y) = 0_B$. Assim
+            \begin{align*}
+                f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
+                f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B
+            \end{align*}
+            Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ \'e um subanel de $A$.
+
+            \seti
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\roman*})]
+            \conti
+            \item Primeiro suponha que $f$ \'e injetora e vamos mostrar que $\ker(f) = \{0_A\}$. Para isso seja $x \in \ker(f)$. Ent\~ao
+            \[
+                f(x) = 0_B,
+            \]
+            mas $f$ sendo um homomorfismo temos $f(0_A) = 0_B$. Da{\'\i}
+            \[
+                f(x) = 0_B = f(0_A).
+            \]
+            E como $f$ \'e injetora, por hip\'otese, segue que $x = 0_A$. Logo $\ker(f) = \{0_A\}$.
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}
+            \item[] Agora suponha que $\ker(f) = \{0_A\}$ e vamos mostrar que $f$ \'e injetora. Para isso sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Da{\'\i}
+            \begin{align*}
+                &f(x_1) = f(x_2)\\
+                &f(x_1) \oplus (-f(x_2)) = 0_B\\
+                &f(x_1) \oplus f(-x_2) = 0_B\\
+                &f(x_1 - x_2) = 0_B
+            \end{align*}
+            Logo $x_1 - x_2 \in \ker(f) = \{0_A\}$. Com isso $x_1 - x_2 = 0_A$, isto \'e, $x_1 = x_2$. Portanto $f$ \'e injetora. \hspace{.5cm} \qedsymbol
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
+            \begin{enumerate}[label={\roman*})]
+                \item Se $A$ tem unidade, ent\~ao $B$ tem unidade e
+                \[
+                    f(1_A) = 1_B.
+                \]
+
+                \vspace{.5cm}
+
+                \item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, ent\~ao $f(x)$ tem inverso e
+                \[
+                    [f(x)]^{-1} = f(x^{-1}).
+                \]
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \noindent \textbf{\textit{Prova: }}
+        \begin{enumerate}[label={\roman*})]
+            \item Incialmente como num anel a unidade \'e \'unica, para mostrar que $B$ possui unidade basta mostrar que
+            \[
+                y\otimes f(1_A) = y = f(1_A)\otimes y
+            \]
+            para todo $y \in B$. Sendo assim, seja $y \in B$. Como $f$ \'e sobrejetor ent\~ao existe $x \in A$ tal que $f(x) = y$. Assim
+            \begin{align*}
+                y\otimes f(1_A) &= f(x) \otimes f(1_A) = f(x\cdot 1_A) = f(x) = y\\
+                f(1_A)\otimes y &= f(1_A) \otimes f(x) = f(1_A\cdot x) = f(x) = y
+            \end{align*}
+            para todo $y \in B$. Portanto $B$ possui unidade e
+            \[
+                1_B = f(1_A).
+            \]
+
+            \seti
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\roman*})]
+            \conti
+
+            \item Novamente, devido \'a unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
+            \[
+                f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
+            \]
+            desde que $x \in A$ possua inverso multiplicativo. Sendo assim suponha que $x \in A$ possui inverso multiplicativo. Seja $x^{-1}$ o inverso multiplicativo de $x$ em $A$. Temos
+            \begin{align*}
+                f(x)\otimes f(x^{-1}) &= f(x\cdot x^{-1}) = f(1_A) = 1_B\\
+                f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
+            \end{align*}
+            Portanto $f(x)$ possui inverso multiplicativo e
+            \[
+                [f(x)]^{-1} = f(x^{-1}),
+            \]
+            como quer{\'\i}amos. \hspace{.5cm} \qedsymbol
         \end{enumerate}
     \end{frame}
 \end{document}
