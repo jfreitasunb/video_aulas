@@ -13,4 +13,11 @@
 \usetikzlibrary{lindenmayersystems}
 \usetikzlibrary[shadings]
 
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+\resetcounteronoverlays{saveenumi}
+
+
 \renewcommand{\qedsymbol}{$\blacksquare$}
