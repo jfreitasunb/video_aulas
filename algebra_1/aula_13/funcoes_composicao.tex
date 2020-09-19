@@ -1,0 +1,95 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Fun\c{c}\~oes - Composição}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $f : A \to B$ \pause e $g : B \to C$ \pause fun\c{c}\~oes. \pause Definimos a \textbf{fun\c{c}\~ao composta} \pause de $g$ com $f$ \pause como sendo a fun\c{c}\~ao denotada por $g \circ f \pause : A \to C$ \pause tal que \pause $(g\circ f)(x) \pause = g(f(x))$ \pause para todo $x \in A$.\pause
+        \end{definicao}
+
+        \vspace{5cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[1)] Sejam $f : \real \to \real$ \pause e $g : \real \to \real$ \pause dadas por $f(x) = x^2$ \pause e $g(x) = x + 1$. \pause Assim podemos definir $g \circ f$ \pause e $f \circ g$ e:\pause
+            \end{enumerate}
+        \end{exemplos}
+
+        \vspace{5cm}
+    \end{frame}
+    
+    \begin{frame}
+        \vspace{5cm}    
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[2)] $f : \real_- \to \real^*_+$ \pause e $g : \real^*_+ \to \real$ \pause dadas por $f(x) = x^2 + 1$ \pause e $g(x) = \ln x$. \pause Nesse caso s\'o podemos definir $g \circ f : \real_- \to \real$ e:\pause
+            \end{enumerate}
+        \end{exemplos}
+
+        \vspace{5cm}
+    \end{frame}
+
+    \begin{frame}
+        \vspace{5cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to C$ \pause s{\~a}o fun{\c c}{\~o}es injetoras, \pause ent{\~a}o $g\circ f : \pause A \to C$ \pause {\'e} injetora.\pause
+        \end{proposicao}
+            \noindent \textbf{\textit{Prova: }}\pause
+            Dados $x_1$, \pause $x_2 \in A$ \pause tais que $(g\circ f)(x_1) \pause = (g\circ f)(x_2)$ \pause queremos mostrar que $x_1 = x_2$. \pause Temos:\pause
+            \begin{center}
+                \begin{tabular}{c}
+                    $(g\circ f)(x_1) = (g\circ f)(x_2)$\pause\\
+                    \\
+                    $g(f(x_1)) = g(f(x_2))$.\pause
+                \end{tabular}
+            \end{center}
+            Como por hip\'otese \pause $g$ \'e injetora, \pause dessa \'ultima igualdade segue \pause  que $f(x_1) \pause = f(x_2)$. \pause Mas $f$ tamb\'em \'e injetora, \pause por hip\'otese, \pause da{\'\i} $x_1 = \pause x_2$, como quer{\'\i}amos. \pause Portanto $g\circ f$ \'e injetora.\pause \hspace{.3cm} \qedsymbol
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to C$ \pause s{\~a}o fun\c{c}\~oes sobrejetoras, \pause ent{\~a}o $g\circ f : A \to C$ \pause {\'e} sobrejetora.\pause
+        \end{proposicao}
+        \noindent \textbf{\textit{Prova: }}\pause
+        Para mostrar que $g \circ f : A \to C$ \pause \'e sobrejetora, \pause precisamos mostrar que para todo $y \in C$, \pause existe $x \in A$ \pause tal que $(g\circ f)(x) = y$.\pause
+
+        Assim seja $y \in C$. \pause Como $g : B \to C$ \'e sobrejetora, \pause existe $z \in B$ \pause tal que $g(z) = y$. \pause Mas $z \in B$ \pause e $f : A \to B$ \pause \'e sobrejetora. \pause Assim existe $x \in A$ \pause tal que $f(x) = z$. \pause Logo\pause
+        \[
+            (g\circ f)(x) \pause = g(f(x)) \pause = g(z) \pause = y.\pause
+        \]
+        Portanto $g \circ f$ \pause \'e sobrejetora.\pause \hspace{.5cm} \qedsymbol
+    \end{frame}
+\end{document}
