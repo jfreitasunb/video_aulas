@@ -15,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Fun\c{c}\~ao Inversa}
+\title{Fun\c{c}\~oes - Continua\c{c}\~ao}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{\today}
@@ -26,6 +26,126 @@
     \end{frame}
 
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+    
+    \begin{frame}
+        \begin{definicao}
+            Seja $f : A \to B$ \pause uma fun{\c c}{\~a}o.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Dado $P \sub A$, \pause chama-se \textbf{imagem direta} \pause de $P$ \pause \textbf{segundo} $f$ \pause e indica-se por $f(P)$ \pause o subconjunto de $B$ \pause dado por\pause
+                \[
+                    f(P) = \pause \{f(x) \pause \mid x \in P\},\pause
+                \]
+                isto {\'e}, \pause $f(P)$ \pause {\'e} o conjunto das imagens por $f$ \pause dos elementos de $P$.\pause
+                
+                \vspace{.5cm}
+
+                \item Dado $Q \sub B$, \pause chama-se \textbf{imagem inversa} \pause de $Q$ \textbf{segundo} $f$ \pause e indica-se por \pause $f^{-1}(Q)$ \pause o subconjunto de $A$ \pause dado por\pause
+                \[
+                    f^{-1}(Q) \pause = \{x \in A \pause \mid f(x) \in Q\},\pause
+                \]
+                isto {\'e}, \pause $f^{-1}(Q)$ \pause {\'e} o conjunto dos elementos de $A$ \pause que tem imagem em $Q$ \pause atrav{\'e}s de $f$.\pause
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \vspace{5cm}
+    \end{frame}
+
+    \begin{frame}
+        \vspace{5cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[1)] Seja $A = \{1, 3, 5, 7, 9 \}$ \pause e $B = \{0, 1, 2, 3, \dots, 10\}$ \pause e $f : A \to B$ \pause dada por $f(x) = x + 1$. \pause Temos:\pause
+
+                \vspace{.5cm}
+
+                \begin{itemize}
+                    \item $f(\{1\}) = \pause \{f(1)\} \pause= \{2\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f(\{3, 5, 7\}) \pause= \{f(3), \pause f(5), \pause f(7)\} \pause = \{4, 6, 8\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f(A) \pause = \{f(1), \pause f(3), \pause f(5), \pause f(7), \pause f(9)\} = \pause \{2, 4, 6, 8, 10\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f(\emptyset) \pause = \emptyset$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f^{-1}(\{2, 4, 10\}) = \pause \{x \in A \pause \mid f(x) \pause \in \{2, 4, 10\}\pause\} = \{1, 3, 9\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) \pause = \{x \in A \pause \mid f(x) \pause \in \{0, 1, 3, 5, 7, 9\}\pause\} = \emptyset$\pause
+
+                    \vspace{.5cm}
+                \end{itemize}
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[2)] Sejam $A = B = \real$ \pause e $f : \real \to \real$ \pause dada por $f(x) = x^2$. \pause Temos:\pause
+
+                \vspace{.5cm}
+
+                \begin{itemize}
+                    \item $f(\{1, 2, 3\}) \pause = \{1, 4, 9\}$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f([0,2]) \pause = \{f(x) \pause \in \real \pause \mid 0 \le x \pause \le 2 \pause \} = \{x^2 \pause \mid 0 \le x \le 2\} \pause = [0, 4]$\pause
+
+                    \vspace{.5cm}
+
+                    \item $f^{-1}([1, 9]) \pause = \{x \in \real \pause \mid f(x) \in [1, 9]\pause \} = \{ x \in \real \pause \mid 1 \le f(x) \le 9\} \pause = \{x \in \real \pause \mid 1 \le x^2 \pause \le 9\} \pause = [-1, -3] \pause \cup [1, 3]$\pause
+
+                    \vspace{.5cm}
+                \end{itemize}
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $f : A \to B$ uma fun{\c c}{\~a}o \pause e sejam $P$, \pause $Q \sub A$, \pause $X$, \pause $Y \sub B$.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Se $P \sub Q$, \pause ent{\~a}o $f(P) \sub f(Q)$.\pause
+
+                \vspace{.5cm}
+
+                \item $f^{-1}(X \cup Y) \pause = f^{-1}(X) \pause \cup f^{-1}(Y)$.\pause
+            \end{enumerate}
+        \end{proposicao}
+            \noindent \textbf{\textit{Prova: }}\pause
+            \begin{enumerate}
+                \item[i)] Se $y \in f(P)$, \pause ent{\~a}o existe $x \in P$ \pause tal que $f(x) = y$. \pause Mas como $P \sub Q$, \pause ent{\~a}o $x \in Q$ \pause e da{\'\i} $y \in f(Q)$. \pause Logo $f(P) \sub f(Q)$.\pause
+            \end{enumerate}
+        \end{frame}
+
+        \begin{frame}
+            \begin{enumerate}
+                \item[ii)] Seja $z \in f^{-1}(X \cup Y)$. \pause Ent{\~a}o $f(z) \in X \cup Y$. \pause Se $f(z) \in X$, \pause ent\~ao $z \in f^{-1}(X)$ \pause e da{\'\i} $z \in f^{-1}(X) \cup \pause f^{-1}(Y)$. \pause Se $f(z) \in Y$, \pause ent{\~a}o $z \in f^{-1}(Y)$ \pause e assim $z \in f^{-1}(X) \cup \pause f^{-1}(Y)$. \pause Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.\pause
+
+                \vspace{.3cm}
+
+                Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. \pause Se $z \in f^{-1}(X)$, \pause ent{\~a}o $f(z) \in X$, \pause da{\'\i} $f(z) \in X \cup Y$, \pause isto {\'e}, \pause $z \in f^{-1}(X \cup Y)$. \pause Se $z \in f^{-1}(Y)$, \pause ent{\~a}o $f(z) \in Y$ \pause e assim $f(z) \in X \cup Y$, \pause isto {\'e}, \pause $z \in f^{-1}(X \cup Y)$. \pause Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.\pause
+
+                \vspace{.3cm}
+
+                Portanto, \pause $f^{-1}(X \cup Y) = \pause f^{-1}(X) \cup f^{-1}(Y)$.\pause \hspace{.5cm} \qedsymbol
+            \end{enumerate}
+    \end{frame}
 
     \begin{frame}
         Dado $f : A \to B$ \pause uma fun\c{c}{\~a}o, \pause queremos construir uma fun\c{c}\~ao $g : B \to A$ \pause de modo que
