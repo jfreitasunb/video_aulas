@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+xmin=-9.091971853434739,
+xmax=10.498177280367296,
+ymin=-9.365807745222352,
+ymax=5.816557833474226,
+xtick={-9,-8,...,10},
+ytick={-9,-8,...,5},]
+\clip(-9.091971853434739,-9.365807745222352) rectangle (10.498177280367296,5.816557833474226);
+\draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-9.091971853434739:10.498177280367296] plot(\x,{3*sin(((\x))*180/pi)});
+\begin{scriptsize}
+\draw[color=qqwuqq] (-8.945045734931224,-1.1297825468864127) node {$f$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

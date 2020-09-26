@@ -10,15 +10,20 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usecolortheme{beaver}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
 % \mode<presentation>
 \input{../configuracoes_latex/pacotes}
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Fun\c{c}\~oes - Continua\c{c}\~ao}
+\title{Fun\c{c}\~oes - Imagem Direta e Inversa}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
-\date{\today}
+\date{19 de setembro de 2020}
 
 \begin{document}
     \begin{frame}
@@ -49,11 +54,119 @@
     \end{frame}
 
     \begin{frame}
-        \vspace{5cm}
+        \begin{center}
+            \definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+            \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+                \begin{axis}[
+                    x=1cm,y=1cm,
+                    axis lines=middle,
+                    xmin=-3.799766551541622,
+                    xmax=3.66180069974375,
+                    ymin=-3.772843851129456,
+                    ymax=4.427922943806761,
+                    xtick={-1.5708, 0, 1.5708},
+                    xticklabels={$-\frac{\pi}{2}$, 0 , $-\frac{\pi}{2}$},
+                    ytick={-3.5,-3,...,4},
+                    yticklabels={,,},
+                ]
+                    \clip(-5.799766551541622,-3.772843851129456) rectangle (3.66180069974375,4.427922943806761);
+                    \draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-1.499766551541622:1.46180069974375] plot(\x,{tan(((\x))*180/pi)});
+                    
+                    \begin{scriptsize}
+                        \draw[color=qqwuqq] (-2.673499485506525,-3.627346375735427) node {$f(x) = \tan(x)$};
+                    \end{scriptsize}
+
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
     \end{frame}
 
     \begin{frame}
-        \vspace{5cm}
+        \begin{center}
+            \definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+            \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+                \begin{axis}[
+                    x=1cm,y=1cm,
+                    axis lines=middle,
+                    xmin=-3.799766551541622,
+                    xmax=3.66180069974375,
+                    ymin=-3.772843851129456,
+                    ymax=4.427922943806761,
+                    xtick={-1.5708, 0, 1.5708},
+                    xticklabels={$-\frac{\pi}{2}$, 0 , $-\frac{\pi}{2}$},
+                    ytick={-3.5,-3,...,4},
+                    yticklabels={,,}
+                ]
+                    \clip(-5.799766551541622,-3.772843851129456) rectangle (3.66180069974375,4.427922943806761);
+                    \draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-1.499766551541622:1.46180069974375] plot(\x,{tan(((\x))*180/pi)});
+                    
+                    \begin{scriptsize}
+                        \draw[color=qqwuqq] (-2.673499485506525,-3.627346375735427) node {$f(x) = \tan(x)$};
+                    \end{scriptsize}
+
+                \end{axis}
+            \end{tikzpicture}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        \definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+        \begin{axis}[
+            x=1cm,y=1cm,
+            axis lines=middle,
+            xmin=-6.091971853434739,
+            xmax=5.498177280367296,
+            ymin=-3.365807745222352,
+            ymax=3.816557833474226,
+            xtick={
+                    -6.28318, -4.7123889, -3.14159, -1.5708,
+                    1.5708, 3.14159, 4.7123889, 6.28318
+                },
+            xticklabels={
+                    $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$,
+                    $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$
+                },
+            ytick={-4,-3,...,4},
+            yticklabels={,,}
+        ]
+            \clip(-7.091971853434739,-7.365807745222352) rectangle (5.498177280367296,6.816557833474226);
+            \draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-6.091971853434739:5.498177280367296] plot(\x,{3*sin(((\x))*180/pi)});
+            \begin{scriptsize}
+                \draw[color=qqwuqq] (-4.8,-3) node {$g(x) = 3\sin(x)$};
+            \end{scriptsize}
+            \end{axis}
+        \end{tikzpicture}
+    \end{frame}
+
+    \begin{frame}
+        \definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+        \begin{axis}[
+            x=1cm,y=1cm,
+            axis lines=middle,
+            xmin=-6.091971853434739,
+            xmax=5.498177280367296,
+            ymin=-3.365807745222352,
+            ymax=3.816557833474226,
+            xtick={
+                    -6.28318, -4.7123889, -3.14159, -1.5708,
+                    1.5708, 3.14159, 4.7123889, 6.28318
+                },
+            xticklabels={
+                    $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$,
+                    $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$
+                },
+            ytick={-4,-3,...,4},
+            yticklabels={,,}
+        ]
+            \clip(-7.091971853434739,-7.365807745222352) rectangle (5.498177280367296,6.816557833474226);
+            \draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-6.091971853434739:5.498177280367296] plot(\x,{3*sin(((\x))*180/pi)});
+            \begin{scriptsize}
+                \draw[color=qqwuqq] (-4.8,-3) node {$g(x) = 3\sin(x)$};
+            \end{scriptsize}
+            \end{axis}
+        \end{tikzpicture}
     \end{frame}
 
     \begin{frame}

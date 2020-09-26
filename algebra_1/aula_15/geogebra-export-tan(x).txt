@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+xmin=-7.799766551541622,
+xmax=6.66180069974375,
+ymin=-3.772843851129456,
+ymax=4.427922943806761,
+xtick={-7.5,-7,...,6.5},
+ytick={-3.5,-3,...,4},]
+\clip(-7.799766551541622,-3.772843851129456) rectangle (6.66180069974375,4.427922943806761);
+\draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-7.799766551541622:6.66180069974375] plot(\x,{tan(((\x))*180/pi)});
+\begin{scriptsize}
+\draw[color=qqwuqq] (-7.473499485506525,-3.627346375735427) node {$f$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
