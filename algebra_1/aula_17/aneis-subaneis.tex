@@ -1,0 +1,124 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Anéis - Subanéis}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+    
+    \begin{frame}
+        \begin{definicao}
+            Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos 
+            $x$, $y \in A$, se $xy = 0_A$, ent{\~a}o $x = 0_A$ ou $y = 0_a$. Um anel de integridade tamb{\'e}m {\'e} chamado de \textbf{dom{\'\i}nio de integridade} ou simplesmente de \textbf{dom{\'\i}nio}.
+        \end{definicao}
+
+        \begin{observacao}
+            Se $x$ e $y$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $xy = 0_A$, ent{\~a}o $x$ e $y$ s{\~a}o chamados de \textbf{divisores pr{\'o}prios de zero}.
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
+                
+                \vspace{.5cm}
+
+                \item Em geral $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} = \overline{4} = \overline{0}$.
+
+                \vspace{.5cm}
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+
+                \item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
+                \begin{align*}
+                    A &= \begin{bmatrix}
+                        1 & 0\\
+                        0 & 0
+                    \end{bmatrix} \neq \begin{bmatrix}
+                        0 & 0\\
+                        0 & 0       
+                    \end{bmatrix},\qquad 
+                    B = \begin{bmatrix}
+                        0 & 0\\
+                        1 & 0
+                    \end{bmatrix} \neq \begin{bmatrix}
+                        0 & 0\\
+                        0 & 0
+                    \end{bmatrix}\\
+                    AB & =\begin{bmatrix}
+                        0 & 0\\
+                        0 & 0
+                    \end{bmatrix}
+                \end{align*}
+
+                \vspace{.5cm}
+                
+                \item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overline{n} \neq \overline{0}$ e $\overline{k} \neq \overline{0}$ e no entanto $\overline{n} \otimes \overline{k} = \overline{m} = \overline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m = p$ primo. Sejam $\overline{x}$, $\overline{y} \in \z_m$ tais que $\overline{x}\otimes \overline{y} = \overline{0}$, ou seja, $xy \equiv 0 \pmod p$. Da{\'\i} $p\mid xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overline{x} = \overline{0}$ ou $\overline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$ {\'e} primo.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(A, +, \cdot)$ um anel. Dizemos que um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um \textbf{subanel} de $A$ quando $(B, +, \cdot)$ \'e um anel.
+        \end{definicao}
+
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Todo anel $A$ sempre tem dois suban{\'e}is: $\{0_{A}\}$ e $A$, que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.
+
+                \vspace{.5cm}
+
+                \item Em $(\z_4,\oplus,\otimes)$ o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.
+
+                \vspace{.5cm}
+                
+                \item No anel $\z$, o conjunto $m\z$, $m > 1$ {\'e} um subanel de $\z$.
+
+                \vspace{.5cm}
+            \end{enumerate} 
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(A, +,\cdot)$ um anel. Um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um subanel de $A$ se, e somente se, $x - y \in B$ e $x\cdot y \in B$ para todos $x$, $y \in B$.
+        \end{proposicao}
+
+        \noindent \textbf{\textit{Prova: }}FAZER!!!!!
+
+        \begin{exemplos}
+            COLOCAR EXEMPLOS
+        \end{exemplos}
+    \end{frame}
+\end{document}
