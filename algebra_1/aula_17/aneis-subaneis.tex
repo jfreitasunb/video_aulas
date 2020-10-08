@@ -28,27 +28,208 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
     
     \begin{frame}
+        \begin{observacao}
+            Seja $(A, \oplus, \cdot)$ \pause um anel. \pause Para simplificar a nota\c{c}\~ao \pause vamos denotar a opera\c{c}\~ao $\oplus$ \pause por $+$ \pause e a opera\c{c}\~ao $\otimes$ \pause por $\cdot$ \pause e assim escrever simplesmente \pause que $(A, +, \cdot)$ \pause \'e um anel.\pause
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(A, + , \cdot)$ um anel. \pause Ent\~ao:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item O elemento neutro {\'e} {\'u}nico.\pause
+
+                \vspace{.5cm}
+
+                \item Para cada $x \in A$ \pause existe um {\'u}nico oposto.\pause
+
+                \vspace{.5cm}
+                
+                \item Para todo $x \in A$, \pause
+                \[
+                    -(-x) = x.\pause
+                \]
+
+                \vspace{.5cm}
+                
+                \item Dados $x_{1}$, \pause $x_{2}$, \pause \dots, $x_n \in A$, \pause $n \geqslant 2$, \pause ent{\~a}o\pause
+                \[
+                    -(x_1 + x_2 + \dots + x_n) \pause = (-x_1) \pause + (-x_2) \pause + \dots + (-x_n).\pause
+                \]
+
+                \vspace{.2cm}
+
+                \seti
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                
+                \item Para todos $\alpha$, \pause $x$, \pause $y \in A$, \pause se
+                \[
+                    \alpha + x \pause = \alpha + y,\pause
+                \]
+                ent{\~a}o $x = y$.\pause
+
+                \vspace{.5cm}
+                
+                \item Para todo $x \in A$, \pause 
+                \[
+                    x\cdot 0_A \pause = 0_A \pause = 0_A\cdot x.\pause
+                \]
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item Para todos $x$, \pause $y \in A$, \pause temos\pause
+                \[
+                    x(-y) \pause = (-x)y \pause = -(xy).\pause
+                \]
+
+                \vspace{.5cm}
+                
+                \item Para todos $x$, \pause $y \in A$, \pause
+                \[
+                    xy \pause = (-x)(-y).\pause
+                \]
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \noindent \textbf{\textit{Prova:} }\pause
+        \begin{enumerate}[label={\roman*})]
+            \item Suponha que existam $0_1$, \pause $0_2\in A$ \pause elementos neutros \pause de $A$. \pause Assim\pause
+                
+            \[
+                x + 0_1 \pause = x\pause \quad \mbox{e}\quad x + 0_2 \pause = x\pause
+            \]
+            para todo $x \in A$. \pause Assim\pause
+
+            \[
+                   0_1 \pause = 0_1 +\pause 0_2 \pause = 0_2\pause
+            \]
+            
+            e portanto o elemento neutro \'e \'unico.\pause
+                
+            \vspace{.5cm}
+
+            \seti
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\roman*})]
+            \conti
+
+            \item De fato, \pause dado $x \in A$ \pause suponha que existam $y_1$, \pause $y_2\in A$ \pause tais que\pause
+            \[
+                x + y_1 \pause = 0_A \pause \quad \mbox{e}\quad x + y_2 \pause = 0_A.\pause
+            \]
+            Da{\'\i}\pause
+            \[
+                y_1 \pause = y_2 \pause + 0_A \pause = y_1 \pause + (x + y_2) \pause = (y_1 + x) \pause + y_2 \pause = 0_A\pause  + y_2 \pause= y_2.\pause
+            \]
+            Logo o oposto de $x$ \'e \'unico \pause e da{\'\i} ser\'a denotado por $-x$.\pause
+                
+            \vspace{.5cm}
+
+            \item Dado $x \in A$, \pause ent\~ao $-x$ {\'e} oposto de $x$, \pause isto {\'e}, \pause $x \pause + (-x) \pause = 0_A$. \pause Logo o oposto de $(-x)$ \pause {\'e} $x$, \pause ou seja, \pause $-(-x) \pause = x$.\pause
+            
+            \seti
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item Segue usando indu\c{c}\~ao sobre $n$.\pause
+
+                \vspace{.5cm}
+
+                \item Suponha que $\alpha + x \pause = \alpha + y$. \pause Seja $-\alpha$ \pause o oposto de $\alpha$. \pause Da{\'\i}\pause
+                \begin{center}
+                    $x = 0_A \pause + x = [(-\alpha) + \alpha] \pause + x = \pause (-\alpha) \pause + (\alpha + x) \pause = (-\alpha) + \pause (\alpha + y) \pause = [(-\alpha) + \alpha] \pause + y \pause = 0_A + y \pause = y$\pause
+                \end{center}
+                como quer{\'\i}amos.\pause
+                \seti
+            \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item Temos \pause
+                \[
+                    x\cdot 0_A + \pause 0_A \pause = x\cdot 0_A \pause = x\cdot(0_A + 0_A) \pause = x\cdot 0_A \pause + x\cdot 0_A.\pause
+                \]
+                Assim do item anterior \pause segue que $x\cdot 0_A \pause = 0_A$.\pause
+
+                \vspace{.5cm}
+
+                \item Provemos que \pause $x(-y) \pause = -(xy)$\pause :
+                \[
+                    x(-y) \pause + xy \pause = x[(-y) + y] \pause = x\cdot 0_A \pause = 0_A,\pause
+                \]
+                portanto $-xy \pause = x(-y)$.\pause
+
+                \vspace{.5cm}
+                
+                \item Basta usar o caso anterior.\pause
+            \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
         \begin{definicao}
-            Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos 
-            $x$, $y \in A$, se $xy = 0_A$, ent{\~a}o $x = 0_A$ ou $y = 0_a$. Um anel de integridade tamb{\'e}m {\'e} chamado de \textbf{dom{\'\i}nio de integridade} ou simplesmente de \textbf{dom{\'\i}nio}.
+            Seja $(A, +, \cdot)$ um anel. \pause Dizemos que um subconjunto n{\~a}o vazio \pause $B\subseteq A$ \pause {\'e} um \textbf{subanel} de $A$ \pause quando $(B, +, \cdot)$ \'e um anel.\pause
         \end{definicao}
 
-        \begin{observacao}
-            Se $x$ e $y$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $xy = 0_A$, ent{\~a}o $x$ e $y$ s{\~a}o chamados de \textbf{divisores pr{\'o}prios de zero}.
-        \end{observacao}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Todo anel $A$ sempre tem dois suban{\'e}is: \pause $\{0_{A}\}$ \pause e $A$, \pause que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.\pause
+
+                \vspace{.5cm}
+
+                \item Em $(\z_4,\oplus,\otimes)$ \pause o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.\pause
+
+                \vspace{.5cm}
+                
+                \item No anel $\z$, \pause o conjunto $m\z$, $m > 1$ \pause {\'e} um subanel de $\z$.\pause
+
+                \vspace{.5cm}
+            \end{enumerate} 
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(A, +,\cdot)$ um anel. \pause Um subconjunto n{\~a}o vazio \pause $B\subseteq A$ \pause {\'e} um subanel de $A$ \pause se, e somente se, \pause $x - y = x + (-y) \in B$ \pause e $x\cdot y \in B$ \pause para todos $x$, $y \in B$.\pause
+        \end{proposicao}
+
+        \noindent \textbf{\textit{Prova: }}\pause
     \end{frame}
 
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
+                \item Em $(\z_4,\oplus,\otimes)$ \pause o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.\pause
+
+                \vspace{5cm}
                 
-                \vspace{.5cm}
-
-                \item Em geral $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} = \overline{4} = \overline{0}$.
-
-                \vspace{.5cm}
-
                 \seti
             \end{enumerate}
         \end{exemplos}
@@ -59,66 +240,33 @@
             \begin{enumerate}[label={\arabic*})]
                 \conti
 
-                \item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
-                \begin{align*}
-                    A &= \begin{bmatrix}
-                        1 & 0\\
-                        0 & 0
-                    \end{bmatrix} \neq \begin{bmatrix}
-                        0 & 0\\
-                        0 & 0       
-                    \end{bmatrix},\qquad 
-                    B = \begin{bmatrix}
-                        0 & 0\\
-                        1 & 0
-                    \end{bmatrix} \neq \begin{bmatrix}
-                        0 & 0\\
-                        0 & 0
-                    \end{bmatrix}\\
-                    AB & =\begin{bmatrix}
-                        0 & 0\\
-                        0 & 0
-                    \end{bmatrix}
-                \end{align*}
+                \item No anel $\z$, \pause o conjunto $m\z$, $m > 1$ \pause {\'e} um subanel de $\z$.\pause
 
-                \vspace{.5cm}
-                
-                \item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overline{n} \neq \overline{0}$ e $\overline{k} \neq \overline{0}$ e no entanto $\overline{n} \otimes \overline{k} = \overline{m} = \overline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m = p$ primo. Sejam $\overline{x}$, $\overline{y} \in \z_m$ tais que $\overline{x}\otimes \overline{y} = \overline{0}$, ou seja, $xy \equiv 0 \pmod p$. Da{\'\i} $p\mid xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overline{x} = \overline{0}$ ou $\overline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$ {\'e} primo.
+                \vspace{5cm}
             \end{enumerate}
         \end{exemplos}
     \end{frame}
 
     \begin{frame}
-        \begin{definicao}
-            Seja $(A, +, \cdot)$ um anel. Dizemos que um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um \textbf{subanel} de $A$ quando $(B, +, \cdot)$ \'e um anel.
-        \end{definicao}
-
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item Todo anel $A$ sempre tem dois suban{\'e}is: $\{0_{A}\}$ e $A$, que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.
+                \conti
 
-                \vspace{.5cm}
+                \item No anel $(\rac, \star, \odot)$ \pause onde as opera\c{c}\~oes $\star$ e $\odot$ em $\rac$ definidas por\pause
+                \begin{center}
+                    $x \star y = x + y - 8$\\\pause
+                    $x \odot y = x + y - \dfrac{xy}{8}.$\pause
+                \end{center}
+                Quais dos seguintes subconjuntos s\~ao suban\'eis?\pause
+                \begin{enumerate}
+                    \item[(a)] $B = \{2k \mid k \in \z\}$\pause
 
-                \item Em $(\z_4,\oplus,\otimes)$ o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.
+                    \vspace{.5cm}
 
-                \vspace{.5cm}
-                
-                \item No anel $\z$, o conjunto $m\z$, $m > 1$ {\'e} um subanel de $\z$.
-
-                \vspace{.5cm}
-            \end{enumerate} 
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $(A, +,\cdot)$ um anel. Um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um subanel de $A$ se, e somente se, $x - y \in B$ e $x\cdot y \in B$ para todos $x$, $y \in B$.
-        \end{proposicao}
-
-        \noindent \textbf{\textit{Prova: }}FAZER!!!!!
-
-        \begin{exemplos}
-            COLOCAR EXEMPLOS
+                    \item[(b)] $C = \{8k \mid k \in \z\}$\pause
+                    \vspace{.5cm}
+                \end{enumerate}
+            \end{enumerate}
         \end{exemplos}
     \end{frame}
 \end{document}
