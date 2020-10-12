@@ -15,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Anéis - Homomorfismos}
+\title{An\'eis - Homomorfismos}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{\today}
@@ -29,76 +29,84 @@
     
     \begin{frame}
         \begin{definicao}
-            Um homomorfismo do anel $(A, +, \cdot)$ no anel $(B, \oplus, \otimes)$ {\'e} uma fun{\c c}{\~a}o $f : A \to B$ que satisfaz:
+            Sejam $(A, +, \cdot)$ \pause e $(B, \oplus, \otimes)$ \pause anéis. \pause Uma fun{\c c}{\~a}o $f : A \to B$ \pause é chamada de um \textbf{homomorfismo de anéis}, \pause ou simplesmente \textbf{homomorfismo}, \pause se satisfaz:\pause
             \begin{enumerate}[label={\roman*})]
-                \item $f(x + y) = f(x) \oplus f(y)$, para todos $x$, $y \in A$;
+                \item $f(x + y) \pause = f(x) \pause \oplus f(y)$\pause
 
                 \vspace{.5cm}
                 
-                \item $f(x \cdot y) = f(x)\otimes f(y)$, para todos $x$, $y \in A$.
+                \item $f(x \cdot y) \pause = f(x) \pause \otimes f(y)$\pause
                 
                 \vspace{.5cm}
             \end{enumerate}
+            para todos $x$, $y \in A$.\pause
         \end{definicao}
     \end{frame}
 
     \begin{frame}
-        \begin{proposicao}
-            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo. Ent{\~a}o:
+        \begin{exemplos}
+            \begin{exemplos}
+            Verifique se as seguintes funções $f : A \to B$, \pause são homomorfismos de anéis:\pause
             \begin{enumerate}[label={\roman*})]
-                \item $f(0_{A}) = 0_{B}$
+                \item $A = \z$, \pause $B = \z$ \pause e $f(x) = x + 1$\pause
+                \item $A = \z$, \pause $B = M_2(\z_5)$ \pause e
+                \[
+                    f(a) = \begin{bmatrix}
+                        \overline{a} & \overline{0}\\
+                        \overline{0} & \overline{a}
+                    \end{bmatrix}.\pause
+                \]
+            \end{enumerate}
+        \end{exemplos}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis. \pause Se $f : A \to B$ é um homomorfismo, \pause ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $f(0_{A}) \pause = 0_{B}$\pause
 
                 \vspace{.5cm}
 
-                \item $f(-x) = -f(x)$, para todo $x \in A$.
+                \item $f(-x) \pause = -f(x)$, \pause para todo $x \in A$.\pause
             \end{enumerate}
         \end{proposicao}
 
         \noindent \textbf{\textit{Prova: }}
-        \begin{enumerate}[label={\roman*})]
-            \item Fazendo $x = y = 0_{A}$, temos
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            A condição \textit{(i)} da proposição anterior \pause serve para determinar quando uma função $f : A \to B$, \pause onde $A$ e $B$ são anéis, não é um homomorfismo. \pause Caso $f(0_A) \ne 0_B$, \pause então $f$ não é um homomorfismo. \pause Mas pode acontecer de $f(0_A) = 0_B$ \pause e mesmo assim $f$ não é um homomorfismo de anéis, \pause como o exemplo a seguir mostra:\pause
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplo}
+            Sejam $A = M_2(\real)$, \pause $B = \real$ \pause anéis com as operações usuais. \pause A função\pause
             \[
-                f(0_A) = f(0_A + 0_A) = f(0_A) \oplus f(0_A)
-             \]
-            Somando $-f(0_A)$ em ambos os lados obtemos
-            \begin{align*}
-                f(0_A) \oplus (-f(0_A)) &= (f(0_A)\oplus f(0_A)) \oplus (-f(0_A))\\
-                0_B &= f(0_A) \oplus 0_B\\
-                f(0_A) &= 0_B
-            \end{align*}
-        \seti
-        \end{enumerate}
+                f\left(\begin{bmatrix}x & y\\z & t\end{bmatrix}\right) \pause = x
+            \]
+            é tal que $f(0_A) = 0_B$ \pause e no entanto $f$ não é um homomorfismo de anéis.\pause
+        \end{exemplo}
     \end{frame}
 
     \begin{frame}
-        \begin{enumerate}[label={\roman*})]
-            \conti
-            \item Temos $0_B = f(0_A) = f(x + (-x)) = f(x)\oplus f(-x)$. Assim somando $-f(x)$ em ambos os lados obtemos
-            \begin{align*}
-                0_B\oplus(-f(x)) &= [f(x)\oplus f(-x)] + (-f(x))\\
-                -f(x) &= f(-x) \oplus (f(x) \oplus (-f(x)))\\
-                f(-x) &= -f(x)
-            \end{align*}
-        \end{enumerate}
-        como queríamos. \hspace{.5cm} \qedsymbol
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que
+        \begin{definicao}Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que:
             \begin{enumerate}[label={\roman*})]
-                \item $f$ {\'e} um epimorfismo se $f$ for sobrejetora.
+                \item $f$ {\'e} um \textbf{epimorfismo} \pause se $f$ for sobrejetora.\pause
 
                 \vspace{.5cm}
 
-                \item $f$ {\'e} um monomorfismo se $f$ for injetora.
-
-                \vspace{.5cm}
-                
-                \item $f$ {\'e} um isomorfismo se $f$ for bijetora.
+                \item $f$ {\'e} um \textbf{monomorfismo} \pause se $f$ for injetora.\pause
 
                 \vspace{.5cm}
                 
-                \item Quando $A=B$ e $f$ {\'e} um isomorfismo, ent{\~a}o $f$ {\'e} um automorfismo.
+                \item $f$ {\'e} um \textbf{isomorfismo} \pause se $f$ for bijetora.\pause
+
+                \vspace{.5cm}
+                
+                \item Quando $A=B$ \pause e $f$ {\'e} um isomorfismo, \pause ent{\~a}o $f$ {\'e} um \textbf{automorfismo}.\pause
 
                 \vspace{.5cm}
                 
@@ -108,87 +116,108 @@
 
     \begin{frame}
         \begin{definicao}
-            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao o subconjunto de $A$ definido por
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis \pause e $f : A \to B$ um homomorfismo de an\'eis. \pause Ent\~ao o subconjunto de $A$ \pause definido por\pause
             \[
-                \ker(f) = \{ x \in A \mid f(x) = 0_B\}
+                \ker(f) = \pause N(f) =\pause \{ x \in A \pause \mid f(x) = 0_B\}\pause
             \]
-            \'e chamado de \textbf{kernel} ou \textbf{n\'ucleo} de $f$.
+            \'e chamado de \textbf{kernel} \pause ou \textbf{n\'ucleo} \pause de $f$.\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            Determine o \textbf{kernel} dos seguintes homomorfismo de anéis:
+            \begin{enumerate}
+                \item[i)] $f : \z \to M_2(\z_5)$ \pause tal que\pause
+                \[
+                    f(a) = \begin{bmatrix}
+                        \overline{a} & \overline{0}\\
+                        \overline{0} & \overline{a}
+                    \end{bmatrix}.\pause
+                \]
+
+                \item[ii)] Seja $(\z\times\z, +, \cdot)$ \pause um anel com as seguintes opera\c{c}\~oes\pause
+                \begin{center}
+                    $(a, b) + (c, d) = (a + c, b + d)\pause$\\
+                    $(a, b)\cdot (c, d) = (ac, ad + bc)\pause$
+                \end{center}
+                para todos $(a, b)$, $(c, d) \in \z\times\z$. \pause
+                O homomorfismo $ f : \z \to \z \times \z$ é dado por $f(a, b) = a$.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}
+                \item[iii)] $f : \rac \to M_3(\rac)$ \pause dada por\pause
+                \[
+                    f(x) = \begin{pmatrix}
+                        x & 0 & 0\\
+                        0 & x & 0\\
+                        0 & 0 & x
+                    \end{pmatrix}\pause
+                \]
+            \end{enumerate}
+        \end{exemplos}
+
+        \noindent \textbf{Solução:}
+        \vspace{3cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis \pause e $f : A \to B$ um homomorfismo de an\'eis. \pause Ent\~ao:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $\ker(f)$ \'e um subanel de $A$.\pause
+
+                \vspace{.5cm}
+
+                \item $f$ \'e injetora \pause se, e somente se, \pause $\ker(f) = \{0_A\}$.\pause
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \noindent \textbf{\textit{Prova: }}
+
+        \vspace{6.5cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(A, +, \cdot)$ um anel unitário. \pause Dado $x \in A$, \pause dizemos que $x$ é \textbf{inversível} \pause ou que $x$ \textbf{possui inverso} \pause se existe $y \in A$ \pause tal que\pause
+            \[
+                x \cdot y = 1_A \pause = y \cdot x.\pause
+            \]
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao:
-            \begin{enumerate}[label={\roman*})]
-                \item $\ker(f)$ \'e um subanel de $A$.
-
-                \vspace{.5cm}
-
-                \item $f$ \'e injetora se, e somente se, $\ker(f) = \{0_A\}$.
-
-                \vspace{.5cm}
-            \end{enumerate}
+            Seja $(A, +, \cdot)$ um anel unitário. \pause O inverso multiplicativo de um elemento $x \in A$, \pause se existir, \pause é único.\pause
         \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \noindent \textbf{\textit{Prova: }}
-        \begin{enumerate}[label={\roman*})]
-            \item Primeiro note que sendo $f$ \'e um homomorfismo ent\~ao $f(0_A) = 0_B$. Logo $0_A \in \ker(f)$, isto \'e, $\ker(f) \ne \emptyset$.
-
-            Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$. Inicialmente como $x$, $y \in \ker(f)$ da{\'\i} $f(x) = f(y) = 0_B$. Assim
-            \begin{align*}
-                f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
-                f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B
-            \end{align*}
-            Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ \'e um subanel de $A$.
-
-            \seti
-        \end{enumerate}
-    \end{frame}
-
-    \begin{frame}
-        \begin{enumerate}[label={\roman*})]
-            \conti
-            \item Primeiro suponha que $f$ \'e injetora e vamos mostrar que $\ker(f) = \{0_A\}$. Para isso seja $x \in \ker(f)$. Ent\~ao
-            \[
-                f(x) = 0_B,
-            \]
-            mas $f$ sendo um homomorfismo temos $f(0_A) = 0_B$. Da{\'\i}
-            \[
-                f(x) = 0_B = f(0_A).
-            \]
-            E como $f$ \'e injetora, por hip\'otese, segue que $x = 0_A$. Logo $\ker(f) = \{0_A\}$.
-        \end{enumerate}
-    \end{frame}
-
-    \begin{frame}
-        \begin{enumerate}
-            \item[] Agora suponha que $\ker(f) = \{0_A\}$ e vamos mostrar que $f$ \'e injetora. Para isso sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Da{\'\i}
-            \begin{align*}
-                &f(x_1) = f(x_2)\\
-                &f(x_1) \oplus (-f(x_2)) = 0_B\\
-                &f(x_1) \oplus f(-x_2) = 0_B\\
-                &f(x_1 - x_2) = 0_B
-            \end{align*}
-            Logo $x_1 - x_2 \in \ker(f) = \{0_A\}$. Com isso $x_1 - x_2 = 0_A$, isto \'e, $x_1 = x_2$. Portanto $f$ \'e injetora. \hspace{.5cm} \qedsymbol
-        \end{enumerate}
+    
+        \noindent \textbf{Prova:}
+        \vspace{4.7cm}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis \pause e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.\pause
             \begin{enumerate}[label={\roman*})]
-                \item Se $A$ tem unidade, ent\~ao $B$ tem unidade e
+                \item Se $A$ tem unidade, \pause ent\~ao $B$ tem unidade e\pause
                 \[
-                    f(1_A) = 1_B.
+                    f(1_A) = 1_B.\pause
                 \]
 
                 \vspace{.5cm}
 
-                \item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, ent\~ao $f(x)$ tem inverso e
+                \item Se $A$ tem unidade \pause e $x \in A$ \pause possui inverso multiplicativo, \pause ent\~ao $f(x)$ \pause tem inverso e\pause
                 \[
-                    [f(x)]^{-1} = f(x^{-1}).
+                    [f(x)]^{-1} = f(x^{-1}).\pause
                 \]
 
                 \vspace{.5cm}
@@ -198,43 +227,6 @@
 
     \begin{frame}
         \noindent \textbf{\textit{Prova: }}
-        \begin{enumerate}[label={\roman*})]
-            \item Incialmente como num anel a unidade \'e \'unica, para mostrar que $B$ possui unidade basta mostrar que
-            \[
-                y\otimes f(1_A) = y = f(1_A)\otimes y
-            \]
-            para todo $y \in B$. Sendo assim, seja $y \in B$. Como $f$ \'e sobrejetor ent\~ao existe $x \in A$ tal que $f(x) = y$. Assim
-            \begin{align*}
-                y\otimes f(1_A) &= f(x) \otimes f(1_A) = f(x\cdot 1_A) = f(x) = y\\
-                f(1_A)\otimes y &= f(1_A) \otimes f(x) = f(1_A\cdot x) = f(x) = y
-            \end{align*}
-            para todo $y \in B$. Portanto $B$ possui unidade e
-            \[
-                1_B = f(1_A).
-            \]
-
-            \seti
-        \end{enumerate}
-    \end{frame}
-
-    \begin{frame}
-        \begin{enumerate}[label={\roman*})]
-            \conti
-
-            \item Novamente, devido \'a unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
-            \[
-                f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
-            \]
-            desde que $x \in A$ possua inverso multiplicativo. Sendo assim suponha que $x \in A$ possui inverso multiplicativo. Seja $x^{-1}$ o inverso multiplicativo de $x$ em $A$. Temos
-            \begin{align*}
-                f(x)\otimes f(x^{-1}) &= f(x\cdot x^{-1}) = f(1_A) = 1_B\\
-                f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
-            \end{align*}
-            Portanto $f(x)$ possui inverso multiplicativo e
-            \[
-                [f(x)]^{-1} = f(x^{-1}),
-            \]
-            como quer{\'\i}amos. \hspace{.5cm} \qedsymbol
-        \end{enumerate}
+        \vspace{6.5cm}
     \end{frame}
 \end{document}
