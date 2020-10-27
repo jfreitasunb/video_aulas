@@ -115,4 +115,32 @@
             \end{enumerate}
         \end{proposicao}
     \end{frame}
+
+    \begin{frame}
+        Seja $G$ um grupo aditivo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, o \textbf{múltiplo $m$-ésimo} de $x$ é o elemento de $G$ denotado por
+        \[
+            m \cdot x
+        \]
+        e definido por:
+        \[
+            m \cdot x = \begin{cases}
+                    e, & \mbox{se m = 0},\\
+                    (m - 1)\cdot x + x, & \mbox{ se } m \ge 1\\
+                    -[(-m) \cdot x], & \mbox{ se } m < 1. 
+                   \end{cases}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo aditivo. Se $m$ e $n$ são números inteiros e $x \in G$, então
+            \begin{enumerate}[label={\arabic*})]
+                \item $m \cdot x + n \cdot x = (m + n) \cdot x$
+
+                \item $(-m) \cdot x = -(m \cdot x)$
+
+                \item $n\cdot (m \cdot x) = (nm)\cdot x$
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
 \end{document}
