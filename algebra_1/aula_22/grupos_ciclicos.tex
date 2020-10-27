@@ -28,85 +28,90 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        \begin{definicao}
-            Seja $(G,*)$ um grupo. \pause Se $G$ {\'e} um conjunto com uma quantidade finita de elementos, \pause dizemos que $G$ {\'e} um \textbf{grupo finito}. \pause Denotamos por $|G|$ \pause o n{\'u}mero de elementos de $G$ \pause e que ser{\'a} chamado de \textbf{ordem} de $G$ \pause ou \textbf{cardinalidade} de $G$. \pause Quando o conjunto $G$ n{\~a}o {\'e} finito, \pause dizemos que $G$ {\'e} um \textbf{grupo infinito}.\pause
-        \end{definicao}
+        Seja $(G, *)$ um grupo. \pause
 
-        \begin{exemplos}
-            \begin{enumerate}[label={\arabic*})]
-                \item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$ \pause e $|G| = m$.\pause
-                \item $(S_n, \circ)$ \'e um grupo finito \pause e $|G| = n!$ elementos.\pause
-                \item $(\z, +)$ {\'e} um grupo infinito.
-            \end{enumerate} 
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Seja $(G,*)$ um grupo. \pause Um subconjunto n{\~a}o vazio \pause $H\sub G$ \pause {\'e} chamado de \textbf{subgrupo} de $G$ \pause se, e somente se, $(H,*)$ \pause {\'e} um grupo.\pause
-        \end{definicao}
-
-        \begin{proposicao}
-            Seja $(G, *)$ um grupo. \pause Um subconjunto n{\~a}o vazio \pause $H\subseteq G$ {\'e} um subgrupo de $G$ \pause se, e somente se\pause
-            \begin{enumerate}[label={\roman*})]
-                \item\label{subgrupo_condicao_1} $x^{-1}\in H$, \pause para todo $x \in H$;
-                \item\label{subgrupo_condicao_2} $x*y\in H$, \pause para todos $x$, $y \in H$.\pause
-            \end{enumerate}
-        \end{proposicao}
-        \noindent \textbf{Prova:}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\arabic*})]
-                \item Dado $(G,*)$ grupo, \pause $H=\{e\}$ \pause e $H=G$ \pause s{\~a}o subgrupos de $G$, \pause chamados de \textbf{subgrupos triviais}.\pause
-                
-                \item Seja $(\mathbb{Z},+)$ um grupo. \pause Tomando $H = m\z$, \pause onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.\pause
-                
-                \item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. \pause Ent\~ao $(G,\odot)$ {\'e} um grupo \pause com $|G| = 4$. \pause Al\'em disso,\pause
-                \begin{center}
-                    \begin{tabular}{l}
-                        $H_1 = \{\overline{1}, \overline{3}\}\pause$\\
-                        $H_2 = \{\overline{1}, \overline{5}\}\pause$\\
-                        $H_3 = \{\overline{1}, \overline{7}\}\pause$
-                    \end{tabular}
-                \end{center}
-                S\~ao subgrupos de $G$.
-
-                \item Considere o grupo aditivo $M_2(\real)$. Mostre que o conjunto
-                \[
-                    H = \left\{\begin{pmatrix}
-                        a & b\\c & d
-                    \end{pmatrix} \in M_2(\real) \mid a + d = 0\right\}
-                \]
-                é um subgrupo de $M_2(\real)$.
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        Seja $(G, *)$ um grupo. \pause Para simplificar a notação \pause vamos adotar uma notação multiplicativa \pause e escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        Caso a operação $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
         \[
             x * y = \pause x \cdot y = \pause xy.
         \]
 
-        Nesse caso vamos dizer simplesmente que $G$ é um grupo.\pause
+        Caso a operação $*$ seja do tipo aditiva, vamos escrever $(G, *) = \pause (G, +)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        \[
+            x * y = \pause x + y
+        \]
+
+        Com a notação multiplicativa \pause o inverso de um elemento $x \in G$ \pause será denotado por $x^{-1}$ \pause e no caso da notação aditiva \pause o oposto de $x \in G$ \pause será denotado por $-x$.
+    \end{frame}
+
+    \begin{frame}
+        Seja $G$ um grupo multiplicativo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, a \textbf{potência $m$-ésima} de $x$, ou \textbf{potência de $x$ de expoente $m$}, é o elemento de $G$ denotado por
+        \[
+            x^m
+        \]
+        e definido por:
+        \[
+            x^m = \begin{cases}
+                    e, & \mbox{se m = 0},\\
+                    x^{m-1}x, & \mbox{ se } m \ge 1\\
+                    (x^{-m})^{-1}, & \mbox{ se } m < 1. 
+                   \end{cases}
+        \]
+        
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item No grupo multiplicativo $GL_2(\real)$ seja
+                \[
+                    A = \begin{pmatrix}
+                        1 & 1\\2 & 3
+                    \end{pmatrix}.
+                \]
+                Então:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+    
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+                \item No grupo multiplicativo $\z_5^*$ seja $a = \overline{2}$. Então:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+                \item No grupo multiplicativo $S_3$ seja
+                \[
+                    a = \begin{pmatrix}
+                        1 & 2 & 3\\ 2 & 3 & 1
+                    \end{pmatrix}
+                \]
+                Então:
+            \end{enumerate}
+        \end{exemplos}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Seja $G$ um grupo. Dado $H \subset G$ um subgrupo defina
-            \[
-                x \sim y \mbox{ se, e somente se, } x^{-1}y \in H
-            \]
-            para todos $x$, $y \in G$.
+            Seja $G$ um grupo multiplicativo. Se $m$ e $n$ são números inteiros e $x \in G$, então
             \begin{enumerate}[label={\arabic*})]
-                \item A relação $\sim$ sobre $G$ definida acima é uma relação de equivalência.
+                \item $x^mx^n = x^{m + n}$
 
-                \item Se $a \in G$, então a classe de equivalência determinada por $a$ é o conjunto
-                \[
-                    aH = \{ah \mid h \in H\}.
-                \]
+                \item $x^{-m} = (x^m)^{-1}$
+
+                \item $(x^m)^n = x^{mn}$
+
+                \item $x^mx^n = x^{m + n}$
+
+                \item $x^mx^n = x^nx^m$
             \end{enumerate}
         \end{proposicao}
     \end{frame}
