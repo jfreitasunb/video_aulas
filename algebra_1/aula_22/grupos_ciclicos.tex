@@ -15,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Grupos Cíclicos}
+\title{Grupos C{\'\i}clicos}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{\today}
@@ -30,21 +30,21 @@
     \begin{frame}
         Seja $(G, *)$ um grupo. \pause
 
-        Caso a operação $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        Caso a opera\c{c}\~ao $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
         \[
             x * y = \pause x \cdot y = \pause xy.
         \]
 
-        Caso a operação $*$ seja do tipo aditiva, vamos escrever $(G, *) = \pause (G, +)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        Caso a opera\c{c}\~ao $*$ seja do tipo aditiva, vamos escrever $(G, *) = \pause (G, +)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
         \[
             x * y = \pause x + y
         \]
 
-        Com a notação multiplicativa \pause o inverso de um elemento $x \in G$ \pause será denotado por $x^{-1}$ \pause e no caso da notação aditiva \pause o oposto de $x \in G$ \pause será denotado por $-x$.
+        Com a nota\c{c}\~ao multiplicativa \pause o inverso de um elemento $x \in G$ \pause ser\'a denotado por $x^{-1}$ \pause e no caso da nota\c{c}\~ao aditiva \pause o oposto de $x \in G$ \pause ser\'a denotado por $-x$.
     \end{frame}
 
     \begin{frame}
-        Seja $G$ um grupo multiplicativo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause a \textbf{potência $m$-ésima} de $x$, \pause ou \textbf{potência de $x$ de expoente $m$}, \pause é o elemento de $G$ denotado por \pause
+        Seja $G$ um grupo multiplicativo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause a \textbf{pot\^encia $m$-\'esima} de $x$, \pause ou \textbf{pot\^encia de $x$ de expoente $m$}, \pause \'e o elemento de $G$ denotado por \pause
         \[
             x^m \pause
         \]
@@ -68,7 +68,7 @@
                         1 & 1\\2 & 3
                     \end{pmatrix}. \pause
                 \]
-                Então: \pause
+                Ent\~ao: \pause
                 \seti
             \end{enumerate}
         \end{exemplos}
@@ -78,7 +78,7 @@
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
                 \conti
-                \item No grupo multiplicativo $\z_5^*$ \pause seja $a = \overline{2}$. \pause Então:
+                \item No grupo multiplicativo $\z_5^*$ \pause seja $a = \overline{2}$. \pause Ent\~ao:
                 \seti
             \end{enumerate}
         \end{exemplos}
@@ -94,14 +94,14 @@
                         1 & 2 & 3\\ 2 & 3 & 1
                     \end{pmatrix} \pause
                 \]
-                Então:
+                Ent\~ao:
             \end{enumerate}
         \end{exemplos}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Seja $G$ um grupo multiplicativo. \pause Se $m$ e $n$ são números inteiros \pause e $x \in G$, \pause então \pause
+            Seja $G$ um grupo multiplicativo. \pause Se $m$ e $n$ s\~ao n\'umeros inteiros \pause e $x \in G$, \pause ent\~ao \pause
             \begin{enumerate}[label={\arabic*})]
                 \item $x^mx^n = \pause x^{m + n}$ \pause
 
@@ -117,7 +117,7 @@
     \end{frame}
 
     \begin{frame}
-        Seja $G$ um grupo aditivo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause o \textbf{múltiplo $m$-ésimo} de $x$ \pause é o elemento de $G$ denotado por \pause
+        Seja $G$ um grupo aditivo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause o \textbf{m\'ultiplo $m$-\'esimo} de $x$ \pause \'e o elemento de $G$ denotado por \pause
         \[
             m \cdot x \pause
         \]
@@ -133,7 +133,7 @@
 
     \begin{frame}
         \begin{proposicao}
-            Seja $G$ um grupo aditivo. \pause Se $m$ e $n$ são números inteiros \pause e $x \in G$, então \pause
+            Seja $G$ um grupo aditivo. \pause Se $m$ e $n$ s\~ao n\'umeros inteiros \pause e $x \in G$, ent\~ao \pause
             \begin{enumerate}[label={\arabic*})]
                 \item $m \cdot x + n \cdot x = \pause (m + n) \cdot x$ \pause
 
@@ -153,20 +153,20 @@
         \begin{proposicao}
             Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause
             \begin{enumerate}[label={\arabic*})]
-                \item O subconjunto $[a]$ \pause é um subgrupo de $G$.\pause
+                \item O subconjunto $[a]$ \pause \'e um subgrupo de $G$.\pause
 
-                \item Se $H$ é um subgrupo de $G$ \pause tal que $a \in H$, \pause então $[a] \subset H$.\pause
+                \item Se $H$ \'e um subgrupo de $G$ \pause tal que $a \in H$, \pause ent\~ao $[a] \subset H$.\pause
             \end{enumerate}
         \end{proposicao}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Um grupo multiplicativo $G$ \pause será chamado de \textbf{grupo cíclico} \pause se, para algum $x \in G$, \pause vale \pause
+            Um grupo multiplicativo $G$ \pause ser\'a chamado de \textbf{grupo c{\'\i}clico} \pause se, para algum $x \in G$, \pause vale \pause
             \[
                 G = [x]. \pause
             \]
-            Nessas condições, o elemento $x$  \pause é chamado de \textbf{gerador} do grupo $G$.\pause
+            Nessas condi\c{c}\~oes, o elemento $x$  \pause \'e chamado de \textbf{gerador} do grupo $G$.\pause
         \end{definicao}
     \end{frame}
 
@@ -188,7 +188,7 @@
 
     \begin{frame}
         \begin{proposicao}
-            Todo subgrupo de um grupo cíclico é também cíclico.
+            Todo subgrupo de um grupo c{\'\i}clico \'e tamb\'em c{\'\i}clico.
         \end{proposicao}
     \end{frame}
 
@@ -199,9 +199,9 @@
                 \item $x^h = e$ \pause
                 \item $x^r \ne e$ \pause qualquer que seja o inteiro $r$ \pause tal que $0 < r < h$\pause
             \end{enumerate}
-            diremos que a \textbf{ordem} \pause ou \textbf{período} \pause de $x$ é $h$. \pause Nesse caso escreveremos $|x| = \pause o(x) = h$. \pause
+            diremos que a \textbf{ordem} \pause ou \textbf{per{\'\i}odo} \pause de $x$ \'e $h$. \pause Nesse caso escreveremos $|x| = \pause o(x) = h$. \pause
 
-            Se para qualquer inteiro \pause $r \ne 0$, \pause $x^r \ne e$, \pause diremos que a \textbf{ordem} de $x$ é \textbf{zero}.
+            Se para qualquer inteiro \pause $r \ne 0$, \pause $x^r \ne e$, \pause diremos que a \textbf{ordem} de $x$ \'e \textbf{zero}.
         \end{definicao}
     \end{frame}
 
@@ -214,14 +214,14 @@
 
                 \item Em $\z_5$ temos: \pause
 
-                \item Em $\z$ \pause o único elemento de ordem diferente de zero \pause é o elemento neutro.
+                \item Em $\z$ \pause o \'unico elemento de ordem diferente de zero \pause \'e o elemento neutro.
             \end{enumerate}
         \end{exemplos}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Seja $x$ um elemento de ordem $h > 0$ \pause de um grupo $G$. \pause Então $a^m = e$ \pause se, e somente se, $h \mid m$.
+            Seja $x$ um elemento de ordem $h > 0$ \pause de um grupo $G$. \pause Ent\~ao $a^m = e$ \pause se, e somente se, $h \mid m$.
         \end{proposicao}
     \end{frame}
 \end{document}
