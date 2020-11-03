@@ -28,6 +28,39 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        
+        \begin{definicao}
+            Dados dois grupos $(G, *)$ \pause e $(H,\triangle)$ \pause dizemos que uma fun\c{c}\~ao $f : G \to H$ \pause \'e um \textbf{homomorfismo de grupos} se \pause
+            \[
+                f(x * y) = \pause f(x)\triangle f(y) \pause
+            \]
+            para todos $x$, $y \in G$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            Sejam $(G, *)$ \pause, $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo. \pause
+            \begin{enumerate}[label={\arabic*})]
+                \item Se $G = H$, \pause neste caso $f : G \to G$ \pause \'e chamado de um \textbf{endomorfimos} de grupos.\pause
+                \item Se $f : G \to H$ \'e uma fun\c{c}\~ao injetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{monomorfismo} de grupos.\pause
+                \item Se $f : G \to H$ \'e uma fun\c{c}\~ao sobrejetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{epimorfismo} de grupos.\pause
+                \item Se $f : G \to H$ \'e uma fun\c{c}\~ao bijetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{isomorfismo} de grupos.\pause
+                \item Se $f : G \to G$ \'e uma fun\c{c}\~ao bijetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{automorfismo} de grupos.
+            \end{enumerate}
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item A fun\c{c}\~ao $f : \z \to \complex$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\z, +)$ em $(\complex, \cdot)$.
+
+                \item A fun\c{c}\~ao $f : \real^*_+ \to \real$ dada por $f(x) = \ln(x)$ \'e um homomorfismo de $(\real^*_+, \cdot)$ em $(\real, +)$.
+
+                \item Sejam $m$ um inteiro positivo fixo. A fun\c{c}\~ao $f: \z \to \z_m$ definida por $f(x) = \overline{x}$ \'e um homomorfimos de $(\z, +)$ em $(\z_m, \oplus)$.
+
+                \item Sejam $(G, *)$ um grupo, $z\in G$ um elemento fixado e $z^{-1}$ seu inverso. Então a aplica{\c c}{\~a}o $i_z: G\to G$ definida por $i_z(x)=z^{-1}*x*z$, para todo $x \in G$, {\'e} um isomorfismo de grupos.
+            \end{enumerate}
+        \end{exemplos}
     \end{frame}
 \end{document}
