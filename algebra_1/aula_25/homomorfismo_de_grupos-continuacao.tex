@@ -1,0 +1,74 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Homomorfismo de Grupos - Continuação}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{n\'ucleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
+            \[
+                \ker(f) = \{x \in G \mid f(x) = 1_H\}.
+            \]
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Considere o homomorfismo $f : \z \to \complex^*$ dado por $f(x) = i^x$.
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+            \conti
+                \item O n\'ucleo do homomorfismo $f : \real^*_+ \to \real$ dado por $f(x) = \ln(x)$.
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+            \conti
+                \item O n\'ucleo do homomorfismo $f : \z \to \z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Ent\~ao:
+            \begin{enumerate}[label={\roman*})]
+                \item $\ker(f)$ \'e um subgrupo de $G$.
+                \item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+\end{document}
