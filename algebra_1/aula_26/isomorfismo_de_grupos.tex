@@ -28,6 +28,150 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        
+        Considere o grupo multiplicativo $G = \{1, -1\}$ e o grupo $S_2$ das permutações sobre o conjunto $\{1,2\}$. Aqui
+        \[
+            S_2 = \left\{f_0 = \begin{pmatrix}
+                1 & 2\\1 & 2
+            \end{pmatrix}; f_1 = \begin{pmatrix}
+                1 & 2\\2 & 1
+            \end{pmatrix}\right\}.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        Temos
+        \begin{table}
+            \begin{minipage}{.5\linewidth}
+                \caption*{$G$}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\cdot$ & 1 & -1\\
+                    \hline
+                    1 & 1 & -1\\
+                    \hline
+                    -1 & -1 & 1\\
+                    \hline
+                \end{tabular}
+            \end{minipage}%
+            \pause
+            \begin{minipage}{.5\linewidth}
+                \caption*{$S_2$}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\cdot$ & $f_0$ & $f_1$\\
+                    \hline
+                    $f_0$ & $f_0$ & $f_1$\\
+                    \hline
+                    $f_1$ & $f_1$ & $f_0$\\
+                    \hline
+                \end{tabular}
+            \end{minipage} 
+        \end{table}
+
+        \vspace{.4cm}
+
+        Defina $\sigma : G \to S_2$ por
+        \begin{center}
+            \begin{tabular}{c}
+                $\sigma(1) = f_0$\\
+                $\sigma(-1) = f_1$.
+            \end{tabular}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        Da definição de $\sigma$  é fácil ver que essa função é bijetora. Além disso,
+        \begin{center}
+            \begin{tabular}{c}
+                $\sigma(1) \circ \sigma(1) = f_1 \circ f_1 = f_1 = \sigma(1) = \sigma(1 \cdot 1)$\\
+                \\
+                $\sigma(1) \circ \sigma(-1) = f_1 \circ f_2 = f_2 = \sigma(-1) = \sigma(1 \cdot -1)$\\
+                \\
+                $\sigma(-1) \circ \sigma(1) = f_2 \circ f_1 = f_2 = \sigma(-1) = \sigma(-1 \cdot 1)$\\
+                \\
+                $\sigma(-1) \circ \sigma(-1) = f_2 \circ f_2 = f_1 = \sigma(1) = \sigma(-1 \cdot -1)$\\
+            \end{tabular}
+        \end{center}
+        ou seja, a função $\sigma$ é um homomorfismo de $G$ em $S_2$.
+
+        Como $\sigma$ também é bijetora, então $\sigma$ é um isomorfismo de $G$ em $S_2$. Nesse caso, dizemos que $G$ e $S_2$ são grupos isomorfos e denotamos isso escrevendo $G \cong S_2$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(G, *)$ e $(H, \triangle)$ grupos. Se existe $f : G \to H$ um isomorfismo, diremos que $G$ e $H$ são \textbf{grupos isomorfos} e denotaremos esse fato escrevendo $G \cong H$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $G$ e $H$ grupos multiplicativos. Se $f : G \to H$ é um isomorfimos de grupos, então $G$ é comutativo se, e somente se, $H$ é comutativo.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \vspace{.3cm}
+            \begin{enumerate}
+                \item[1)] Os grupos $\z_6$ e $S_3$ não são isomorfos pois $\z_6$ e comutativo e $S_3$ não é comutativo.
+
+                \vspace{.3cm}
+
+                \item[2)] Considere o grupo $S_6$ das permutações em $\{1, 2, \cdots, 6\}$. Tome
+                \[
+                    f = \begin{pmatrix}
+                        1 & 2 & 3 & 4 & 5 & 6\\
+                        2 & 3 & 4 & 5 & 6 & 1
+                    \end{pmatrix} \in S_6.
+                \]
+                Seja $h = [f]$. Então $H \cong \z_6$, onde $\phi : H \to \z_6$ dada por $\phi(f) = \overline{1}$ é um isomorfimo de grupos.
+                
+                \vspace{.3cm}
+
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $G$ e $H$ grupos multiplicativos. Se $f : G \to H$ é um isomorfimos de grupos e se $x \in G$ é tal que $o(x) = h > 0$, então $o(f(x)) = h$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Seja $G = [a]$ um grupo cíclico. Dois casos podem ocorrer:
+
+        \textbf{Caso 1:} $a^r \ne a^s$ sempre que $r \ne s$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, então a função $f : \z \to G$ por $f(r) = a^r$ é um isomorfimo de grupos. Ou seja, $G \cong \z$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \textbf{Caso 2:} $a^r = a^s$ para algum par de inteiros distintos, $r$ e $s$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G = [a]$ um grupo cíclico que cumpre a condição do \textbf{Caso 2}. Então existe um inteiro $h > 0$ tal que
+            \begin{enumerate}
+                \item[i)] $a^h = e$
+
+                \item[ii)] $a^r \ne e$, sempre que $0 < r < h$.
+            \end{enumerate}
+            Nesse caso, a ordem do grupo $G$ é $h$ e
+            \[
+                G = [a] = \{e, a, a^2, \cdots, a^{h - 1}\}.
+            \]
+        \end{proposicao}
+
+        \begin{corolario}
+            Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. Então a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfimo de grupos.
+        \end{corolario}
     \end{frame}
 \end{document}
