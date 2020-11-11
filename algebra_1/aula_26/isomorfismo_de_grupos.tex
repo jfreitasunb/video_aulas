@@ -30,9 +30,9 @@
     \begin{frame}
         Considere o grupo multiplicativo $G = \{1, -1\}$ \pause e o grupo $S_2$ das permuta\c{c}\~oes sobre o conjunto $\{1,2\}$. \pause Aqui
         \[
-            S_2 = \left\{f_0 = \begin{pmatrix}
+            S_2 = \left\{id = \begin{pmatrix}
                 1 & 2\\1 & 2
-            \end{pmatrix}; \pause f_1 = \begin{pmatrix}
+            \end{pmatrix}; \pause f = \begin{pmatrix}
                 1 & 2\\2 & 1
             \end{pmatrix}\right\}.
         \]
@@ -60,11 +60,11 @@
                 \centering
                 \begin{tabular}{|c|c|c|}
                     \hline
-                    $\cdot$ & $f_0$ & $f_1$\\
+                    $\cdot$ & $id$ & $f$\\
                     \hline
-                    $f_0$ & $f_0$ & $f_1$\\
+                    $id$ & $id$ & $f$\\
                     \hline
-                    $f_1$ & $f_1$ & $f_0$\\
+                    $f$ & $f$ & $id$\\
                     \hline
                 \end{tabular}
             \end{minipage}\pause
@@ -75,9 +75,9 @@
         Defina $\sigma : G \to S_2$ por \pause
         \begin{center}
             \begin{tabular}{c}
-                $\sigma(1) = f_0$ \pause\\
+                $\sigma(1) = id$ \pause\\
                 \vspace{.3cm}\\
-                $\sigma(-1) = f_1$.
+                $\sigma(-1) = f$.
             \end{tabular}
         \end{center}
     \end{frame}
@@ -86,13 +86,13 @@
         Da defini\c{c}\~ao de $\sigma$ \pause \'e f\'acil ver que essa fun\c{c}\~ao \'e bijetora. \pause Al\'em disso, \pause
         \begin{center}
             \begin{tabular}{c}
-                $\sigma(1) \circ \sigma(1) \pause = f_1 \pause \circ f_1 \pause = f_1 \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
+                $\sigma(1) \circ \sigma(1) \pause = id \pause \circ id \pause = id \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
                 \\
-                $\sigma(1) \circ \sigma(-1) \pause = f_1 \pause \circ f_2 \pause = f_2 \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
+                $\sigma(1) \circ \sigma(-1) \pause = id \pause \circ f \pause = f \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
                 \\
-                $\sigma(-1) \circ \sigma(1) \pause = f_2 \pause \circ f_1 \pause = f_2 \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
+                $\sigma(-1) \circ \sigma(1) \pause = f \pause \circ id \pause = f \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
                 \\
-                $\sigma(-1) \circ \sigma(-1) \pause = f_2 \pause \circ f_2 \pause = f_1 \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
+                $\sigma(-1) \circ \sigma(-1) \pause = f \pause \circ f \pause = id \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
             \end{tabular}
         \end{center}
         ou seja, $\sigma(x\cdot y) = \pause \sigma(x) \circ \sigma(y)$ \pause para todos $x$, $y \in G$. \pause Assim fun\c{c}\~ao $\sigma$ \'e um homomorfismo de $G$ em $S_2$. \pause
