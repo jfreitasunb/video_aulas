@@ -83,32 +83,34 @@
     \end{frame}
 
     \begin{frame}
-        Da definição de $\sigma$  é fácil ver que essa função é bijetora. Além disso,
+        Da definição de $\sigma$ \pause é fácil ver que essa função é bijetora. \pause Além disso, \pause
         \begin{center}
             \begin{tabular}{c}
-                $\sigma(1) \circ \sigma(1) = f_1 \circ f_1 = f_1 = \sigma(1) = \sigma(1 \cdot 1)$\\
+                $\sigma(1) \circ \sigma(1) \pause = f_1 \pause \circ f_1 \pause = f_1 \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
                 \\
-                $\sigma(1) \circ \sigma(-1) = f_1 \circ f_2 = f_2 = \sigma(-1) = \sigma(1 \cdot -1)$\\
+                $\sigma(1) \circ \sigma(-1) \pause = f_1 \pause \circ f_2 \pause = f_2 \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
                 \\
-                $\sigma(-1) \circ \sigma(1) = f_2 \circ f_1 = f_2 = \sigma(-1) = \sigma(-1 \cdot 1)$\\
+                $\sigma(-1) \circ \sigma(1) \pause = f_2 \pause \circ f_1 \pause = f_2 \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
                 \\
-                $\sigma(-1) \circ \sigma(-1) = f_2 \circ f_2 = f_1 = \sigma(1) = \sigma(-1 \cdot -1)$\\
+                $\sigma(-1) \circ \sigma(-1) \pause = f_2 \pause \circ f_2 \pause = f_1 \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
             \end{tabular}
         \end{center}
-        ou seja, a função $\sigma$ é um homomorfismo de $G$ em $S_2$.
+        ou seja, $\sigma(x\cdot y) = \pause \sigma(x) \circ \sigma(y)$ \pause para todos $x$, $y \in G$. \pause Assim função $\sigma$ é um homomorfismo de $G$ em $S_2$. \pause
 
-        Como $\sigma$ também é bijetora, então $\sigma$ é um isomorfismo de $G$ em $S_2$. Nesse caso, dizemos que $G$ e $S_2$ são grupos isomorfos e denotamos isso escrevendo $G \cong S_2$.
+        \vspace{.3cm}
+
+        Como $\sigma$ também é bijetora, \pause então $\sigma$ é um isomorfismo \pause de $G$ em $S_2$. \pause Nesse caso, dizemos que $G$ e $S_2$ são grupos isomorfos \pause e denotamos isso escrevendo $G \cong S_2$.
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Sejam $(G, *)$ e $(H, \triangle)$ grupos. Se existe $f : G \to H$ um isomorfismo, diremos que $G$ e $H$ são \textbf{grupos isomorfos} e denotaremos esse fato escrevendo $G \cong H$.
+            Sejam $(G, *)$ e $(H, \triangle)$ grupos. \pause Se existe $f : G \to H$ um isomorfismo, \pause diremos que $G$ e $H$ são \textbf{grupos isomorfos} \pause e denotaremos esse fato escrevendo $G \cong H$. \pause
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $G$ e $H$ grupos multiplicativos. Se $f : G \to H$ é um isomorfimos de grupos, então $G$ é comutativo se, e somente se, $H$ é comutativo.
+            Sejam $G$ e $H$ grupos multiplicativos. \pause Se $f : G \to H$ é um isomorfimos de grupos, então \pause $G$ é comutativo se, e somente se, $H$ é comutativo. \pause
         \end{proposicao}
     \end{frame}
 
@@ -116,18 +118,18 @@
         \begin{exemplos}
             \vspace{.3cm}
             \begin{enumerate}
-                \item[1)] Os grupos $\z_6$ e $S_3$ não são isomorfos pois $\z_6$ e comutativo e $S_3$ não é comutativo.
+                \item[1)] Os grupos $\z_6$ e $S_3$ \pause não são isomorfos \pause pois $\z_6$ é comutativo \pause e $S_3$ não é comutativo.\pause
 
                 \vspace{.3cm}
 
-                \item[2)] Considere o grupo $S_6$ das permutações em $\{1, 2, \cdots, 6\}$. Tome
+                \item[2)] Considere o grupo $S_6$ das permutações em $\{1, 2, \cdots, 6\}$. \pause Tome
                 \[
                     f = \begin{pmatrix}
                         1 & 2 & 3 & 4 & 5 & 6\\
                         2 & 3 & 4 & 5 & 6 & 1
-                    \end{pmatrix} \in S_6.
+                    \end{pmatrix} \in S_6. \pause
                 \]
-                Seja $h = [f]$. Então $H \cong \z_6$, onde $\phi : H \to \z_6$ dada por $\phi(f) = \overline{1}$ é um isomorfimo de grupos.
+                Seja $h = [f]$. \pause Então $H \cong \z_6$, \pause onde $\phi : H \to \z_6$ dada por $\phi(f) = \overline{1}$ \pause é um isomorfimo de grupos. \pause
                 
                 \vspace{.3cm}
 
@@ -137,42 +139,44 @@
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $G$ e $H$ grupos multiplicativos. Seja $f : G \to H$ é um isomorfimos de grupos. Então $x \in G$ é tal que $o(x) = h$ se, e somente se, $o(f(x)) = h$.
+            Sejam $G$ e $H$ grupos multiplicativos. \pause Seja $f : G \to H$ é um isomorfimos de grupos. \pause Então $x \in G$ \pause é tal que $o(x) = h$ \pause se, e somente se, $o(f(x)) = h$.\pause
         \end{proposicao}
     \end{frame}
 
     \begin{frame}
-        Seja $G = [a]$ um grupo cíclico. Dois casos podem ocorrer:
+        Seja $G = [a]$ um grupo cíclico. \pause Dois casos podem ocorrer: \pause
 
-        \textbf{Caso 1:} $a^r \ne a^s$ sempre que $r \ne s$.
+        \textbf{Caso 1:} $a^r \ne a^s$ \pause sempre que $r \ne s$.\pause
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, então a função $f : \z \to G$ por $f(r) = a^r$ é um isomorfimo de grupos. Ou seja, $G \cong \z$.
+            Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, \pause então a função $f : \z \to G$ por $f(r) = a^r$ \pause é um isomorfimo de grupos. \pause Ou seja, $G \cong \z$.\pause
         \end{proposicao}
     \end{frame}
 
     \begin{frame}
-        \textbf{Caso 2:} $a^r = a^s$ para algum par de inteiros distintos, $r$ e $s$.
+        \textbf{Caso 2:} $a^r = a^s$ \pause para algum par de inteiros distintos, $r$ e $s$. \pause
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Seja $G = [a]$ um grupo cíclico que cumpre a condição do \textbf{Caso 2}. Então existe um inteiro $h > 0$ tal que
+            Seja $G = [a]$ um grupo cíclico que cumpre a condição do \textbf{Caso 2}. \pause Então existe um inteiro $m > 0$ tal que \pause
             \begin{enumerate}
-                \item[i)] $a^h = e$
+                \item[i)] $a^m = e$ \pause
 
-                \item[ii)] $a^r \ne e$, sempre que $0 < r < h$.
+                \item[ii)] $a^m \ne e$, sempre que $0 < r < m$. \pause
             \end{enumerate}
-            Nesse caso, a ordem do grupo $G$ é $h$ e
+            Nesse caso, a ordem do grupo $G$ é $m$ \pause e
             \[
-                G = [a] = \{e, a, a^2, \cdots, a^{h - 1}\}.
+                G = [a] = \{e, a, a^2, \cdots, a^{m - 1}\}. \pause
             \]
         \end{proposicao}
+    \end{frame}
 
+    \begin{frame}
         \begin{corolario}
-            Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. Então a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfimo de grupos.
+            Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. \pause Então a função $f : \z_m \to G$ \pause dada por $f(\overline{x}) = a^x$ \pause é um isomorfimo de grupos.
         \end{corolario}
     \end{frame}
 \end{document}
