@@ -28,52 +28,51 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        Seja $N$ um subgrupo normal de um grupo $G$, onde $e$ denota o elemento neutro de $G$. Denote por
+        Seja $N$ um subgrupo normal \pause de um grupo $G$, onde $e$ denota o elemento neutro de $G$. \pause Denote por \pause
         \[
-            G/N = \{aN \mid a \in G\}
+            G/N = \{aN \mid a \in G\} \pause
         \]
-        o conjunto das classes de equivalência determinadas por $N$.
+        o conjunto das classes de equivalência determinadas por $N$. \pause
         
-        \vspace{.3cm}
+        \vspace{.5cm}
 
-        Defina em $G/N$ a operação
+        Defina em $G/N$ a operação \pause
         \[
-            (aN)(bN) = (ab)N
+            (aN)(bN)  \pause = (ab)N \pause
         \]
-        para todos $a$, $b \in N$.
+        para todos $a$, $b \in N$. \pause
     \end{frame}
 
     \begin{frame}
-        Temos:
+        Temos: \pause
 
         \vspace{.3cm}
         
-        \begin{enumerate}[label=({\roman*})]
-            \item $[(aN)(bN)](cN) = (an)[(bN)(cN)]$ para todos $aN$, $bN$, $cN \in G/N$;
+        \begin{enumerate}[label={\roman*})]
+            \item $[(aN)(bN)](cN) \pause = (an)[(bN)(cN)]$ \pause para todos $aN$, $bN$, $cN \in G/N$; \pause
 
             \vspace{.3cm}
         
-            \item $(aN)(eN) = (ae)N = aN = (ea)N = (eN)(aN)$ para todo $aN \in G/N$;
+            \item $(aN)(eN) \pause = (ae)N \pause = aN \pause = (ea)N \pause = (eN)(aN)$ \pause para todo $aN \in G/N$; \pause
 
             \vspace{.3cm}
         
-
-            \item $(aN)(a^{-1}N) = (aa^{-1})N = eN = (a^{-1}a)N = (a^{-1}N)(aN)$ para todo $aN \in G/N$.
+            \item $(aN)(a^{-1}N) \pause = (aa^{-1})N \pause = eN \pause = (a^{-1}a)N \pause = (a^{-1}N)(aN)$ \pause para todo $aN \in G/N$. \pause
 
             \vspace{.3cm}
         \end{enumerate}
 
-        Assim, o conjunto $G/N$ é um grupo com a multiplicação de conjuntos.
+        Assim, o conjunto $G/N$ é um grupo com a multiplicação de conjuntos. \pause
 
         \vspace{.3cm}
         
-        Nesse grupo o elemento neutro é $eN$ e $(aN)^{-1} = (a^{-1})N$.
+        Nesse grupo o elemento neutro é $eN$ \pause e $(aN)^{-1} = (a^{-1})N$.
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. Nessas condições, o \textbf{grupo quociente} 
-            de $G$ por $N$ é o par formado pelo conjunto quociente $G/N$ e da operação de multiplicação de conjuntos 
+            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condições, \pause o \textbf{grupo quociente} \pause 
+            de $G$ por $N$ \pause é o par formado pelo conjunto quociente $G/N$ \pause e da operação de multiplicação de conjuntos 
             aplicadas aos elementos desse conjunto.
         \end{definicao}    
     \end{frame}
@@ -81,7 +80,7 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = \{1, -1, i, -i\}$ um grupo e $N = \{1, -1\}$. 
+                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$. 
 
                 \seti
             \end{enumerate}
@@ -93,7 +92,7 @@
             \begin{enumerate}[label=({\arabic*})]
                 \conti
 
-                \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ e $H = \{\overline{0}, \overline{3}\}$.
+                \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ \pause e $H = \{\overline{0}, \overline{3}\}$.
 
                 \seti
             \end{enumerate}
@@ -105,16 +104,16 @@
             \begin{enumerate}[label=({\arabic*})]
                 \conti
                 
-                \item Seja $G = S_3$. Já vimos que se tomamos
+                \item Seja $G = S_3$. \pause Já vimos que se tomamos
                 \[
                     Id = \begin{pmatrix}
                         1 & 2 & 1\\
                         1 & 2 & 3
-                    \end{pmatrix},\quad
+                    \end{pmatrix}, \pause\quad
                     f = \begin{pmatrix}
                         1 & 2 & 1\\
                         2 & 3 & 1
-                    \end{pmatrix} \quad \mbox{e}\quad
+                    \end{pmatrix} \pause \quad \mbox{e}\quad
                     g = \begin{pmatrix}
                         1 & 2 & 1\\
                         1 & 3 & 2
@@ -122,9 +121,9 @@
                 \]
                 então
                 \[
-                    S_3 = \{Id, f, f^2, g, gf, gf^2\}.
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
                 \]
-                Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$.
+                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$.
 
                 \seti
             \end{enumerate}
@@ -133,7 +132,7 @@
 
     \begin{frame}
         \begin{proposicao}
-            Se $N$ é um subgrupo normal de $G$, então a função $\mu : G \to G/N$ definida por $\mu(a) = aN$ é um homomorfismo sobrejetor de grupos tal que
+            Se $N$ é um subgrupo normal de $G$, \pause então a função $\mu : G \to G/N$ \pause definida por $\mu(a) = aN$ \pause é um homomorfismo sobrejetor \pause de grupos tal que \pause
             \[
                 \ker(\mu) = N.
             \]
@@ -142,25 +141,25 @@
 
     \begin{frame}
         \begin{definicao}
-            Se $N$ é um subgrupo normal de $G$, então o homomorfismo $\mu : G \to G/N$ definido por $\mu(a) = aN$ é chamado de \textbf{homomorfismo canônico} de $G$ sobre $G/N$.
+            Se $N$ é um subgrupo normal de $G$, \pause então o homomorfismo $\mu : G \to G/N$ \pause definido por $\mu(a) = aN$ \pause é chamado de \textbf{homomorfismo canônico} \pause de $G$ sobre $G/N$.
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{lema}
-            Se $f : G \to L$ é um homomorfismo de grupos, então $N = \ker(f)$ é um subgrupo normal de $G$ e, portanto, $G/N$ é um grupo.
+            Se $f : G \to L$ é um homomorfismo de grupos, \pause então $N = \ker(f)$ \pause é um subgrupo normal de $G$ \pause e, portanto, $G/N$ é um grupo.
         \end{lema}
     \end{frame}
 
     \begin{frame}
         \begin{teorema}[Teorema do Homomorfismo para Grupos]
-            Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $N = \ker(f)$, então o grupo quociente $G/N$ é isomorfo ao grupo $L$.
+            Seja $f : G \to L$ um homomorfismo sobrejetor \pause de grupos. \pause Se $N = \ker(f)$, \pause então o grupo quociente $G/N$ é isomorfo ao grupo $L$.
         \end{teorema}
     \end{frame}
 
     \begin{frame}
         \begin{exemplo}
-            Dado um inteiro $m > 1$, considere o homomorfismo $\rho_m : \z \to \z_m$ definido por $\rho_m(x) = \overline{x}$.
+            Dado um inteiro $m > 1$, \pause considere o homomorfismo $\rho_m : \z \to \z_m$ \pause definido por $\rho_m(x) = \overline{x}$.
         \end{exemplo}
     \end{frame}
     
