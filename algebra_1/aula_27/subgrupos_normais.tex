@@ -28,6 +28,68 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        
+        Sejam $(G, \cdot)$ um grupo e $A$ e $B$ subconjuntos de $G$. Vamos indicar por
+        \[
+            AB
+        \]
+        e chamaremos de \textbf{produto} de $A$ por $B$ o seguinte subconjunto de $G$:
+        \begin{center}
+            \begin{tabular}{l}
+                $AB = \emptyset$, se $A = \emptyset$ ou $B = \emptyset$\\
+                \\
+                $AB = \{xy \mid x \in A \mbox{ e } y \in B\}$, se  $A \ne \emptyset$  e $B \ne \emptyset$.
+            \end{tabular}
+        \end{center}
+
+        \vspace{.3cm}
+
+        Assim o \textbf{produto} de $A$ por $B$ é uma operação sobre o subconjuntos das partes de $G$, $\mathcal{P}(G)$, chamada de \textbf{multiplicação de subconjuntos} de $G$.
+
+        \vspace{.3cm}
+
+        Como $G$ é associativo, então a \textbf{multiplicação de subconjuntos} também será associativa. Além disso, caso o grupo $G$ seja comutativo, então \textbf{multiplicação de subconjuntos} também será comutativa.
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = \{e, a, b, c\}$ o grupo tal que
+                \begin{table}[h]
+                    \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $\cdot$ & e & a & b & c\\
+                        \hline
+                        e & e & a & b & c\\
+                        \hline
+                        a & a & e & c & b\\
+                        \hline
+                        b & b & c & e & a\\
+                        \hline
+                        c & c & b & a & e\\
+                        \hline
+                    \end{tabular}.
+                \end{table}
+                Esse grupo é chamada de \textbf{grupo de Klein}.
+
+                \vspace{.3cm}
+                
+                Se $A = \{e, a\}$ e $B = \{b, c\}$, então:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+                \item Considere o grupo multiplicativo dos números reais. Se
+                \begin{center}
+                    $A = \{x \in \real^* \mid x > 0\}$\\
+                    $B = \{x \in \real^* \mid x < 0\}$
+                \end{center}
+                então:
+            \end{enumerate}
+        \end{exemplos}
     \end{frame}
 \end{document}
