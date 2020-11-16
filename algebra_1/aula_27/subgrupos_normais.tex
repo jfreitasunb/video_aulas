@@ -72,7 +72,7 @@
                 Esse grupo é chamada de \textbf{grupo de Klein}.
 
                 \vspace{.3cm}
-                
+
                 Se $A = \{e, a\}$ e $B = \{b, c\}$, então:
                 \seti
             \end{enumerate}
@@ -89,6 +89,68 @@
                     $B = \{x \in \real^* \mid x < 0\}$
                 \end{center}
                 então:
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Um subgrupo $N$ de um grupo $G$ é chamado de \textbf{subgrupo normal} (ou \textbf{invariante}) se, para todo $x \in G$, vale
+            \[
+                xN = Nx.
+            \]
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = S_3$. Já vimos que se tomamos
+                \[
+                    Id = \begin{pmatrix}
+                        1 & 2 & 1\\
+                        1 & 2 & 3
+                    \end{pmatrix},\quad
+                    f = \begin{pmatrix}
+                        1 & 2 & 1\\
+                        2 & 3 & 1
+                    \end{pmatrix} \quad \mbox{e}\quad
+                    g = \begin{pmatrix}
+                        1 & 2 & 1\\
+                        1 & 3 & 2
+                    \end{pmatrix}
+                \]
+                então
+                \[
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}.
+                \]
+                Considere o subgrupo $H = [f] = \{Id, f, f^2\}$. Então $H$ é um subgrupo normal de $G$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \seti
+
+                \item Se $G$ é um grupo abeliano, então todo subgrupo de $G$ é normal.
+                
+                \conti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \seti
+
+                \item Seja $H$ um subgrupo de $G$ tal que $H$ possui somente duas classes laterais. Então $H$ é um subgrupo normal de $G$.
+                
+                \conti
             \end{enumerate}
         \end{exemplos}
     \end{frame}
