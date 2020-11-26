@@ -28,31 +28,31 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        Seja $G$ um grupo finito. Se $H$ \'e um subgrupo de $G$, ent\~ao existir\'a uma quantidade finita de classes laterais m\'odulo $H$.
+        Seja $G$ um grupo finito. \pause Se $H$ \'e um subgrupo de $G$, \pause ent\~ao existir\'a uma quantidade finita de classes laterais m\'odulo $H$ \pause.
         Assim o conjunto
         \[
-            G/H = \{aH \mid a \in G\}
+            G/H = \{aH \mid a \in G\} \pause
         \]
-        \'e finito.
+        \'e finito. \pause
 
-        O n\'umero de elementos de $G/H$ \'e chamada de \textbf{{\'\i}ndice} de $H$ em $G$ e ser\'a denotado por
+        O n\'umero de elementos de $G/H$ \pause \'e chamado de \textbf{{\'\i}ndice} \pause de $H$ em $G$ \pause e ser\'a denotado por
         \[
-            [G : H] = |G/H|.
+            [G : H] = |G/H|. \pause
         \]
     \end{frame}
 
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$. J\'a vimos que as classes laterais de $N$ em $G$ s\~ao
+                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$ \pause um subgrupo de $G$. \pause J\'a vimos que as classes laterais de $N$ em $G$ s\~ao \pause
                 \[
-                    N \quad \mbox{e}\quad iN.
+                    N \quad \mbox{e}\quad iN. \pause
                 \]
                 Da{\'\i}
                 \[
-                    G/N = \{N, iN\}
+                    G/N = \{N, iN\} \pause
                 \]
-                e assim $[G : H] = 2$.
+                e assim $[G : H] = 2$. \pause
 
                 \seti
             \end{enumerate}
@@ -85,11 +85,11 @@
                 \]
                 Considere o subgrupo $H = [\ g\ ] \pause = \{Id, g\}$. Ent\~ao $H$ possui 3 classes laterais que s\~ao
                 \[
-                    H,\ fH,\ f^2H. 
+                    H,\ fH,\ f^2H. \pause
                 \]
                 Da{\'\i}
                 \[
-                    G/H = \{H, fH, f^2H\}
+                    G/H = \{H, fH, f^2H\} \pause
                 \]
                 e ent\~ao $[G : H] = 3$.
             \end{enumerate}
@@ -98,46 +98,46 @@
 
     \begin{frame}
         \begin{teorema}[Teorema de Lagrange]
-            Seja $H$ um subgrupo de um grupo finito $G$. Ent\~ao $o(G) = o(H)[G:H]$ e, portanto, $o(H) | o(G)$.
+            Seja $H$ um subgrupo \pause de um grupo finito $G$. \pause Ent\~ao $o(G) = o(H)[G:H]$ \pause e, portanto, $o(H) | o(G)$.\pause
         \end{teorema}
     \end{frame}
 
     \begin{frame}
         \begin{observacao}
-            Considere o seguinte subconjunto do grupo $S_4$:
+            No grupo $S_4$ \pause considere o seguinte subconjunto: \pause
             \[
                 L = \left\{\begin{pmatrix}
                     1 & 2 & 3 & 4\\
                     1 & 2 & 3 & 4
-                \end{pmatrix}, \begin{pmatrix}
+                \end{pmatrix}, \pause \begin{pmatrix}
                     1 & 2 & 3 & 4\\
                     1 & 3 & 4 & 2
-                \end{pmatrix}\right\}.
+                \end{pmatrix}\right\}. \pause
             \]
-            Observe que o n\'umero de elementos de L divide $|S_4| = 4! = 24$ mas $L$ n\~ao \'e um subgrupo de $S_4$ pois
+            Observe que o n\'umero de elementos de L \pause divide $|S_4| = 4! = 24$ \pause mas $L$ n\~ao \'e um subgrupo de $S_4$ \pause pois
             \[
                 \begin{pmatrix}
                     1 & 2 & 3 & 4\\
                     1 & 3 & 4 & 2
-                \end{pmatrix}^{-1} = \begin{pmatrix}
+                \end{pmatrix}^{-1} \pause = \begin{pmatrix}
                     1 & 2 & 3 & 4\\
                     1 & 4 & 2 & 3
-                \end{pmatrix} \notin L.
+                \end{pmatrix} \pause \notin L.
             \]
         \end{observacao}
     \end{frame}
 
     \begin{frame}
         \begin{corolario}
-            Seja $G$ um grupo finito. Ent\~ao a ordem de um elemento $x \in G$ divide a ordem de $G$ e o quociente \'e $(G : H)$, onde $H = [x]$.
+            Seja $G$ um grupo finito. \pause Ent\~ao a ordem de um elemento $x \in G$ \pause divide a ordem de $G$ \pause e o quociente \'e $(G : H)$, \pause onde $H = [x]$.
         \end{corolario}
     \end{frame}
 
     \begin{frame}
         \begin{corolario}
-            Sejam $G$ um grupo finito e $x \in G$. Ent\~ao
+            Sejam $G$ um grupo finito \pause e $x \in G$. \pause Ent\~ao
             \[
-                x^{o(G)} = e,
+                x^{o(G)} \pause = e, \pause
             \]
             onde $e$ denota o elemento neutro de $G$.
         \end{corolario}
@@ -145,7 +145,7 @@
 
     \begin{frame}
         \begin{corolario}
-            Seja $G$ um grupo finito cuja ordem \'e um n\'umero primo. Ent\~ao $G$ \'e um grupo c{\'\i}clico e os \'unicos subgrupos de $G$ s\~ao os triviais, ou seja, $\{e\}$ e $G$.
+            Seja $G$ um grupo finito \pause cuja ordem \'e um n\'umero primo. \pause Ent\~ao $G$ \'e um grupo c{\'\i}clico \pause e os \'unicos subgrupos de $G$ \pause s\~ao os triviais, \pause ou seja, $\{e\}$ e $G$.
         \end{corolario}
     \end{frame}
 
