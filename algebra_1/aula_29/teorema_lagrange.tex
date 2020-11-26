@@ -97,9 +97,34 @@
     \end{frame}
 
     \begin{frame}
-        \begin{teorema}
+        \begin{teorema}[Teorema de Lagrange]
             Seja $H$ um subgrupo de um grupo finito $G$. Então $o(G) = o(H)[G:H]$ e, portanto, $o(H) | o(G)$.
         \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            Considere o seguinte subconjunto do grupo $S_4$:
+            \[
+                L = \left\{\begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 2 & 3 & 4
+                \end{pmatrix}, \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 3 & 4 & 2
+                \end{pmatrix}\right\}.
+            \]
+            Observe que o número de elementos de L divide $|S_4| = 4! = 24$ mas $L$ não é um subgrupo de $S_4$ pois
+            \[
+                \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 3 & 4 & 2
+                \end{pmatrix}^{-1} = \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 4 & 2 & 3
+                \end{pmatrix} \notin L.
+            \]
+        \end{observacao}
     \end{frame}
 
     \begin{frame}
@@ -122,5 +147,11 @@
         \begin{corolario}
             Seja $G$ um grupo finito cuja ordem é um número primo. Então $G$ é um grupo cíclico e os únicos subgrupos de $G$ são os triviais, ou seja, $\{e\}$ e $G$.
         \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplo}
+            Determine todos os subgrupos do grupo $S_3$.
+        \end{exemplo}
     \end{frame}
 \end{document}
