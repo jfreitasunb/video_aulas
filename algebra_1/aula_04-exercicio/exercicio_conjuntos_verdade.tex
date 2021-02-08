@@ -1,0 +1,40 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Conjuntos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{exercicio}
+            Mostre que se $A$ e $B$ s\~ao conjuntos ent\~ao
+            \begin{center}
+                $A \cup B = A \cap B$ se, e somente se,  $A = B$.
+            \end{center}
+        \end{exercicio}
+
+        \vspace{6cm}
+    \end{frame}
+\end{document}
