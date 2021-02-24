@@ -1,0 +1,44 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Conjuntos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{exercicio}
+            Defina a relação $\sim$ em $\mathbb{Q}$ por
+            \[
+                x \sim y \mbox{ quando } \dfrac{x - y}{2} \in \mathbb{Z}.
+            \]
+            \begin{enumerate}
+                \item[a)] Mostre que $\sim$ é um relação de equivalência em $\mathbb{Q}$.
+                \item[b)] Determine as classes de equivalências de $\overline{0}$, $\overline{1}$ e $\overline{1/2}$.
+            \end{enumerate}
+        \end{exercicio}
+
+        \vspace{6cm}
+    \end{frame}
+\end{document}
