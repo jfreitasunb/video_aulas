@@ -1,5 +1,5 @@
 %!TEX program = xelatex
-% !TEX encoding = ISO-8859-1
+%!TEX encoding = ISO-8859-1
 \def\ano{2020}
 \def\semestre{2}
 \def\disciplina{\'Algebra 1}
@@ -10,17 +10,12 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usecolortheme{beaver}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.15}
-\usepackage{mathrsfs}
-\usetikzlibrary{arrows}
-
 % \mode<presentation>
 \input{../configuracoes_latex/pacotes}
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Exercícios - Imagem Direta e Inversa}
+\title{Funções}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{}
@@ -31,19 +26,15 @@
     \end{frame}
 
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
-    
-    \begin{frame}
-        \begin{exercicio}
-            Seja $g : A\to B$ uma fun{\c c}{\~a}o e sejam $X$, $Y\subset B$. Mostre que $g^{-1}(X - Y)= g^{-1}(X) - g^{-1}(Y)$.
-        \end{exercicio}
-
-    \end{frame}
 
     \begin{frame}
         \begin{exercicio}
-            Sejam $f : A \to B$ uma fun{\c c}{\~a}o e $P$, $Q \subseteq A$. Mostre que se $f$ \'e injetora, ent{\~a}o $f(P \cap Q) = f(P) \cap f(Q)$.
+            Considere o anel $(Q, \star, \otimes)$ onde as operações $\star$ e $otimes$ em $\rac$ são definidas por
+            \begin{align*}
+                x \star y &= x + y - 6\\
+                x \otimes y &= x + y - \dfrac{x}{y}.
+            \end{align*}
+            Verifique se o conjunto $\{6k \mid k \in \z\}$ é um subanel de $\rac$.
         \end{exercicio}
-
     \end{frame}
-
 \end{document}

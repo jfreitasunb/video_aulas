@@ -1,5 +1,5 @@
 %!TEX program = xelatex
-% !TEX encoding = ISO-8859-1
+%!TEX encoding = ISO-8859-1
 \def\ano{2020}
 \def\semestre{2}
 \def\disciplina{\'Algebra 1}
@@ -10,17 +10,12 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usecolortheme{beaver}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.15}
-\usepackage{mathrsfs}
-\usetikzlibrary{arrows}
-
 % \mode<presentation>
 \input{../configuracoes_latex/pacotes}
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Exercícios - Imagem Direta e Inversa}
+\title{Funções}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{}
@@ -31,19 +26,24 @@
     \end{frame}
 
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
-    
-    \begin{frame}
-        \begin{exercicio}
-            Seja $g : A\to B$ uma fun{\c c}{\~a}o e sejam $X$, $Y\subset B$. Mostre que $g^{-1}(X - Y)= g^{-1}(X) - g^{-1}(Y)$.
-        \end{exercicio}
-
-    \end{frame}
 
     \begin{frame}
         \begin{exercicio}
-            Sejam $f : A \to B$ uma fun{\c c}{\~a}o e $P$, $Q \subseteq A$. Mostre que se $f$ \'e injetora, ent{\~a}o $f(P \cap Q) = f(P) \cap f(Q)$.
+            Seja $f : \complex \to M_2(\real)$ dada por
+    \[
+        f(a + bi) = \begin{bmatrix}
+            a & -b\\
+            b & a
+        \end{bmatrix}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $f$ \'e um homomorfismo de an\'eis.
+        
+        \item Esse homomorfismo \'e injetor?
+        
+        \item \'E sobrejetor?
+    \end{enumerate}
         \end{exercicio}
 
     \end{frame}
-
 \end{document}
