@@ -15,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{Classes de Equival\^encia na Congruência módulo $m$}
+\title{Classes de Equival\^encia na CongruÃªncia mÃ³dulo $m$}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{}
@@ -289,26 +289,6 @@
     \end{frame}
 
     \begin{frame}
-        \noindent \textbf{Prova: }
-            \begin{enumerate}[label={\roman*})]
-                \item \pause $\overline{x} \oplus \overline{y} = \pause \overline{x + y} = \pause \overline{y + x} = \pause \overline{y} \oplus \overline{x}$. \vspace{.2cm} \pause
-                
-                \item \pause $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \pause \overline{x + y} \pause \oplus \overline{z} = \pause \overline{(x + y) + z} = \pause \overline{x + (y + z)} \pause = \overline{x} \oplus \pause \overline{y + z}\pause  = \overline{x} \oplus \pause (\overline{y} \oplus \overline{z})$. \vspace{.2cm} \pause
-
-                \item \pause $\overline{x} \oplus \overline{0} = \pause \overline{x + 0} = \pause \overline{x}$. \vspace{.2cm} \pause
-
-                \item \pause Dado $\overline{x} \in \z_m$ \pause escolha $\overline{y} = \pause \overline{m - x} \in \z_m$. \pause Assim $\overline{x} \oplus \overline{y} = \pause \overline{x} \oplus \pause \overline{m - x} = \pause \overline{x + (m - x)} = \pause \overline{m} = \overline{0}$. \vspace{.2cm} \pause
-
-                \item \pause $\overline{x} \otimes \overline{y} = \pause \overline{x \cdot y} = \pause \overline{y \cdot x} = \pause \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
-
-                \item \pause $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \pause \overline{x \cdot y} \otimes \pause \overline{z} = \pause \overline{(x \cdot y)\cdot z} \pause = \overline{x\cdot(y \cdot z)} = \pause \overline{x} \otimes \pause \overline{y \cdot z} = \pause \overline{x} \otimes \pause (\overline{y}\otimes \overline{z})$. \vspace{.2cm} \pause
-
-                \item \pause $\overline{x} \otimes \overline{1} = \pause \overline{x \cdot 1} = \pause \overline{x}$. \pause
-            \end{enumerate}
-        \qedsymbol
-    \end{frame}
-
-    \begin{frame}
         \begin{definicao}
             Um elemento $\overline{a} \in \z_m$ {\'e} \textbf{invers{\'\i}vel} \pause se, e somente se, existe $\overline{b} \in \z_m$ \pause tal que $\overline{a} \otimes \overline{b} = \pause \overline{1}$. \pause Neste caso, $\overline{b}$ \pause {\'e} chamado \textbf{inverso} de $\overline{a}$ \pause e denotaremos $\overline{b} = (\overline{a})^{-1}$.\pause
         \end{definicao}
@@ -316,14 +296,6 @@
         \begin{proposicao}
             Se o inverso existe, \pause ent\~ao ele {\'e} {\'u}nico.\pause
         \end{proposicao}
-        \noindent \textbf{Prova:} \pause 
-            De fato, \pause dado $\overline{a} \in \z_m$, \pause suponha que existem $\overline{b}$, \pause $\overline{d} \in \z_m$ \pause tais que $\overline{a} \otimes \overline{b} = \overline{1} \pause = \overline{a} \otimes \overline{d}$, \pause ent{\~a}o\pause
-            \begin{center}
-                \begin{tabular}{l}
-                    $\overline{b} = \pause \overline{b} \otimes \overline{1} = \pause \overline{b} \otimes \pause (\overline{a} \otimes \overline{d}) = \pause (\overline{b} \otimes \overline{a}) \pause \otimes \overline{d} = \pause \overline{1} \otimes \overline{d} = \pause \overline{d}$\pause
-                \end{tabular}
-            \end{center}
-        Portanto o inverso de $\overline{a}$ \'e \'unico, \pause como quer{\'\i}amos. \hspace{.5cm}\qedsymbol\pause
     \end{frame}
 
     \begin{frame}
@@ -358,7 +330,7 @@
                    \end{tabular}
                 \end{table}
             \end{enumerate}
-            \vspace{4.5cm}
+            \vspace{3.5cm}
         \end{exemplos}
     \end{frame}
 \end{document}
