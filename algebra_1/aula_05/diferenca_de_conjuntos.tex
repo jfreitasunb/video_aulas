@@ -1,5 +1,4 @@
 %!TEX program = xelatex
-% !TEX encoding = ISO-8859-1
 \def\ano{2020}
 \def\semestre{1}
 \def\disciplina{\'Algebra 1}
@@ -18,7 +17,7 @@
 \title{Diferen\c{c}a de Conjuntos}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
-\date{\today}
+\date{}
 
 \begin{document}
     \begin{frame}
@@ -65,7 +64,7 @@
             \item $(A - C) \cup (B - C) \sub  (A \cup B) - C$\pause
         \end{enumerate}
         Para a primeira inclus\~ao \pause seja $x \in (A \cup B) - C$. \pause Assim por defini\c{c}\~ao, \pause $x \in A \cup B$ \pause e $x \notin C$. \pause De $x \in A \cup B$, \pause ent\~ao $x \in A$ ou $x \in B$.\pause
-        
+
         Se $x \in A$, \pause como $x \notin C$ \pause segue ent\~ao que $x \in A - C$. \pause Logo $x \in (A - C) \cup (B - C)$.\pause
 
         Se $x \in B$, \pause como $x \notin C$ \pause segue ent\~ao que $x \in B - C$. \pause Logo $x \in (A - C) \cup (B - C)$.\pause
@@ -73,13 +72,13 @@
 
     \begin{frame}
         Assim $(A \cup B) - C \sub (A - C) \cup (B - C)$.\pause
-        
+
         Agora, para a segunda inclus\~ao, \pause seja $y \in (A - C) \cup (B - C)$. \pause Por defini\c{c}\~ao, \pause $y \in A - C$ ou $y \in B - C$.\pause
 
         Se $y \in A - C$, \pause ent\~ao $y \in A$ e $y \notin C$. \pause Como $y \in A$, \pause segue que $y \in A \cup B$. \pause Mas $y \notin C$, \pause com isso, $y \in (A \cup B) - C$.\pause
 
         Se $y \in B - C$, \pause ent\~ao $y \in B$ \pause e $y \notin C$. \pause Como $y \in B$, \pause segue que $y \in A \cup B$. \pause Mas $y \notin C$, \pause com isso, $y \in (A \cup B) - C$.\pause
-        
+
         Assim $(A - C) \cup (B - C) \sub (A \cup B) - C$.\pause
 
         Portanto, \pause $(A \cup B) - C = (A - C) \cup (B - C)$, \pause como quer{\'\i}amos.\qedsymbol

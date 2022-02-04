@@ -1,5 +1,4 @@
 %!TEX program = xelatex
-%!TEX encoding = ISO-8859-1
 \def\ano{2020}
 \def\semestre{1}
 \def\disciplina{\'Algebra 1}
@@ -18,7 +17,7 @@
 \title{Grupo Quociente}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
-\date{17 de novembro de 2020}
+\date{}
 
 \begin{document}
     \begin{frame}
@@ -33,7 +32,7 @@
             G/N = \{aN \mid a \in G\} \pause
         \]
         o conjunto das classes de equival\^encia determinadas por $N$. \pause
-        
+
         \vspace{.5cm}
 
         Defina em $G/N$ a opera\c{c}\~ao \pause
@@ -47,16 +46,16 @@
         Temos: \pause
 
         \vspace{.3cm}
-        
+
         \begin{enumerate}[label={\roman*})]
             \item $[(aN)(bN)](cN) \pause = (an)[(bN)(cN)]$ \pause para todos $aN$, $bN$, $cN \in G/N$; \pause
 
             \vspace{.3cm}
-        
+
             \item $(aN)(eN) \pause = (ae)N \pause = aN \pause = (ea)N \pause = (eN)(aN)$ \pause para todo $aN \in G/N$; \pause
 
             \vspace{.3cm}
-        
+
             \item $(aN)(a^{-1}N) \pause = (aa^{-1})N \pause = eN \pause = (a^{-1}a)N \pause = (a^{-1}N)(aN)$ \pause para todo $aN \in G/N$. \pause
 
             \vspace{.3cm}
@@ -65,22 +64,22 @@
         Assim, o conjunto $G/N$ \'e um grupo com a multiplica\c{c}\~ao de conjuntos. \pause
 
         \vspace{.3cm}
-        
+
         Nesse grupo o elemento neutro \'e $eN$ \pause e $(aN)^{-1} = (a^{-1})N$.
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condi\c{c}\~oes, \pause o \textbf{grupo quociente} \pause 
-            de $G$ por $N$ \pause \'e o par formado pelo conjunto quociente $G/N$ \pause e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos 
+            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condi\c{c}\~oes, \pause o \textbf{grupo quociente} \pause
+            de $G$ por $N$ \pause \'e o par formado pelo conjunto quociente $G/N$ \pause e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos
             aplicadas aos elementos desse conjunto.
-        \end{definicao}    
+        \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$. 
+                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$.
 
                 \seti
             \end{enumerate}
@@ -103,7 +102,7 @@
         \begin{exemplos}
             \begin{enumerate}[label=({\arabic*})]
                 \conti
-                
+
                 \item Seja $G = S_3$. \pause J\'a vimos que se tomamos
                 \[
                     Id = \begin{pmatrix}
@@ -162,5 +161,5 @@
             Dado um inteiro $m > 1$, \pause considere o homomorfismo $\rho_m : \z \to \z_m$ \pause definido por $\rho_m(x) = \overline{x}$.
         \end{exemplo}
     \end{frame}
-    
+
 \end{document}

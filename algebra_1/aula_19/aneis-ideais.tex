@@ -1,5 +1,4 @@
 %!TEX program = xelatex
-% !TEX encoding = ISO-8859-1
 \def\ano{2020}
 \def\semestre{1}
 \def\disciplina{\'Algebra 1}
@@ -18,7 +17,7 @@
 \title{An\'eis - Ideais}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
-\date{\today}
+\date{}
 
 \begin{document}
     \begin{frame}
@@ -48,7 +47,7 @@
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
                 \item Os an{\'e}is $\z$, \pause $\rac$, \pause $\real$, \pause $\complex$ \pause s{\~a}o an{\'e}is de integridade.\pause
-                
+
                 \vspace{.5cm}
 
                 \item Em geral $\z_m$ \pause n{\~a}o {\'e} anel de integridade, \pause por exemplo, em $\z_4$, \pause $\overline{2} \neq \overline{0}$, \pause no entanto
@@ -74,8 +73,8 @@
                         0 & 0
                     \end{bmatrix} \neq \begin{bmatrix}
                         0 & 0\\
-                        0 & 0       
-                    \end{bmatrix},\pause \qquad 
+                        0 & 0
+                    \end{bmatrix},\pause \qquad
                     B = \begin{bmatrix}
                         0 & 0\\
                         1 & 0
@@ -90,12 +89,12 @@
                 \end{center}
 
                 \vspace{.5cm}
-                
+
                 \item Suponha que $m = nk$, \pause $m > n > 1$ \pause e $m > k > 1$. \pause Logo, em $\z_m$, \pause $\overline{n} \neq \overline{0}$ \pause e $\overline{k} \neq \overline{0}$ \pause e no entanto $\overline{n} \otimes \overline{k} \pause = \overline{m} \pause = \overline{0}$. \pause Logo, se $m$ n{\~a}o {\'e} primo, \pause ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. \pause Agora, suponha que $m = p$ primo. \pause Sejam $\overline{x}$, \pause $\overline{y} \in \z_m$ \pause tais que $\overline{x}\otimes \overline{y} \pause = \overline{0}$, \pause ou seja, $xy \equiv 0 \pmod p$. \pause Da{\'\i} $p\mid xy$. \pause Logo $p\mid x$ \pause ou $p\mid y$. \pause Portanto, $\overline{x} = \overline{0}$ \pause ou $\overline{y} = \bar{0}$. \pause Assim, $\z_m$ {\'e} anel de integridade \pause se, e somente se, \pause $m$ {\'e} primo.\pause
             \end{enumerate}
         \end{exemplos}
     \end{frame}
-    
+
     \begin{frame}
         \begin{definicao}
             Seja $(A, +, \cdot)$ um anel comutativo. \pause Um subconjunto n\~ao-vazio \pause $I \sub A$ \pause {\'e} chamado de \textbf{ideal} \pause de $A$ se:\pause
@@ -113,7 +112,7 @@
     \begin{frame}
         \begin{exemplos}
             \begin{enumerate}[label={\arabic*})]
-                \item Considere no anel $\z$ as opera\c{c}\~oes usuais de soma e multiplica\c{c}\~ao. \pause Seja 
+                \item Considere no anel $\z$ as opera\c{c}\~oes usuais de soma e multiplica\c{c}\~ao. \pause Seja
                 \[
                     I = m\z \pause = \{mk \mid k \in \z\},\pause
                 \]
@@ -163,7 +162,7 @@
     \end{frame}
 
     \begin{frame}
-        Seja $y \in A$. \pause A classe de equival{\^e}ncia m{\'o}dulo $I$ \pause de $y$ {\'e}\pause 
+        Seja $y \in A$. \pause A classe de equival{\^e}ncia m{\'o}dulo $I$ \pause de $y$ {\'e}\pause
         \[
             C(y) \pause = \{x \in A \pause \mid x\equiv y \pmod I\} \pause = \{x \in A \pause \mid x - y \in I\}.\pause
         \]
@@ -176,9 +175,9 @@
         \]
 
         \begin{observacao}
-            Denotamos por $y + I$ \pause (ou $I + y$) \pause a classe de equival{\^e}ncia de $y \in A$ \pause m{\'o}dulo $I$. \pause Denotamos por \pause 
+            Denotamos por $y + I$ \pause (ou $I + y$) \pause a classe de equival{\^e}ncia de $y \in A$ \pause m{\'o}dulo $I$. \pause Denotamos por \pause
             \[
-                \dfrac{A}{I}\pause 
+                \dfrac{A}{I}\pause
             \]
             o conjunto de todas as classes de equival{\^e}ncia, \pause tal conjunto {\'e} chamado de \textbf{quociente do anel $A$ pelo ideal $I$}.\pause
         \end{observacao}
@@ -191,7 +190,7 @@
                 \begin{enumerate}
                     \item[i)] Dado $x \in A$:\pause
                     \[
-                        C(x) = \pause x + I_{1} \pause = \{x + 0\} = \pause \{x\}.\pause 
+                        C(x) = \pause x + I_{1} \pause = \{x + 0\} = \pause \{x\}.\pause
                     \]
                     Assim
                     \[
@@ -208,7 +207,7 @@
             \begin{enumerate}
                 \item[ii)] Para $I_{2} = A$ \pause temos:
                 \[
-                    C(0_A) = \pause 0_A + I = \pause \{0_A + t \mid t \in I_{2}\}.\pause 
+                    C(0_A) = \pause 0_A + I = \pause \{0_A + t \mid t \in I_{2}\}.\pause
                 \]
                 Como $I_2 = A$, \pause para todo $x \in A$ \pause temos $x \in C(0_A)$ \pause logo existe uma \'unica \pause classe de equival\^encia\pause e
                 \[
@@ -223,9 +222,9 @@
             \begin{enumerate}
                 \item[2)] Seja $A = \z$. \pause Os ideais de $\z$ \pause s{\~a}o da forma $m\z$, \pause $m > 1$. \pause Seja $I = m\z$ \pause um ideal de $\z$. \pause Assim\pause
                 \[
-                    x\equiv y \pmod I\pause 
+                    x\equiv y \pmod I\pause
                 \]
-                se, e s\'o se, 
+                se, e s\'o se,
                 \[
                     x - y \in I.\pause
                 \]
@@ -238,16 +237,16 @@
     \end{frame}
 
     \begin{frame}
-        Agora seja $I$ ideal \pause e $A$ um anel comutativo unitário. \pause Temos\pause 
+        Agora seja $I$ ideal \pause e $A$ um anel comutativo unitário. \pause Temos\pause
         \[
-            \dfrac{A}{I} = \pause \{y + I \mid y \in A\}\pause 
+            \dfrac{A}{I} = \pause \{y + I \mid y \in A\}\pause
         \]
-        onde $y + I = \{y + t \mid t \in I\}$ \pause e $y \in A$.\pause 
+        onde $y + I = \{y + t \mid t \in I\}$ \pause e $y \in A$.\pause
 
-        Vamos definir uma soma $\oplus$ \pause e um produto $\otimes$ \pause em $\dfrac{A}{I}$ por\pause 
+        Vamos definir uma soma $\oplus$ \pause e um produto $\otimes$ \pause em $\dfrac{A}{I}$ por\pause
         \begin{center}
             $(x + I) \oplus (y + I) = \pause (x + y) + I$\pause\\
-            $(x + I) \otimes (y + I) = \pause (xy) + I$\pause 
+            $(x + I) \otimes (y + I) = \pause (xy) + I$\pause
         \end{center}
         para $x + I$, \pause $y + I \in \dfrac{A}{I}$.\pause
     \end{frame}
@@ -255,13 +254,13 @@
     \begin{frame}
         Verifiquemos que a soma \pause e o produto \pause em $\dfrac{A}{I}$ \pause n{\~a}o dependem do representante da classe de equival{\^e}ncia.\pause
 
-        Para isso, \pause sejam $x_1 + I$, \pause $x_2 + I$, \pause $y_1 + I$, \pause $y_2 + I \in \dfrac{A}{I}$ \pause tais que\pause 
+        Para isso, \pause sejam $x_1 + I$, \pause $x_2 + I$, \pause $y_1 + I$, \pause $y_2 + I \in \dfrac{A}{I}$ \pause tais que\pause
         \begin{center}
             $x_1 + I \pause = x_2 + I$\pause\\
             $y_1 + I \pause = y_2 + I$\pause
         \end{center}
 
-        Ent{\~a}o\pause 
+        Ent{\~a}o\pause
         \begin{center}
             $(x_1 + I) \oplus (y_1 + I) \pause = (x_1 + y_1) + I$\pause\\
             $(x_2 + I) \oplus (y_2 + I) \pause = (x_2 + y_2) + I$\pause
@@ -269,14 +268,14 @@
     \end{frame}
 
     \begin{frame}
-        Como $x_1 + I = x_2 + I$, \pause ent{\~a}o $x_1 - x_2 \in I$ \pause e como $y_1 + I = y_2 + I$, \pause ent{\~a}o $y_1 = y_2 \in I$. \pause Mas $I$ {\'e} ideal, \pause logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1) - (x_2 + y_2) \in I$, \pause ou seja\pause 
+        Como $x_1 + I = x_2 + I$, \pause ent{\~a}o $x_1 - x_2 \in I$ \pause e como $y_1 + I = y_2 + I$, \pause ent{\~a}o $y_1 = y_2 \in I$. \pause Mas $I$ {\'e} ideal, \pause logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1) - (x_2 + y_2) \in I$, \pause ou seja\pause
         \[
             (x_1 + I) \oplus (y_1 + I) \pause = (x_2 + I) \oplus (y_2 + I).\pause
         \]
     \end{frame}
 
     \begin{frame}
-        Agora,\pause 
+        Agora,\pause
         \begin{center}
             $(x_1 + I) \otimes (y_1 + I) \pause = (x_1y_1) + I$\pause\\
             $(x_2 + I) \otimes (y_2 + I) \pause = (x_2y_2) + I$\pause
@@ -286,9 +285,9 @@
         \begin{center}
             $(x_1 - x_2)y_1 + (y_1 - y_2)x_2 \in I$\pause\\
             $x_1y_2-\underbrace{x_2y_1 + y_1x_2}_{= 0} - y_2x_2 \in I$\pause\\
-            $x_1y_1 - x_2y_2\in I,$\pause 
+            $x_1y_1 - x_2y_2\in I,$\pause
         \end{center}
-        ou seja, \pause $xy + I = x_2y_2 + I$. \pause Portanto,\pause 
+        ou seja, \pause $xy + I = x_2y_2 + I$. \pause Portanto,\pause
         \[
             (x_1 + I) \otimes (y + I) \pause = (x_2 + I) \otimes (y_2 + I).\pause
         \]
@@ -298,7 +297,7 @@
         \begin{teorema}
             Seja $(A, +, \cdot)$ um anel comutativo \pause e com unidade. \pause Se $I$ {\'e} um ideal de $A$, \pause ent\~ao
             \[
-                \left(\dfrac{A}{I}, \oplus, \otimes\right)\pause 
+                \left(\dfrac{A}{I}, \oplus, \otimes\right)\pause
             \]
             {\'e} um anel comutativo \pause e com unidade. \pause O elemento neutro da soma \pause {\'e} a classe $0_{A} + I$ \pause e a unidade do produto \pause {\'e} a classe $1_{A} + I$.\pause
         \end{teorema}
