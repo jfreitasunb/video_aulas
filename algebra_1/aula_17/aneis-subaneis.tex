@@ -26,9 +26,64 @@
 
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
+
+    \begin{frame}
+        $A \ne \emptyset$, $\oplus$ \pause e $\otimes$ operações binárias. \pause $(A, \oplus, \otimes)$ \pause {\'e} um \textbf{anel} se:\pause
+        \begin{enumerate}[label={\roman*})]
+            \item \pause para todos $x$, \pause $y$, \pause $z \in A$ \pause vale\pause
+            \[
+                (x \oplus y) \pause \oplus z \pause = x \oplus \pause (y \oplus z).\pause
+            \]
+
+            \item \pause Para todos $x$, \pause $y \in A$ \pause vale\pause
+            \[
+                x \oplus y = \pause y \oplus x.\pause
+            \]
+
+            \item \pause Existe $0_A \in A$ \pause tal que para todo elemento $x \in A$ \pause vale\pause
+            \[
+                x \oplus 0_A \pause = x \pause = 0_A \oplus x.\pause
+            \]
+
+            \item \pause Para cada elemento $x \in A$, \pause existe $y \in A$ \pause tal que\pause
+            \[
+                x \oplus y \pause = 0_A \pause = y \oplus x.\pause
+            \]
+
+            \seti
+    \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\roman*})]
+            \conti
+
+            \item \pause Para todos $x$, \pause $y$, \pause $z \in A$, \pause vale\pause
+            \[
+                (x\otimes y) \pause \otimes z \pause = x \otimes \pause (y\otimes z).\pause
+            \]
+
+            \item Para todos $x$, \pause $y$, \pause $z \in A$ \pause vale\pause
+            \[
+                (x \oplus y) \pause \otimes z \pause = x \otimes z \pause \oplus \pause y\otimes z.\pause
+            \]
+
+            \item Para todos $x$, \pause $y$, \pause $z \in A$ \pause vale\pause
+            \[
+                x \otimes \pause (y \oplus z) \pause = x \otimes y \pause \oplus \pause x\otimes z.\pause
+            \]
+        \end{enumerate}
+    \end{frame}
+
+
     \begin{frame}
         \begin{observacao}
-            Seja $(A, \oplus, \otimes)$ \pause um anel. \pause Para simplificar a nota\c{c}\~ao \pause vamos denotar a opera\c{c}\~ao $\oplus$ \pause por $+$ \pause e a opera\c{c}\~ao $\otimes$ \pause por $\cdot$ \pause e assim escrever simplesmente \pause que $(A, +, \cdot)$ \pause \'e um anel.\pause
+            Seja $(A, \oplus, \otimes)$ \pause um anel. \pause Para
+            simplificar a nota\c{c}\~ao \pause vamos denotar a
+            opera\c{c}\~ao $\oplus$ \pause por $+$ \pause e a
+            opera\c{c}\~ao $\otimes$ \pause por $\cdot$ \pause e
+            assim escrever simplesmente \pause que $(A, +, \cdot)$
+            \pause \'e um anel.\pause
         \end{observacao}
     \end{frame}
 
@@ -40,7 +95,9 @@
 
                 \vspace{.5cm}
 
-                \item Para cada $x \in A$ \pause existe um {\'u}nico oposto. \pause Neste caso o \textbf{oposto} de $x \in A$ \pause ser\'a denotado por $-x$.\pause
+                \item Para cada $x \in A$ \pause existe um {\'u}nico
+                    oposto. \pause Neste caso o \textbf{oposto} de
+                    $x \in A$ \pause ser\'a denotado por $-x$.\pause
 
                 \vspace{.5cm}
 
@@ -51,9 +108,12 @@
 
                 \vspace{.5cm}
 
-                \item Dados $x_{1}$, \pause $x_{2}$, \pause \dots, $x_n \in A$, \pause $n \geqslant 2$, \pause ent{\~a}o\pause
+                \item Dados $x_{1}$, \pause $x_{2}$, \pause \dots,
+                    $x_n \in A$, \pause $n \geqslant 2$, \pause
+                    ent{\~a}o\pause
                 \[
-                    -(x_1 + x_2 + \dots + x_n) \pause = (-x_1) \pause + (-x_2) \pause + \dots + (-x_n).\pause
+                    -(x_1 + x_2 + \dots + x_n) \pause = (-x_1) \pause
+                    + (-x_2) \pause + \dots + (-x_n).\pause
                 \]
 
                 \vspace{.2cm}
