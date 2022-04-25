@@ -220,4 +220,85 @@
       \]
     \end{exemplo}
   \end{frame}
+
+  \begin{frame}
+    \begin{definicao}
+      Dadas duas matrizes $A$ e $B$ tais que $A = (a_{ij})_{m \times p}$ e $B = (b_{ij})_{p \times n}$, isto é, 
+      \textbf{o número de colunas de $A$ é igual ao número de linhas de $B$} podemos definir o \textbf{produto de $A$ por $B$}
+      denotado por
+      \[
+        C = AB. 
+      \]
+      A matriz $C$ será uma matriz $m \times n$ obtida da seguinte forma 
+      \begin{equation}\label{multiplicacao_de_matrizes}
+        c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{ip}b_{pj}
+      \end{equation}
+      para $i = 1$, \dots, $m$ e $j = 1$, \dots, $n$.
+    \end{definicao}
+  \end{frame}
+
+
+  \begin{frame}
+    A equação \eqref{multiplicacao_de_matrizes} está dizendo que para obtermos o elemento na posição $i$, $j$ da matriz $C$ precisamos 
+    realizar a soma dos produtos dos elementos da $i$-ésima linha de $A$ pelos elementos correspondentes da $j$-ésima coluna de $B$:
+    \[ 
+      \begin{bmatrix}
+        c_{11} & \cdots & c_{1n}\\
+        \vdots & c_{ij} & \vdots\\
+        c_{m1} & \cdots & c_{mn}
+      \end{bmatrix} = \begin{bmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n}\\
+        \vdots & \vdots & \vdots & \vdots\\
+        a_{i1} & a_{i2} & \cdots & a_{ip}\\
+        \vdots & \vdots & \vdots & \vdots\\
+        a_{m1} & \cdots & \cdots & a_{mn}
+      \end{bmatrix} \begin{bmatrix}
+        b_{11} & \cdots & b_{1j} & \cdots & b_{1n}\\
+        b_{21} & \cdots & b_{2j} & \cdots & b_{2n}\\
+        \vdots & \cdots & \vdots & \cdots & \vdots\\
+        b_{p1} & \cdots & b_{pj} & \cdots & b_{pn}
+      \end{bmatrix} 
+    \]
+  \end{frame}
+
+  \begin{frame}
+    \begin{exemplo}
+      Considere as seguintes matrizes: 
+      \[
+        A = \begin{bmatrix}
+          1 & 3\\
+          2 & 4\\
+          -3 & 0
+        \end{bmatrix},\quad
+        B = \begin{bmatrix}
+          -2 & 1 & 0\\
+          0 & 3 & 1\\
+          1 & 2 & 0
+        \end{bmatrix}
+      \]
+      Nessse caso não podemos fazer o produto de $A$ por $B$ pois $A$ é uma matriz $3 \times 2$ e $B$ é uma matriz $3 \times 3$. 
+      Mas podemos realizar o produto $BA$. Nesse caso fazendo $C = BA$ obtemos
+      \begin{eqnarray*}
+        &C = BA = \begin{bmatrix}
+          -2 & 1 & 0\\
+          \phantom{-}0 & 3 & 1\\
+          \phantom{-}1 & 2 & 0
+        \end{bmatrix}\begin{bmatrix}
+          \phantom{-}1 & 3\\
+          \phantom{-}2 & 4\\
+          -3 & 0
+        \end{bmatrix} \\
+        &= \begin{bmatrix}
+          (-2)1 + 1\cdot 1 + 0(-3) & (-2)3 + 1\cdot 3 + 0\cdot 3\\
+          0\cdot 1 + 3\cdot 2 + 1(-3) & 0\cdot 3 + 3\cdot 4 + 1\cdot 0\\
+          1 \cdot 1 + 2 \cdot 2 + 0(-3) & 1 \cdot 3 + 2 \cdot 4 + 0\cdot 0
+        \end{bmatrix}
+        = \begin{bmatrix}
+          -1 & -3\\
+          \phantom{-}3 & \phantom{-}12\\
+          \phantom{-}5 & \phantom{-}11
+        \end{bmatrix}
+      \end{eqnarray*}
+    \end{exemplo}
+  \end{frame}
 \end{document}
