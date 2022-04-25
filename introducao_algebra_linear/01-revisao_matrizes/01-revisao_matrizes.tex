@@ -364,4 +364,89 @@
       \end{eqnarray*}
     \end{exemplos}
   \end{frame}
+
+  \begin{frame}
+   \begin{teorema}
+      Sejam $A$, $B$ e $C$ matrizes com tamanhos apropriados, $\alpha$ e $\beta$ escalares. Então as seguintes propriedades são válidas:
+      \begin{enumerate}[label={\arabic*})]
+        \item (Comutatividade) $A + B = B + A$
+
+        \item (Associatividade) $(A + B) + C = A + (B + C)$
+
+        \item (Elemento Neutro) A matriz denotada por $\overline{0}$, $m \times n$, definida por $\overline{0} = (0)_{m \times n}$, para todo $i = 1$, \dots, $m$ 
+        e todo $j = 1$, \dots, $m$ é tal que
+        \[ 
+          A + \overline{0} = A
+        \]
+        para toda matriz $A$, $m \times n$. Tal matriz é chamada de \textbf{matriz nula} $m \times n$.
+        \seti
+      \end{enumerate}
+    \end{teorema}
+  \end{frame}
+
+  \begin{frame}
+    \begin{teorema}
+      \begin{enumerate}[label={\arabic*)}]
+        \conti
+
+        \item (Elemento simétrico ou oposto) Para cada matriz $A = (a_{ih})$, existe uma única matriz $-A$, definida por
+          \[ -A = (-a_{ij})\]
+        tal que
+        \[ A + (-A) = \overline{0}.\]
+
+        \item (Associatividade) $(\alpha\beta)A = \alpha(\beta A)$
+
+        \item (Distributividade) $(\alpha + \beta)A = \alpha A + \beta A$
+
+        \item (Distributividade) $\alpha(A + B) = \alpha A + \alpha B$
+
+        \item (Associatividade) $(AB)C = A(BC)$
+        \seti
+      \end{enumerate}
+    \end{teorema}
+  \end{frame}
+
+  \begin{frame}
+    \begin{teorema}
+      \begin{enumerate}[label={\arabic*)}]
+        \conti
+
+        \item (Elemento Neutro) Para cada inteiro positivo $p$ a matrix $p \times p$ dada por
+          \[
+            I_p = \begin{bmatrix}
+              1 & 0 & \cdots & 0\\
+              0 & 1 & \cdots & 0\\
+              \vdots & & \ddots & \vdots\\
+              0 & 0 & \cdots & 1
+            \end{bmatrix}
+          \]
+        chamada de \textbf{matriz identidade} e tal que
+        \[
+          AI_n = I_mA = A
+        \]
+        para toda matriz $A = (a_{ij})_{m \times n}$.
+      \seti
+      \end{enumerate}
+    \end{teorema}
+  \end{frame}
+
+  \begin{frame}
+    \begin{teorema}
+      \begin{enumerate}[label={\arabic*)}]
+        \conti
+
+        \item (Distributividade) $A(B + C) = AB + AC$ e $(B + C)A = BA + CA$
+
+        \item $\alpha(AB) = (\alpha A)B = A(\alpha B)$
+
+        \item $(A^t)^t = A$
+
+        \item $(A + B)^t = A^t + B^t$
+
+        \item $(\alpha A)^t = \alpha A^t$
+
+        \item $(AB)^t = B^tA^t$
+      \end{enumerate}
+    \end{teorema} 
+  \end{frame}
 \end{document}
