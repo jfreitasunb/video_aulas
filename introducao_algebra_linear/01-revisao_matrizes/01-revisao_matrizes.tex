@@ -26,6 +26,67 @@
 
     \begin{frame}
 
+      \begin{observacao}
+        Vamos utilizar os seguintes conjuntos numéricos:
+        \begin{enumerate}[label={\arabic*})]
+          \item O conjunto dos números racionais: $\rac$
+
+          \item O conjunto dos números reais: $\real$
+
+          \item O conjunto dos números complexos: $\complex = \{a + bi \mid a, b
+            \in \real,\ i^2 = -1\}$.
+        \end{enumerate}
+      \end{observacao}
+
+      \begin{teorema}
+        O conjunto dos reais, $\real$, com as operações de soma e multiplicação
+        usual satisfaz as seguintes propriedades:
+        \begin{enumerate}[label={\roman*})]
+          \seti
+          \item $x + y = y + x$ para todos $x$, $y \in \real$.
+
+          \item $(x + y) + z = x + (y + z)$ para todos $x$, $y$, $z \in \real$
+
+          \item existe 0 em $\real$ tal que $o + x = x$ para todo $x \in \real$
+
+          \item para todo $x \in \real$, existe um único $-x \in \real$ tal que
+            $x + (-x) = 0$
+        \end{enumerate}
+
+      \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+      \begin{teorema}
+        \begin{enumerate}[label={\roman*})]
+          \conti
+          \item $xy = yx$ para todos $x$, $y \in \real$
+          
+          \item $(xy)z = x(yz)$ para todos $x$, $y$, $z \in \real$
+
+          \item existe 1 em $\real$ tal que $1x = x$ para todo $x \in \real$
+
+          \item para todo $x \in \real$, $x \ne 0$, existe $x^{-1} \in \real$ tal
+            que $x\cdot x^{-1} = 1$
+        \end{enumerate}
+        Com essas propriedades dizemos que a terna $(\real, +, \cdot)$ é um
+        corpo ou simplesmente que $\real$ é um corpo.
+      \end{teorema}
+      
+      \begin{observacao}
+        As propriedades do teorema anterior também são verdadeiras nas ternas
+        $(\rac, +, \cdot)$ e $(\complex, +, \cdot)$, onde para o caso dos
+        complexos temos:
+        \begin{align*}
+          (a + bi) + (c + di) &= (a + c) + (b + d)i\\
+          (a + bi)\cdot(c + di) &= (ad + bc) + (ac - bd)i.
+        \end{align*}
+        Assim $(\rac, +, \cdot)$ e $(\complex, +, \cdot)$ também são exemplos de
+        corpos.
+      \end{observacao}
+    \end{frame}
+
+    \begin{frame}
       \begin{definicao}
         Uma matriz $A$, $m \times n$ é uma tabela contendo $mn$ números organizados em $m$ linhas e $n$ colunas sendo escrita como
         \begin{displaymath}
