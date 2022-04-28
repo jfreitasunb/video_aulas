@@ -43,14 +43,14 @@
         usual satisfaz as seguintes propriedades:
         \begin{enumerate}[label={\roman*})]
           \seti
-          \item $x + y = y + x$ para todos $x$, $y \in \real$.
+          \item Para todos $x$, $y \in \real$ temos: $x + y = y + x$.
 
-          \item $(x + y) + z = x + (y + z)$ para todos $x$, $y$, $z \in \real$
+          \item Para todos $x$, $y$, $z \in \real$ temos: $(x + y) + z = x + (y + z)$.
 
-          \item existe 0 em $\real$ tal que $o + x = x$ para todo $x \in \real$
+          \item Existe 0 em $\real$ tal que $0 + x = x$, para todo $x \in \real$.
 
-          \item para todo $x \in \real$, existe um único $-x \in \real$ tal que
-            $x + (-x) = 0$
+          \item Para cada $x \in \real$, existe um único $-x \in \real$ tal que
+            $x + (-x) = 0$.
         \end{enumerate}
 
       \end{teorema}
@@ -60,19 +60,19 @@
       \begin{teorema}
         \begin{enumerate}[label={\roman*})]
           \conti
-          \item $xy = yx$ para todos $x$, $y \in \real$
-          
-          \item $(xy)z = x(yz)$ para todos $x$, $y$, $z \in \real$
+          \item Para todos $x$, $y \in \real$ vale: $xy = yx$.
 
-          \item existe 1 em $\real$ tal que $1x = x$ para todo $x \in \real$
+          \item Para todos $x$, $y$, $z \in \real$ vale: $(xy)z = x(yz)$.
 
-          \item para todo $x \in \real$, $x \ne 0$, existe $x^{-1} \in \real$ tal
-            que $x\cdot x^{-1} = 1$
+          \item Existe 1 em $\real$ tal que $1\cdot x = x$, para todo $x \in \real$.
+
+          \item Para cada $x \in \real$, $x \ne 0$, existe $x^{-1} \in \real$ tal
+            que $x\cdot x^{-1} = 1$.
         \end{enumerate}
         Com essas propriedades dizemos que a terna $(\real, +, \cdot)$ é um
         corpo ou simplesmente que $\real$ é um corpo.
       \end{teorema}
-      
+
       \begin{observacao}
         As propriedades do teorema anterior também são verdadeiras nas ternas
         $(\rac, +, \cdot)$ e $(\complex, +, \cdot)$, onde para o caso dos
@@ -105,7 +105,7 @@
             a_{m1} & a_{m2} & \cdots & a_{mn}
           \end{bmatrix}.
         \end{displaymath}
-        
+
       \end{definicao}
     \end{frame}
 
@@ -133,11 +133,11 @@
       \[
         A = (a_{ij})_{m \times n}
       \]
-      para denotar uma matriz $A$ de $m$ linhas por $n$ colunas. 
+      para denotar uma matriz $A$ de $m$ linhas por $n$ colunas.
 
       Nesse caso diremos que $a_{ij}$ ou $[A]_{ij}$ é o \textbf{elemento} ou a \textbf{entrada} na posição $i$, $j$ da matriz A.
 
-      Quando $m = n$, diremos que $A$ é uma \textbf{matriz quadrada de ordem} $n$ e que os elementos $a_{11}$, $a_{22}$, \dots, $a_{nn}$ 
+      Quando $m = n$, diremos que $A$ é uma \textbf{matriz quadrada de ordem} $n$ e que os elementos $a_{11}$, $a_{22}$, \dots, $a_{nn}$
       formam a \textbf{diagonal principal} de $A$.
     \end{frame}
 
@@ -169,7 +169,7 @@
           F = \begin{bmatrix}
             1
           \end{bmatrix}
-        \end{align*} 
+        \end{align*}
       \end{exemplos}
     \end{frame}
 
@@ -188,10 +188,10 @@
       \end{enumerate}
     \end{definicao}
   \end{frame}
-  
+
   \begin{frame}
     \begin{definicao}
-      Dadas duas matrizes de mesmo tamanho, $A = (a_{ij})_{m \times n}$ e $B = (b_{ij})_{m \times n}$ definimos a soma de $A$ com $B$ 
+      Dadas duas matrizes de mesmo tamanho, $A = (a_{ij})_{m \times n}$ e $B = (b_{ij})_{m \times n}$ definimos a soma de $A$ com $B$
       como sendo a matriz
       \[
         C = A + B = (c_{ij})_{m \times n}
@@ -212,11 +212,11 @@
           \phantom{-}1 & 3\\
           \phantom{-}2 & 4\\
           -3 & 0
-        \end{bmatrix}, 
+        \end{bmatrix},
        B = \begin{bmatrix}
           -2 & \phantom{-}0\\
           \phantom{-}1 & \phantom{-}3\\
-          \phantom{-}5 & -4 
+          \phantom{-}5 & -4
         \end{bmatrix}.
     \]
     Denotando por $C$ a soma de $A$ e $B$, então
@@ -229,7 +229,7 @@
       -1 & \phantom{-}3\\
       \phantom{-}3 & \phantom{-}7\\
       \phantom{-}2 & -4
-     \end{bmatrix} 
+     \end{bmatrix}
     \end{align*}
     \end{exemplos}
   \end{frame}
@@ -239,7 +239,7 @@
       Dada uma matriz $A = (a_{ij})_{m \times n}$. A \textbf{multiplicação de $A$ por um escalar(número) $\alpha$} é definida
       como sendo a matriz
       \[
-        B = \alpha A 
+        B = \alpha A
       \]
       obtida multiplicando cada entrada da matriz $A$ pelo número $\alpha$, ou seja,
       \[
@@ -276,13 +276,13 @@
 
   \begin{frame}
     \begin{definicao}
-      Dadas duas matrizes $A$ e $B$ tais que $A = (a_{ij})_{m \times p}$ e $B = (b_{ij})_{p \times n}$, isto é, 
+      Dadas duas matrizes $A$ e $B$ tais que $A = (a_{ij})_{m \times p}$ e $B = (b_{ij})_{p \times n}$, isto é,
       \textbf{o número de colunas de $A$ é igual ao número de linhas de $B$} podemos definir o \textbf{produto de $A$ por $B$}
       denotado por
       \[
-        C = AB. 
+        C = AB.
       \]
-      A matriz $C$ será uma matriz $m \times n$ obtida da seguinte forma 
+      A matriz $C$ será uma matriz $m \times n$ obtida da seguinte forma
       \begin{equation}\label{multiplicacao_de_matrizes}
         c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{ip}b_{pj}
       \end{equation}
@@ -292,9 +292,9 @@
 
 
   \begin{frame}
-    A equação \eqref{multiplicacao_de_matrizes} está dizendo que para obtermos o elemento na posição $i$, $j$ da matriz $C$ precisamos 
+    A equação \eqref{multiplicacao_de_matrizes} está dizendo que para obtermos o elemento na posição $i$, $j$ da matriz $C$ precisamos
     realizar a soma dos produtos dos elementos da $i$-ésima linha de $A$ pelos elementos correspondentes da $j$-ésima coluna de $B$:
-    \[ 
+    \[
       \begin{bmatrix}
         c_{11} & \cdots & c_{1n}\\
         \vdots & c_{ij} & \vdots\\
@@ -310,13 +310,13 @@
         b_{21} & \cdots & b_{2j} & \cdots & b_{2n}\\
         \vdots & \cdots & \vdots & \cdots & \vdots\\
         b_{p1} & \cdots & b_{pj} & \cdots & b_{pn}
-      \end{bmatrix} 
+      \end{bmatrix}
     \]
   \end{frame}
 
   \begin{frame}
     \begin{exemplo}
-      Considere as seguintes matrizes: 
+      Considere as seguintes matrizes:
       \[
         A = \begin{bmatrix}
           1 & 3\\
@@ -329,7 +329,7 @@
           1 & 2 & 0
         \end{bmatrix}
       \]
-      Nessse caso não podemos fazer o produto de $A$ por $B$ pois $A$ é uma matriz $3 \times 2$ e $B$ é uma matriz $3 \times 3$. 
+      Nessse caso não podemos fazer o produto de $A$ por $B$ pois $A$ é uma matriz $3 \times 2$ e $B$ é uma matriz $3 \times 3$.
       Mas podemos realizar o produto $BA$. Nesse caso fazendo $C = BA$ obtemos
       \begin{align*}
         C &= BA = \begin{bmatrix}
@@ -357,11 +357,11 @@
 
   \begin{frame}
     \begin{definicao}
-      A \textbf{transposta} de uma matriz $A = (a_{ij})_{m \times n}$ é definida como sendo a matriz $n \times m$ 
+      A \textbf{transposta} de uma matriz $A = (a_{ij})_{m \times n}$ é definida como sendo a matriz $n \times m$
       \[
-        B = A^t 
+        B = A^t
       \]
-      obtida trocando-se as linhas com as colunas de $A$, ou seja, 
+      obtida trocando-se as linhas com as colunas de $A$, ou seja,
       \[
         b_{ij} = a_{ji}
       \]
@@ -426,9 +426,9 @@
 
         \item \textit{(Associatividade)} $(A + B) + C = A + (B + C)$
 
-        \item \textit{(Elemento Neutro)} A matriz denotada por $\overline{0}$, $m \times n$, definida por $\overline{0} = (0)_{m \times n}$, para todo $i = 1$, \dots, $m$ 
+        \item \textit{(Elemento Neutro)} A matriz denotada por $\overline{0}$, $m \times n$, definida por $\overline{0} = (0)_{m \times n}$, para todo $i = 1$, \dots, $m$
         e todo $j = 1$, \dots, $m$ é tal que
-        \[ 
+        \[
           A + \overline{0} = A
         \]
         para toda matriz $A$, $m \times n$. Tal matriz é chamada de \textbf{matriz nula} $m \times n$.
@@ -500,6 +500,6 @@
 
         \item $(AB)^t = B^tA^t$
       \end{enumerate}
-    \end{teorema} 
+    \end{teorema}
   \end{frame}
 \end{document}
