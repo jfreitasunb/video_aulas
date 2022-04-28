@@ -88,7 +88,7 @@
 
     \begin{frame}
       \begin{definicao}
-        Uma matriz $A$, $m \times n$ é uma tabela contendo $mn$ números organizados em $m$ linhas e $n$ colunas sendo escrita como
+          Uma matriz $A$ com entrandas num corpo $\mathbb{K}$, é uma tabela contendo $m\cdot n$ números de $\mathbb{K}$ organizados em $m$ linhas e $n$ colunas, onde $m$ e $n$ são números naturais com $m$, $n \ge 1$ e escrita como
         \begin{displaymath}
          A = \begin{pmatrix}
            a_{11} & a_{12} & \cdots & a_{1n}\\
@@ -129,6 +129,9 @@
     \end{frame}
 
     \begin{frame}
+
+      Uma matriz $A$ com $m$ \textbf{linhas} e $n$ \textbf{colunas} é dita possuir \textbf{ordem} ou \textbf{tamanho} $m \times n$.
+
       Usaremos também a notação
       \[
         A = (a_{ij})_{m \times n}
@@ -137,8 +140,7 @@
 
       Nesse caso diremos que $a_{ij}$ ou $[A]_{ij}$ é o \textbf{elemento} ou a \textbf{entrada} na posição $i$, $j$ da matriz A.
 
-      Quando $m = n$, diremos que $A$ é uma \textbf{matriz quadrada de ordem} $n$ e que os elementos $a_{11}$, $a_{22}$, \dots, $a_{nn}$
-      formam a \textbf{diagonal principal} de $A$.
+      Quando $m = n$, diremos que $A$ é uma \textbf{matriz quadrada de ordem} $n$ e que os elementos $a_{11}$, $a_{22}$, \dots, $a_{nn}$ formam a \textbf{diagonal principal} de $A$.
     \end{frame}
 
     \begin{frame}
@@ -175,8 +177,7 @@
 
     \begin{frame}
     \begin{definicao}
-      Uma matriz que possui uma única linha é chamada de \textbf{matriz linha}, e um matriz que possui uma única coluna
-      é chamada de \textbf{matriz coluna}.
+      Uma matriz que possui uma única linha, isto é, uma matriz de tamanho $1 \times n$ é chamada de \textbf{matriz linha}. Uma matriz que possui uma única coluna, isto é, uma matriz de tamanho $m \times 1$  é chamada de uma \textbf{matriz coluna}.
     \end{definicao}
 
     \begin{definicao}
@@ -187,6 +188,18 @@
         \item $a_{ij} = b_{ij}$ para $i = 1$, \dots, $m$ e $j = 1$, \dots, $n$.
       \end{enumerate}
     \end{definicao}
+  \end{frame}
+
+  \begin{frame}
+    \begin{observacao}
+      Denotaremos o conjunto de todas as matrizes com entradas em $\real$ por $M_{m \times n}(\real)$. Assim por exemplo,
+      \[
+          M_{2 \times 3}(\real) = \left\{\begin{bmatrix}a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23}\end{bmatrix} \mid a_{ij} \in \real,\ i,j = 1,2,3\right\}.
+      \]
+
+      Quando $m = n$ vamos escrever $M_{n \times n}(\real) = M_n(\real)$.
+
+    \end{observacao}
   \end{frame}
 
   \begin{frame}
