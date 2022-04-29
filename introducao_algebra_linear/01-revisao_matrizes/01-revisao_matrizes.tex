@@ -26,52 +26,47 @@
 
     \begin{frame}
 
+        \begin{observacao}
+            Vamos utilizar os seguintes conjuntos numéricos:
+            \begin{enumerate}[label={\arabic*})]
+                \item O conjunto dos números racionais: $\rac$
 
-      \begin{observacao}
-        Vamos utilizar os seguintes conjuntos numéricos:
-        \begin{enumerate}[label={\arabic*})]
-          \item O conjunto dos números racionais: $\rac$
+                \item O conjunto dos números reais: $\real$
 
-          \item O conjunto dos números reais: $\real$
+                \item O conjunto dos números complexos: $\complex = \{a + bi \mid a, b \in \real,\ i^2 = -1\}$.
+            \end{enumerate}
+        \end{observacao}
 
-          \item O conjunto dos números complexos: $\complex = \{a + bi \mid a, b
-            \in \real,\ i^2 = -1\}$.
-        \end{enumerate}
-      \end{observacao}
+        \begin{teorema}
+            O conjunto dos reais, $\real$, com as operações de soma e multiplicação usual satisfaz as seguintes propriedades:
+            \begin{enumerate}[label={\roman*})]
+                \seti
+                \item Para todos $x$, $y \in \real$ temos: $x + y = y + x$.
 
-      \begin{teorema}
-        O conjunto dos reais, $\real$, com as operações de soma e multiplicação
-        usual satisfaz as seguintes propriedades:
-        \begin{enumerate}[label={\roman*})]
-          \seti
-          \item Para todos $x$, $y \in \real$ temos: $x + y = y + x$.
+                \item Para todos $x$, $y$, $z \in \real$ temos: $(x + y) + z = x + (y + z)$.
 
-          \item Para todos $x$, $y$, $z \in \real$ temos: $(x + y) + z = x + (y + z)$.
+                \item Existe 0 em $\real$ tal que $0 + x = x$, para todo $x \in \real$.
 
-          \item Existe 0 em $\real$ tal que $0 + x = x$, para todo $x \in \real$.
-
-          \item Para cada $x \in \real$, existe um único $-x \in \real$ tal que
-            $x + (-x) = 0$.
-        \end{enumerate}
-
-      \end{teorema}
+                \item Para cada $x \in \real$, existe um único $-x \in \real$ tal que
+                    $x + (-x) = 0$.
+            \end{enumerate}
+        \end{teorema}
     \end{frame}
 
     \begin{frame}
       \begin{teorema}
-        \begin{enumerate}[label={\roman*})]
-          \conti
-          \item Para todos $x$, $y \in \real$ vale: $xy = yx$.
+            \begin{enumerate}[label={\roman*})]
+              \conti
+              \item Para todos $x$, $y \in \real$ vale: $xy = yx$.
 
-          \item Para todos $x$, $y$, $z \in \real$ vale: $(xy)z = x(yz)$.
+              \item Para todos $x$, $y$, $z \in \real$ vale: $(xy)z = x(yz)$.
 
-          \item Existe 1 em $\real$ tal que $1\cdot x = x$, para todo $x \in \real$.
+              \item Existe 1 em $\real$ tal que $1\cdot x = x$, para todo $x \in \real$.
 
-          \item Para cada $x \in \real$, $x \ne 0$, existe $x^{-1} \in \real$ tal
-            que $x\cdot x^{-1} = 1$.
-        \end{enumerate}
-        Com essas propriedades dizemos que a terna $(\real, +, \cdot)$ é um
-        corpo ou simplesmente que $\real$ é um corpo.
+              \item Para cada $x \in \real$, $x \ne 0$, existe $x^{-1} \in \real$ tal
+                que $x\cdot x^{-1} = 1$.
+            \end{enumerate}
+            Com essas propriedades dizemos que a terna $(\real, +, \cdot)$ é um corpo ou simplesmente que $\real$ é um corpo.
       \end{teorema}
 
       \begin{observacao}
@@ -89,15 +84,15 @@
 
     \begin{frame}
       \begin{definicao}
-          Uma matriz $A$ com entrandas num corpo $\mathbb{K}$, é uma tabela contendo $m\cdot n$ números de $\mathbb{K}$ organizados em $m$ linhas e $n$ colunas, onde $m$ e $n$ são números naturais com $m$, $n \ge 1$ e escrita como
-        \begin{displaymath}
-         A = \begin{pmatrix}
-           a_{11} & a_{12} & \cdots & a_{1n}\\
-           a_{21} & a_{22} & \cdots & a_{2n}\\
-           \vdots & \vdots & \cdots & \vdots\\
-           a_{m1} & a_{m2} & \cdots & a_{mn}
-         \end{pmatrix}\end{displaymath}
-         ou
+        Uma matriz $A$ com entrandas num corpo $\mathbb{K}$, é uma tabela contendo $m\cdot n$ números de $\mathbb{K}$ organizados em $m$ linhas e $n$ colunas, onde $m$ e $n$ são números naturais com $m$, $n \ge 1$ e escrita como
+            \begin{displaymath}
+                A = \begin{pmatrix}
+                a_{11} & a_{12} & \cdots & a_{1n}\\
+                a_{21} & a_{22} & \cdots & a_{2n}\\
+                \vdots & \vdots & \cdots & \vdots\\
+                a_{m1} & a_{m2} & \cdots & a_{mn}
+            \end{pmatrix}\end{displaymath}
+        ou
         \begin{displaymath}
           A = \begin{bmatrix}
             a_{11} & a_{12} & \cdots & a_{1n}\\
